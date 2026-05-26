@@ -724,28 +724,28 @@
 3 PROcess_CAFAna || Start reading the files..
 3 PROcess_CAFAna || Branch pruning fid=0: keeping 96 branches
 3 PROcess_CAFAna || File 0 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt) -- uni : 0 / 132217  took 0 seconds
-3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 27 seconds
-3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 27 seconds
-3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 27 seconds
-3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 27 seconds
-3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 27 seconds
+3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 32 seconds
+3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 29 seconds
+3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 28 seconds
+3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 34 seconds
+3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 33 seconds
 3 PROcess_CAFAna || Branch pruning fid=1: keeping 96 branches
 3 PROcess_CAFAna || File 1 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_nue_files_localtest.txt) -- uni : 0 / 61880  took 0 seconds
-3 PROcess_CAFAna || File 1 -- uni : 12376 / 61880  took 14 seconds
-3 PROcess_CAFAna || File 1 -- uni : 24752 / 61880  took 13 seconds
-3 PROcess_CAFAna || File 1 -- uni : 37128 / 61880  took 13 seconds
-3 PROcess_CAFAna || File 1 -- uni : 49504 / 61880  took 13 seconds
+3 PROcess_CAFAna || File 1 -- uni : 12376 / 61880  took 18 seconds
+3 PROcess_CAFAna || File 1 -- uni : 24752 / 61880  took 17 seconds
+3 PROcess_CAFAna || File 1 -- uni : 37128 / 61880  took 19 seconds
+3 PROcess_CAFAna || File 1 -- uni : 49504 / 61880  took 18 seconds
 3 PROcess_CAFAna || Branch pruning fid=2: keeping 96 branches
-3 PROcess_CAFAna || File 2 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_fullosc_files_localtest.txt) -- uni : 0 / 66150  took 13 seconds
-3 PROcess_CAFAna || File 2 -- uni : 13230 / 66150  took 15 seconds
-3 PROcess_CAFAna || File 2 -- uni : 26460 / 66150  took 14 seconds
+3 PROcess_CAFAna || File 2 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_fullosc_files_localtest.txt) -- uni : 0 / 66150  took 18 seconds
+3 PROcess_CAFAna || File 2 -- uni : 13230 / 66150  took 20 seconds
+3 PROcess_CAFAna || File 2 -- uni : 26460 / 66150  took 18 seconds
 3 PROcess_CAFAna || File 2 -- uni : 39690 / 66150  took 14 seconds
 3 PROcess_CAFAna || File 2 -- uni : 52920 / 66150  took 14 seconds
-3 PROcess_CAFAna || Finish reading files, it took 272 seconds..
+3 PROcess_CAFAna || Finish reading files, it took 326 seconds..
 3 PROcess_CAFAna || DONE
-3 save || Serialization save of PROpeller into file  scaling20bins_10pulls_prop.bin took 0.00450755 seconds
+3 save || Serialization save of PROpeller into file  scaling20bins_10pulls_prop.bin took 0.00613007 seconds
 3 main || Done processing PROpeller and PROsysts from XML defined root files, and saving to binary output also: scaling20bins_10pulls_prop.bin
-3 PROseed || For 1+1 threads we precalculated thread seeds as: [3768273221, 2008727734] 
+3 PROseed || For 1+1 threads we precalculated thread seeds as: [2019084440, 1680264185] 
 3 PROnueapp || setting up a model nueapp, with  2 params.
 3 PROnueapp || Param 0 is dmsq with lower bound/upper bound of -2/2 and default -2
 3 PROnueapp || Param 1 is sinsq2thme with lower bound/upper bound of -10/0 and default -10
@@ -850,4 +850,8 @@
 3 print || --------------------------------------- 
 3 main || Gradient mode: central-full
 3 main || We are hoping to FIX : [] 
-3 main || Total run time: 272929269
+3 main || Total run time: 328060233
+
+real	5m28.280s
+user	5m22.426s
+sys	0m3.802s

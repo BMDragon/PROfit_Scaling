@@ -9,7 +9,7 @@ Npulls = sys.argv[2]
 
 filename = 'scale_' + str(Nbins) + 'bins_' + str(Npulls) + 'pulls'
 
-file = open('./xml/' + filename + '.xml', 'w')
+file = open('.././xml/' + filename + '.xml', 'w')
 file.write('''
 <?xml version="1.0" ?>
 
@@ -25,13 +25,6 @@ file.write('''
     <bins unit = "True Neutrino Energy [GeV]" min="0" max="3" nbins="''' + str(Nbins) + '''"/>
     <bins unit = "True L/E" min="0" max="3" nbins="''' + str(Nbins) + '''" plot="false"/>
     <subchannel name="numucc" plotname="#nu_{#mu} CC" color="#99CCFF"/>
-</channel>
-<channel name="nue" plotname="#nu_{e} Selection">
-    <bins unit = "Reconstructed Neutrino Energy [GeV]" min="0.2" max="3" nbins="''' + str(Nbins) + '''"  />
-    <bins unit = "True Neutrino Energy [GeV]" min="0" max="3" nbins="''' + str(Nbins) + '''"/>
-    <bins unit = "True L/E" min="0" max="3" nbins="''' + str(Nbins) + '''" plot="false"/>
-    <subchannel name="intrinsic" plotname="#nu_{e} CC"                    color="#33CC33"/>
-    <subchannel name="fullosc"   plotname="#nu_{#mu} #rightarrow #nu_{e}" color="#FFFF99"/>
 </channel>
 
 <!-- The Physics model, here nue-appearance only -->
@@ -56,34 +49,6 @@ file.write('''
     </branch>
 </MCFile>
 
-<MCFile treename="events/selectedNu" filename="/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_nue_files_localtest.txt" scale = "1.0" pot="1.40322e21">
-    <friend treename="events/multisigmaTree" />
-    <friend treename="events/multisimTree" />
-    <branch
-        associated_subchannel = "nu_SBND_nue_intrinsic"
-        model_rule            = "0"
-        additional_weight     = "0.8*CC*(truePDG == 12 || truePDG == -12)*(recoE>0)"
-        >
-        <variable>recoE</variable>
-        <variable>trueE</variable>
-        <variable>trueL/(trueE*1000.0)</variable>
-    </branch>
-</MCFile>
-
-<MCFile treename="events/selectedNu" filename="/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_fullosc_files_localtest.txt" scale = "1.0" pot="1.0282e19">
-    <friend treename="events/multisigmaTree" />
-    <friend treename="events/multisimTree" />
-    <branch
-        associated_subchannel = "nu_SBND_nue_fullosc"
-        model_rule            = "1"
-        additional_weight     = "0.8*CC*(truePDG == 12 || truePDG == -12)*(recoE>0)"
-        >
-        <variable>recoE</variable>
-        <variable>trueE</variable>
-        <variable>trueL/(trueE*1000.0)</variable>
-    </branch>
-</MCFile>
-
 
 <systematics>
     <!-- Inlcude MC stats, uncomment out to remove -->
@@ -93,9 +58,6 @@ file.write('''
     <systematic type="norm" plotname="ICARUSDet" tag="Other">nu_ICARUS:0.02</systematic>
 
     <systematic type="spline"  binning="var1" plotname="ZExpA1CCQE" tag="Zexpansion">GENIEReWeight_SBN_v1_multisigma_ZExpA1CCQE</systematic>
-    <systematic type="spline"  binning="var1" plotname="ZExpA2CCQE" tag="Zexpansion">GENIEReWeight_SBN_v1_multisigma_ZExpA2CCQE</systematic>
-    <systematic type="spline"  binning="var1" plotname="ZExpA3CCQE" tag="Zexpansion">GENIEReWeight_SBN_v1_multisigma_ZExpA3CCQE</systematic>
-    <systematic type="spline"  binning="var1" plotname="ZExpA4CCQE" tag="Zexpansion">GENIEReWeight_SBN_v1_multisigma_ZExpA4CCQE</systematic>
 
     <systematic type="spline"  binning="var1"  plotname="MaCCRES" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisigma_MaCCRES</systematic>
     <systematic type="spline"  binning="var1"  plotname="MvCCRES" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisigma_MvCCRES</systematic>

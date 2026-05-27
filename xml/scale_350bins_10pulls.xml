@@ -9,9 +9,9 @@
 
 <!-- Two Channels, numu and nue selections -->
 <channel name="numu" plotname="#nu_{#mu} Selection">
-    <bins unit = "Reconstructed Neutrino Energy [GeV]" min="0.2" max="3" nbins="20" />
-    <bins unit = "True Neutrino Energy [GeV]" min="0" max="3" nbins="20"/>
-    <bins unit = "True L/E" min="0" max="3" nbins="20" plot="false"/>
+    <bins unit = "Reconstructed Neutrino Energy [GeV]" min="0.2" max="3" nbins="350" />
+    <bins unit = "True Neutrino Energy [GeV]" min="0" max="3" nbins="350"/>
+    <bins unit = "True L/E" min="0" max="3" nbins="350" plot="false"/>
     <subchannel name="numucc" plotname="#nu_{#mu} CC" color="#99CCFF"/>
 </channel>
 

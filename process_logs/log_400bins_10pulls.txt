@@ -1,0 +1,1078 @@
+3 Load || Loading Bounds for plot_channels 
+2  
+            ....                                                                                                  
+            .=+=-..                                            .:                                                 
+            .:=++=-.                              .-=+*****+=-+@=.   :+##-  :#%=                                 
+            .-+++=-.               .::.      .*#*=--:::--+#@@@=  :#=*@%. :@@=                                 
+            .:=+++=-.            :++=-.    ...         :**=-.  .. %@#. +@+                                  
+            .:-++++=:.        .=++++=-.                        :@@= =@+                                   
+            .-=++++=:.     -++++++++-.                      =@@=*%-                                    
+            :=+-. .-+= .:=+++++=:. .+++++++++++-.             .--.   .*%#=.                                     
+            .=+=%%:  +@*.   .-++++++==+++++++++++++-.           -+++:                                             
+            .. :%%: .##.      .:=++++++++++:.-+++++++-.        :+++++-.                                           
+            *@* .*#.      .:..:=+++++++-   .-+++++++-.     .+++++++=:                    .::.                  
+            .#@=:*+.       :*=   .-++++=.     .-+++++++-.  .=+++++++++-.                  .+*#*-.               
+            =##+-         :*=     .:==.        .-=++++++-.-+++++++++++=.                    .-*%=              
+            .:=+. ..        .:.-*+:::.                .:=++++++++++++=+++++++:                      -@*.            
+            :**%%*.          =*+++++++.       .=-.       .-++++++++++-.:=++++++-.                     :@+            
+            ..*+:*:          =*+++++++.       :++.         .-=++++++=.  .-++++++=:                     +@:           
+            -%.             =*+**++++.    .::-++:::.        .:+++++.     :+++++++-.                 .+=@==.         
+            +*              .::::++++.    -++++++++:       .. .-=+:       .=++++++=.                .+@@@*.         
+            +#          :======: -**+.    -++++++++:      .=+:  ..         .:+++++++-.                :=:           
+            :%:        .-******- .-=+.    -++++++++:       +*:               .=++++++=.                :-.   .-:.   
+            +#.   .:-==++++++++==-:.     -++++++++:   .---++=--:      .::.   .-+++++++:            .-##@@:  *@@.   
+            .-: :=+*****+++++++***++-.   -++++++++:   :***++***-      .++:     :=++++++-.          .=::@@-  *@+.   
+            .=+*+++*+++++++++*++++*+:  -++++++++:   :+++++++*-   ....=+:...   .-++++++=:     ...    +@@. =@+     
+            .=*+++++-..:*++++.-+*+++*+. -++++++++:   :+++++++*-   .===+++=+:     :+++++++-.  .=+:   .%@*.+@=      
+            .+++++++.  :*++++. .+++++=: -++++++++:   :+++++++*-   .++++++++:      .=++++++=..=++=.  .#@%##:       
+            .+++++++=..:*++++.  .....   -++++++++:   :+++++++*-   .++++++++:       .:+++++++=++++.   .-=:         
+            .-*+++++*++++++++.          -++++++++:   :+++++++*-   .++++++++:     ....:+++++++++++-                
+            .-+**++++++++++++==-:.     -++++++++:   :+++++++*-   .++++++++:  .=====++++++++++++++.               
+            .-=++***+++++++***++-.   :===++===.   :+++++++*-   .++++++++:  .:-+++++++++++++++++-               
+            ..:--=+++++**++++*+-.    :+=.      :+++++++*-   .++++++++:     .:=++++++++++++++=.              
+            .     :*++++-=++++++*-    :+=.      :++++++++-   .:::++-::.    .-: .:=++++++++++++:              
+            .=====+-    :*++++..:+++++++.   :++.      ....+*:...      .=+.    ...:*+... .:=+++++++++=.             
+            .+*****+:   :*++++.  =*+++++.   .+=.         .+*:         .++:    .+++++++=    .-=+++++++:             
+            :+++++*+=:.:*++++.:=+++++*-    ...          .+*:         .-=.    .++++++*=      ..-=++++-             
+            :+**+++**+++++++++*+++*+-.                 .++:                 .+**++**=         .:-=++.            
+            .-=+*****++++++****++=.                   ....                 .::-*+-::            .::.            
+            ..:-==++++++++==-:.                                             :*+                               
+            :******:.                                                 .-:.                              
+            .======.                                                                                    
+            .::::::::::.      .::::::::::..           .:--=--:..           .-+*####=  .--:                       
+            =@@@@@@@@@@@%*-.  =@@@@@@@@@@@%*-.     .=#%@@@@@@@@%*-.       -%@@@@@@@= :@@@@-   .----.             
+            =@@@@#**##@@@@@#. =@@@@#***#%@@@@*.  .+@@@@@#*++*%@@@@#:      #@@@*..... .#%%#:   .%%%%:             
+            =@@@@:    .+@@@@+ =@@@@-    .=@@@@+ .*@@@@+.     .:#@@@@-  -==%@@@*====. .====. -==@@@@+===:         
+            =@@@@:     -@@@@* =@@@@-     -@@@@* =@@@@+  .....  .%@@@%. %@@@@@@@@@@@- :@@@@. %@@@@@@@@@@=         
+            =@@@@-::::=%@@@@: =@@@@+--==*@@@@%: #@@@@: ........ +@@@@- ---%@@@*----. :@@@@. --=@@@@*---.         
+            =@@@@@@@@@@@@@%-  =@@@@@@@@@@@@#+.  #@@@@. ........ =@@@@-    #@@@=      :@@@@.   .@@@@-             
+            =@@@@%%%###*+-.   =@@@@*++#@@@%:    +@@@@=  ...... .#@@@@.    #@@@=      :@@@@.   .@@@@=             
+            =@@@@:            =@@@@-  .*@@@%-   .#@@@@=.      .*@@@@=     #@@@=      :@@@@.   .@@@@-             
+            =@@@@:            =@@@@-   .*@@@@=   .*@@@@%*===+*@@@@@=      #@@@=      :@@@@.   .%@@@#==+:         
+            =@@@@:            =@@@@-     +@@@@+.   -*%@@@@@@@@@@%+:       %@@@=      :@@@@.    =%@@@@@@*         
+            :===-.            :====.      -====.     .:-=++++=-:.         -===:      .===-.     .-=++=-:         
+             
+2 main || ##################################################################
+2 main || ####################### PROfit version v2.3.0 ######################
+2 main || ##################################################################
+2 main || PROfit commandline input arguments. xml: .././xml/scale_400bins_10pulls.xml, tag: scaling400bins_10pulls, output v1, nthread: 1 
+3 LoadFromXML || Correctly loaded and parsed XML, continuing
+3 LoadFromXML || num_variation_type_covariance: 36 
+3 LoadFromXML || num_variation_type_covariance_to_spline: 0 
+3 LoadFromXML || num_variation_type_external_ovariance: 0 
+3 LoadFromXML || num_variation_type_flat: 0 
+3 LoadFromXML || num_variation_type_norm: 2 
+3 LoadFromXML || num_variation_type_spline: 8 
+3 LoadFromXML || num_variation_type_spline_to_covariance: 0 
+3 LoadFromXML || Using MC intrinsic stat uncertainty. 
+3 remove_unused_channel || Remove any used channels and subchannels...
+3 remove_unused_channel || fullname of subchannel: nu_SBND_numu_numucc 
+3 CalcTotalBins || calculating number of bins involved
+3 CalcTotalBins || Generating Index maps for convenience
+3 generate_index_map || Generate map between subchannel and global indices..
+3 CalcTotalBins || On variable 0 bin widths are size 400 and  [0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.00700001, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00699997, 0.00700003, 0.00700003, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00700009, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00699997, 0.00700021, 0.00699997, 0.00699997] 
+3 CalcTotalBins || On variable 1 bin widths are size 400 and  [0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00749999, 0.00750001, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00750005, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017] 
+3 CalcTotalBins || On variable 2 bin widths are size 400 and  [0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.0075, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00750001, 0.00749999, 0.00749999, 0.00750001, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750002, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00749999, 0.00750005, 0.00749999, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00749993, 0.00750005, 0.00750005, 0.00750005, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00750017, 0.00749993, 0.00749993, 0.00749993, 0.00750017] 
+3 LoadFromXML || Checking number of Mode/Detector/Channel/Subchannels and BINs
+3 LoadFromXML || num_modes: 1 
+3 LoadFromXML || num_detectors: 1 
+3 LoadFromXML || num_channels: 1 
+3 LoadFromXML || num of subchannels: 1 
+3 LoadFromXML || variable 0 num_bins_total: 400
+3 LoadFromXML || variable 0 num_bins_total_collapsed: 400
+3 LoadFromXML || variable 1 num_bins_total: 400
+3 LoadFromXML || variable 1 num_bins_total_collapsed: 400
+3 LoadFromXML || variable 2 num_bins_total: 400
+3 LoadFromXML || variable 2 num_bins_total_collapsed: 400
+3 LoadFromXML || Done reading the xmls
+3 CalcHash || MurmurHash output hash 593970633 
+3 CalcDetVarHash || MurmurHash detvar_hash output 2445041692 
+3 construct_variable_collapsing_matrices || Creating Collapsing Matrices 
+3 construct_variable_collapsing_matrices || Creating Variable 0 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  400  400
+3 construct_variable_collapsing_matrices || Creating Variable 1 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  400  400
+3 construct_variable_collapsing_matrices || Creating Variable 2 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  400  400
+3 main || Loading PROpeller and PROsysts from precalc binary input: scaling400bins_10pulls_prop.bin
+3 load || Serialization load of PROpeller from file  scaling400bins_10pulls_prop.bin took 0.0168539 seconds
+3 main || Done loading. Config hash (593970633) and binary loaded PROpeller (593970633) are here. 
+3 main || Done loading. Config hash (593970633) and binary loaded PROsyst hash(593970633) are here. 
+3 PROseed || For 1+1 threads we precalculated thread seeds as: [3937942024, 4171310701] 
+3 PROnueapp || setting up a model nueapp, with  2 params.
+3 PROnueapp || Param 0 is dmsq with lower bound/upper bound of -2/2 and default -2
+3 PROnueapp || Param 1 is sinsq2thme with lower bound/upper bound of -10/0 and default -10
+3 PROsyst || SumMatrix for index 0 
+3 PROsyst || SumMatrix for index 0 DONE 
+3 PROsyst || SumMatrix for index 1 
+3 PROsyst || SumMatrix for index 1 DONE 
+3 main || model->default_val: [-2, -10]
+3 main || fake_data_osc_param_vector: [-2, -10]
+3 main || fakedataparams (physics portion): -2 -10
+3 main || Going to get fake data set up for each variable.
+3 main || Starting from fit preset :  [good, fast].
+3 PROfitterConfig ||Fit and  L-BFGS-B parameters for the Detailed Global minimia finder.  
+3 print || Printing PROfitterConfig Values.
+3 print || ------------ PROfitter specific -------------- 
+3 print || n_latin_points: 2000  
+3 print || latin_diversity_factor: 0.5  
+3 print || n_localfit: 8  
+3 print || n_max_local_retries: 1  
+3 print || ------------ Particle Swarm Optimization -------------- 
+3 print || n_swarm_particles: 25  
+3 print || n_swarm_iterations: 100  
+3 print || n_swarm_max_stagnent_iterations: 50  
+3 print || swarm_inertia_start: 0.9  
+3 print || swarm_inertia_end: 0.6  
+3 print || swarm_cognitive_score: 2  
+3 print || swarm_social_score: 2  
+3 print || swarm_convergence_threshold: 0.0001  
+3 print || ------------ MCMC Parameters -------------- 
+3 print || MCMCiter: 20000  
+3 print || MCMCburn: 25000  
+3 print || ------------ Harmonic Seed Search -------------- 
+3 print || harmonic_min_num_seeds: 2  
+3 print || harmonic_max_num_seeds: 4  
+3 print || harmonic_num_test_points: 125  
+3 print || harmonic_raw_max_tests: 60  
+3 print || harmonic_prominence_threshold: 0.5  
+3 print || harmonic_prominence_threshold_shift: 0.2  
+3 print || harmonic_min_spacing_log: 0.025  
+3 print || harmonic_prominence_threshold_minimum: 1e-05  
+3 print || harmonic_seed_norm_tolerance: 0.0001  
+3 print || harmonic_seed_chi_tolerence: 1e-06  
+3 print || harmonic_scan_fit: 0  
+3 print || ------------ LBFGSBParam -------------- 
+3 print || m: 6   
+3 print || epsilon: 1e-05  
+3 print || epsilon_rel: 1e-05  
+3 print || past: 1   
+3 print || delta: 1e-06  
+3 print || max_iterations: 150  
+3 print || max_submin: 10   
+3 print || max_linesearch: 20   
+3 print || min_step: 1.19209e-07  ) 
+3 print || max_step: 1e+20   
+3 print || ftol: 0.0001   
+3 print || wolfe: 0.9   
+3 print || --------------------------------------- 
+3 PROfitterConfig ||Fit and  L-BFGS-B parameters for the Simplier Scan minimia finder.  
+3 print || Printing PROfitterConfig Values.
+3 print || ------------ PROfitter specific -------------- 
+3 print || n_latin_points: 750  
+3 print || latin_diversity_factor: 0.5  
+3 print || n_localfit: 4  
+3 print || n_max_local_retries: 1  
+3 print || ------------ Particle Swarm Optimization -------------- 
+3 print || n_swarm_particles: 15  
+3 print || n_swarm_iterations: 100  
+3 print || n_swarm_max_stagnent_iterations: 50  
+3 print || swarm_inertia_start: 0.9  
+3 print || swarm_inertia_end: 0.6  
+3 print || swarm_cognitive_score: 2  
+3 print || swarm_social_score: 2  
+3 print || swarm_convergence_threshold: 0.0001  
+3 print || ------------ MCMC Parameters -------------- 
+3 print || MCMCiter: 20000  
+3 print || MCMCburn: 25000  
+3 print || ------------ Harmonic Seed Search -------------- 
+3 print || harmonic_min_num_seeds: 2  
+3 print || harmonic_max_num_seeds: 4  
+3 print || harmonic_num_test_points: 125  
+3 print || harmonic_raw_max_tests: 60  
+3 print || harmonic_prominence_threshold: 0.5  
+3 print || harmonic_prominence_threshold_shift: 0.2  
+3 print || harmonic_min_spacing_log: 0.025  
+3 print || harmonic_prominence_threshold_minimum: 1e-05  
+3 print || harmonic_seed_norm_tolerance: 0.0001  
+3 print || harmonic_seed_chi_tolerence: 1e-06  
+3 print || harmonic_scan_fit: 0  
+3 print || ------------ LBFGSBParam -------------- 
+3 print || m: 6   
+3 print || epsilon: 1e-05  
+3 print || epsilon_rel: 1e-05  
+3 print || past: 1   
+3 print || delta: 1e-06  
+3 print || max_iterations: 100  
+3 print || max_submin: 10   
+3 print || max_linesearch: 20   
+3 print || min_step: 1.19209e-07  ) 
+3 print || max_step: 1e+20   
+3 print || ftol: 0.0001   
+3 print || wolfe: 0.9   
+3 print || --------------------------------------- 
+3 main || Gradient mode: central-full
+3 main || We are hoping to FIX : [] 
+3 run_scale_test || ===== PRObench scale-test starting =====
+3 run_scale_test || N_fillspectra=1000  N_metric=100  N_fit=10  grad_mode=central-full
+3 run_scale_test || nphys=2  nnuis=10  nbins=400
+3 [SCALETEST] tag=fillspectra_vary_all N=1000 nbins=400 nphys=2 nnuis=10 total_us=1275899 per_call_us=1275.9
+3 [SCALETEST] tag=fillspectra_vary_phys N=1000 nbins=400 nphys=2 nnuis=10 total_us=69568 per_call_us=69.568
+3 [SCALETEST] tag=fillspectra_vary_nuis N=1000 nbins=400 nphys=2 nnuis=10 total_us=1193779 per_call_us=1193.78
+3 [SCALETEST] tag=metric_vary_all N=100 nbins=400 nphys=2 nnuis=10 total_us=448990 per_call_us=4489.9
+3 [SCALETEST] tag=metric_vary_phys N=100 nbins=400 nphys=2 nnuis=10 total_us=318847 per_call_us=3188.47
+3 [SCALETEST] tag=metric_vary_nuis N=100 nbins=400 nphys=2 nnuis=10 total_us=433184 per_call_us=4331.84
+3 [SCALETEST] tag=metric_grad_vary_all N=100 nbins=400 nphys=2 nnuis=10 total_us=8035145 per_call_us=80351.4
+3 [SCALETEST] tag=metric_grad_vary_phys N=100 nbins=400 nphys=2 nnuis=10 total_us=7914538 per_call_us=79145.4
+3 [SCALETEST] tag=metric_grad_vary_nuis N=100 nbins=400 nphys=2 nnuis=10 total_us=7387623 per_call_us=73876.2
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 1.39622 with pts  : [0.520611, -3.20966, 0.247831, 0.116502, 0.351293, 0.0100616, 0.0496021, 0.209529, 0.142937, 0.0254073, 0.190946, 0.175268] 
+3 Fit || Will swarm with 25 swarm points chis of  1.396225 1.790488 2.130239 2.133783 2.348054 2.438642 2.502200 2.767476 2.815256 3.198099 3.373074 3.504583 3.581236 3.606111 3.679378 3.722138 3.877325 3.899444 3.922303 3.984626 4.064587 4.067227 4.152362 4.165712 4.169219 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0269177 at [1.27683, -3.55307, -0.0901611, -0.0455455, 0.0254784, 0.0563953, -0.0714534, 0.00679347, 0.00220677, 0.0205129, -0.0587436, 0.00997146] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.4993e-06 after 8 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.8967e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.16031e-06 after 13 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.50837e-07 after 8 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.50972e-06 after 14 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.42058e-07 after 13 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.44645e-08 after 15 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.33061e-07 after 11 iterations
+3 Fit || FINAL has a chi 8.44645e-08
+3 Fit || FINAL is  :  0.060320 -3.881917 0.000012 0.000061 0.000026 -0.000063 0.000025 -0.000012 0.000003 -0.000070 0.000113 -0.000179 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 1.28877 with pts  : [0.29404, -2.80003, 0.443032, 0.571033, 0.0307735, 0.0701832, 0.106767, 0.250183, 0.0628479, 0.252106, 0.21326, 0.0546441] 
+3 Fit || Will swarm with 25 swarm points chis of  1.288773 1.972111 2.441960 2.653085 2.767394 3.127935 3.184570 3.353537 3.356828 3.367612 3.402808 3.410752 3.412373 3.543558 3.570216 3.639226 3.679302 3.835718 3.854329 3.907826 3.978904 3.986089 4.082461 4.128733 4.197002 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0281585 at [0.810277, -3.0004, 0.0563587, 0.0123203, 0.0341667, -0.0139278, 0.0900138, -0.047919, -0.00213659, 0.00648913, -0.04119, 0.0258897] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.23723e-07 after 12 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.52461e-07 after 22 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.34125e-07 after 13 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.99918e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.67447e-08 after 14 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.17714e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.22267e-07 after 15 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.72425e-08 after 15 iterations
+3 Fit || FINAL has a chi 1.72425e-08
+3 Fit || FINAL is  :  0.011641 -2.730012 -0.000074 -0.000003 0.000001 -0.000035 0.000033 -0.000001 0.000000 -0.000005 0.000019 -0.000018 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 1.05971 with pts  : [0.356011, -4.58487, 0.106092, 0.389391, 0.253645, 0.281536, 0.0745924, 0.0808405, 0.0365917, 0.0778315, 0.0734566, 0.401451] 
+3 Fit || Will swarm with 25 swarm points chis of  1.059715 1.140415 1.805317 2.556422 2.684695 2.785851 2.818178 3.029043 3.105518 3.216507 3.308465 3.351092 3.494900 3.507474 3.547830 3.587284 3.620836 3.629817 3.698956 3.948358 3.985890 4.065432 4.072516 4.161219 4.208772 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0105124 at [0.438791, -3.77662, 0.00621884, -0.0150804, 0.0126543, -0.0521713, 0.0561239, 0.0126032, -0.00278281, -0.0134598, 0.0162381, 0.0180321] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.84219e-07 after 9 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.21456e-07 after 25 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.93237e-07 after 12 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.4919e-07 after 13 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.953e-08 after 15 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.8445e-07 after 13 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.5087e-07 after 14 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.27716e-08 after 14 iterations
+3 Fit || FINAL has a chi 7.27716e-08
+3 Fit || FINAL is  :  0.323817 -3.068946 -0.000026 -0.000051 0.000064 -0.000051 0.000053 0.000063 0.000005 -0.000008 0.000100 -0.000157 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 2.48479 with pts  : [0.241599, -2.57666, 0.161008, 0.602409, 0.18344, 0.736857, 0.00795175, 0.146306, 0.0542708, 0.276673, 0.221845, 0.0821941] 
+3 Fit || Will swarm with 25 swarm points chis of  2.484786 2.659641 2.664825 2.741125 3.093693 3.098779 3.138070 3.285719 3.355677 3.401172 3.539901 3.539908 3.605870 3.815936 3.906001 3.966596 3.986343 4.030472 4.068393 4.071552 4.106022 4.214635 4.268859 4.305023 4.345680 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0195122 at [0.7236, -3.30105, -0.0428742, 0.0492464, 0.0137787, 0.0151562, -0.0220282, 0.0267929, -0.0030004, 0.0379557, 0.080965, 0.0223769] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.4877e-07 after 10 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.44581e-07 after 17 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.36824e-08 after 13 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.24553e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.44582e-06 after 13 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.46177e-08 after 15 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.24317e-07 after 15 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.92997e-07 after 18 iterations
+3 Fit || FINAL has a chi 6.46177e-08
+3 Fit || FINAL is  :  0.792868 -4.775630 0.000073 -0.000047 -0.000059 0.000039 -0.000085 -0.000023 -0.000007 -0.000076 0.000080 -0.000031 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 1.98094 with pts  : [0.690292, -4.69761, 0.825119, 0.20269, 0.134657, 0.00495841, 0.284168, 0.301574, 0.0466321, 0.305462, 0.758511, 0.0306484] 
+3 Fit || Will swarm with 25 swarm points chis of  1.980939 2.056361 2.472275 2.475846 2.576901 2.717640 2.781985 3.187705 3.291727 3.320478 3.350239 3.377988 3.426100 3.434770 3.469495 3.495387 3.552286 3.566733 3.977972 4.020039 4.027425 4.039146 4.041516 4.056056 4.109654 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0227074 at [0.560475, -4.93887, -0.0251394, 0.00567257, -0.0253307, 0.0373585, -0.0196018, 0.0324469, -0.00265672, 0.031202, 0.0900591, 0.0694532] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.24237e-07 after 9 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.22303e-07 after 17 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.16213e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.48706e-07 after 15 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.61186e-06 after 15 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.58822e-08 after 15 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.87579e-08 after 13 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.41756e-06 after 12 iterations
+3 Fit || FINAL has a chi 5.58822e-08
+3 Fit || FINAL is  :  0.154421 -4.807235 -0.000058 -0.000065 -0.000027 0.000008 -0.000065 0.000076 -0.000006 0.000021 0.000055 -0.000062 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 1.41951 with pts  : [0.882237, -3.36164, 0.742734, 0.267776, 0.0205514, 0.226118, 0.130908, 0.12885, 0.0188874, 0.303553, 0.0766058, 0.479667] 
+3 Fit || Will swarm with 25 swarm points chis of  1.419514 1.450561 1.471452 2.205448 2.582765 2.740537 3.047507 3.224564 3.236933 3.352979 3.399547 3.415164 3.433171 3.487218 3.542405 3.791784 3.805974 3.808362 3.940069 3.998584 4.038197 4.141439 4.156484 4.175419 4.226787 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0126673 at [-0.239826, -3.95827, -0.0151029, 0.037169, -0.00160863, -0.00571095, 0.0183696, 0.0078456, 0.00937216, -0.034043, 0.01675, -0.0375179] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.58937e-06 after 8 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.09641e-06 after 20 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.89541e-06 after 14 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.4287e-07 after 18 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.40627e-08 after 16 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.19094e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.46356e-07 after 14 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.45845e-07 after 14 iterations
+3 Fit || FINAL has a chi 7.40627e-08
+3 Fit || FINAL is  :  0.303439 -4.074147 -0.000083 0.000000 0.000162 -0.000001 -0.000051 -0.000030 -0.000003 -0.000019 0.000088 0.000074 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 2.45518 with pts  : [0.467053, -2.55057, 0.738942, 0.523549, 0.499704, 0.213574, 0.160802, 0.257201, 0.0433988, 0.178532, 0.440767, 0.322754] 
+3 Fit || Will swarm with 25 swarm points chis of  2.455182 2.554226 2.721846 2.739255 2.816898 2.821709 2.847637 2.928790 3.096244 3.145659 3.292954 3.394949 3.606187 3.657014 3.675110 3.740934 3.904440 3.967109 3.970863 4.007625 4.039310 4.227879 4.250658 4.311054 4.391810 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0168576 at [0.485515, -2.92896, 0.0121664, 0.0203559, -0.0254041, 0.0359221, -0.0424448, 0.0216472, 0.014971, 0.00796217, 0.025995, -0.0326944] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.26499e-07 after 13 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.73498e-07 after 14 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.61962e-06 after 15 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.12632e-07 after 14 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.78984e-07 after 14 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.45218e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.16943e-07 after 17 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.79746e-07 after 15 iterations
+3 Fit || FINAL has a chi 1.78984e-07
+3 Fit || FINAL is  :  0.429987 -4.714685 -0.000027 -0.000074 -0.000020 -0.000022 -0.000138 -0.000015 -0.000007 0.000055 0.000088 -0.000089 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 1.25698 with pts  : [0.681547, -3.66787, 0.174612, 0.10291, 0.14023, 0.00186989, 0.106894, 0.177834, 0.0376629, 0.132016, 0.215154, 0.85478] 
+3 Fit || Will swarm with 25 swarm points chis of  1.256978 1.850787 2.306632 2.337030 2.528653 2.685121 2.694267 2.908490 3.187299 3.193931 3.261405 3.309968 3.323484 3.398597 3.429238 3.443930 3.576960 3.590807 3.658721 3.708328 4.004955 4.051704 4.132705 4.145997 4.328952 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0141328 at [0.310872, -3.86605, -0.0151441, -0.0555971, 0.0184431, 0.0160541, 0.016907, 0.00583228, 0.00566491, 0.0124544, 0.047156, -0.0299942] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.36685e-07 after 12 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.2703e-07 after 17 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.11434e-07 after 13 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.80639e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.0601e-07 after 17 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.09164e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.14762e-07 after 14 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.73015e-07 after 13 iterations
+3 Fit || FINAL has a chi 1.0601e-07
+3 Fit || FINAL is  :  0.901450 -3.052934 -0.000048 -0.000084 -0.000074 -0.000004 0.000050 0.000017 -0.000018 -0.000061 0.000054 -0.000094 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 1.62191 with pts  : [0.696231, -3.61062, 0.191905, 0.0775324, 0.404291, 0.159533, 0.0651521, 0.0236336, 0.0321804, 0.0733385, 0.212789, 0.926998] 
+3 Fit || Will swarm with 25 swarm points chis of  1.621912 2.174042 2.562855 2.743077 2.896524 2.945318 3.027601 3.032250 3.034647 3.035967 3.095349 3.261718 3.439047 3.485610 3.498959 3.515812 3.545293 3.693278 3.804741 3.840650 3.924609 3.944300 3.995910 4.133696 4.134262 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.0103579 at [0.658602, -3.00375, 0.0181765, -0.00248827, 0.0361482, -0.0168181, -0.0372192, 0.00208307, 0.00280452, -0.0268457, -0.0260963, 0.00468754] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.72748e-07 after 11 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.14589e-07 after 19 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.86639e-06 after 12 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.22129e-07 after 14 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.73695e-06 after 9 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.53976e-06 after 14 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.61133e-08 after 15 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.33569e-07 after 15 iterations
+3 Fit || FINAL has a chi 5.61133e-08
+3 Fit || FINAL is  :  0.987902 -3.044800 -0.000057 -0.000030 0.000055 -0.000011 0.000025 -0.000038 -0.000006 -0.000088 0.000009 -0.000098 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 1.93562 with pts  : [0.360138, -3.08036, 0.61571, 0.101034, 0.222448, 0.0292602, 0.1112, 0.428606, 0.0420816, 0.530367, 0.436329, 0.532124] 
+3 Fit || Will swarm with 25 swarm points chis of  1.935620 2.117552 2.244491 2.285306 2.495087 2.510606 2.684866 2.984093 3.102415 3.158979 3.259212 3.262286 3.378736 3.663847 3.697238 3.706426 3.717814 3.717907 3.724098 3.781431 3.831061 3.982671 4.052281 4.157930 4.188072 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 0.00922736 at [-0.604221, -2.19234, -0.0119995, 0.0541161, 0.00961519, -0.000240944, -0.0014105, -0.0194626, 0.00249092, -0.0153983, -0.041527, -0.00370249] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.71481e-07 after 11 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.49036e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.54654e-06 after 12 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.80086e-07 after 14 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.65291e-07 after 18 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.53046e-07 after 16 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.09182e-07 after 15 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.04828e-07 after 14 iterations
+3 Fit || FINAL has a chi 1.04828e-07
+3 Fit || FINAL is  :  0.707830 -3.855542 0.000043 -0.000098 0.000110 0.000002 -0.000005 0.000091 0.000007 -0.000034 0.000012 0.000017 
+3 [SCALETEST] tag=fit N=10 nbins=400 nphys=2 nnuis=10 total_s=298.661 per_call_s=29.8661
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -243.176. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 370 has negative content -35.4203. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -10.0187. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -254.669. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -52.3316. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -203.461. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -142.122. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -134.367. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -544.313. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 8 has negative content -0.367937. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 10 has negative content -91.7465. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -88.3325. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 293 has negative content -68.9584. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 320 has negative content -70.3989. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -242.355. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 333 has negative content -188.27. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -0.97551. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 363 has negative content -95.3734. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -8.59928. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -86.5504. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -127.38. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -288.235. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 295 has negative content -129.976. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -86.359. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -27.099. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 375 has negative content -1.48481. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 394 has negative content -36.2046. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -253.789. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 331 has negative content -431.539. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 385 has negative content -11.0338. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -32.8034. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -21.045. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 351 has negative content -14.6938. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 353 has negative content -92.022. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -46.1427. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -6.10587. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 370 has negative content -14.3231. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 350 has negative content -25.5427. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 316 has negative content -82.059. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 343 has negative content -94.7458. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 397 has negative content -60.993. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 315 has negative content -137.83. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 304 has negative content -115.805. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 343 has negative content -7.54794. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -99.9363. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -100.511. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 308 has negative content -220.943. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -320.404. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -301.108. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -295.349. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -399.735. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -483.286. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -0.687151. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 381 has negative content -174.75. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -5.90593. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 294 has negative content -28.5272. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 303 has negative content -9.64321. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 337 has negative content -51.9022. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 8 has negative content -61.9566. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -337.653. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 280 has negative content -187.311. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 293 has negative content -297.787. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 294 has negative content -213.174. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 302 has negative content -143.887. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 308 has negative content -372.916. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 324 has negative content -121.479. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 325 has negative content -20.3664. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 340 has negative content -53.0464. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -63.1597. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -174.254. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 8 has negative content -274.692. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -34.4634. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 325 has negative content -191.463. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -575.596. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 273 has negative content -35.3197. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 295 has negative content -85.3164. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 319 has negative content -50.8536. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 325 has negative content -95.901. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -54.1456. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -47.7104. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 339 has negative content -134.772. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 343 has negative content -27.2412. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -20.6996. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -174.646. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -214.947. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -19.325. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 363 has negative content -7.912. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -2.13426. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 306 has negative content -35.1351. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 314 has negative content -33.889. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 363 has negative content -13.6354. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 307 has negative content -112.365. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 326 has negative content -23.6166. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -7.92033. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -603.033. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -116.106. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -37.2523. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -276.773. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 372 has negative content -26.5819. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -20.2235. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -60.9879. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -93.4072. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 375 has negative content -158.251. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -232.092. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -99.6303. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 310 has negative content -132.546. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -67.7573. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -63.7671. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -74.6461. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 365 has negative content -33.5121. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -126.888. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 276 has negative content -228.178. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 285 has negative content -277.426. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -273.851. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 295 has negative content -69.3838. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 302 has negative content -82.1541. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 310 has negative content -11.222. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -45.4612. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 318 has negative content -214.227. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 326 has negative content -110.49. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 336 has negative content -158.709. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 342 has negative content -147.248. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -71.8803. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -81.9875. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 370 has negative content -219.709. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 385 has negative content -51.102. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -977.92. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -529.546. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 2 has negative content -258.719. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -37.3652. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -399.323. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -415.276. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -1329.41. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 7 has negative content -703.341. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 8 has negative content -1088.66. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 9 has negative content -877.737. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 10 has negative content -54.8774. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -1507.12. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 13 has negative content -34.8049. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 16 has negative content -101.141. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -53.2012. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -13.6521. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -196.358. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -307.549. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -192.961. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -742.777. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 10 has negative content -101.845. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 13 has negative content -58.1778. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -48.7167. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 337 has negative content -6.41982. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -4.24131. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -593.352. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -571.926. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -208.036. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -753.056. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -185.375. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -1444.55. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 7 has negative content -308.723. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 9 has negative content -93.4893. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 10 has negative content -537.397. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -849.091. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 305 has negative content -104.921. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 306 has negative content -104.717. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 331 has negative content -139.088. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -266.363. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -24.3258. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -139.364. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -12.7226. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 331 has negative content -77.6862. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -91.1575. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -380.015. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 343 has negative content -165.255. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -78.1248. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 284 has negative content -33.8852. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -58.7546. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 396 has negative content -24.7996. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 331 has negative content -3.02841. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 362 has negative content -75.0598. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -129.943. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -245.894. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -91.4432. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 2 has negative content -158.214. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -615.532. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -312.97. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 9 has negative content -148.66. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 11 has negative content -21.0047. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -71.6494. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -11.8475. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 307 has negative content -9.84455. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -39.8644. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 318 has negative content -18.0566. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 343 has negative content -49.5475. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 348 has negative content -110.855. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 366 has negative content -23.5036. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -199.754. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 331 has negative content -154.651. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -110.523. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -51.1716. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -17.2148. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -41.7877. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 325 has negative content -15.2897. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -118.344. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 381 has negative content -72.273. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 336 has negative content -94.5761. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -242.364. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -131.521. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -74.6311. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 338 has negative content -198.549. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -63.7051. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -13.2983. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -158.3. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -96.2365. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -55.7939. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -59.6224. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -71.1871. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 368 has negative content -90.1301. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 341 has negative content -56.6194. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -75.8589. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 310 has negative content -69.1057. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -85.5461. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 374 has negative content -116.014. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -74.8497. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -91.784. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -199.692. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -50.5869. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 263 has negative content -58.5788. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 270 has negative content -113.453. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -13.4115. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 280 has negative content -125.05. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 294 has negative content -263.878. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 295 has negative content -141.434. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 306 has negative content -53.0398. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 320 has negative content -33.1538. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 325 has negative content -127.286. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -18.7402. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 342 has negative content -141.911. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 343 has negative content -42.4597. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 348 has negative content -148.633. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -43.8795. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -64.6815. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 363 has negative content -50.0598. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 365 has negative content -89.5836. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -73.8854. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 331 has negative content -143.337. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -66.2624. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -21.2278. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -594.244. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -128.894. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 7 has negative content -471.948. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 14 has negative content -0.487738. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 366 has negative content -36.688. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 381 has negative content -2.84848. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -34.142. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -5.19684. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 298 has negative content -56.4128. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 309 has negative content -43.7042. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 325 has negative content -27.8253. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -260.096. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -22.6741. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -6.06485. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 339 has negative content -94.6821. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 341 has negative content -74.4958. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 345 has negative content -167.238. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -362.843. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -390.8. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 293 has negative content -41.4835. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 294 has negative content -45.1259. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 331 has negative content -128.061. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -191.769. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -73.0522. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -120.083. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 356 has negative content -159.994. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -201.616. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -261.579. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 10 has negative content -51.6983. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -88.7385. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 281 has negative content -63.3332. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -62.451. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 308 has negative content -108.117. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 316 has negative content -105.776. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -16.7039. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -176.919. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 385 has negative content -51.2187. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 270 has negative content -168.895. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -287.573. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -167.247. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 295 has negative content -249.232. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 298 has negative content -77.3265. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 306 has negative content -12.1505. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -67.4621. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -79.02. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 307 has negative content -25.9795. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -80.9238. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 337 has negative content -24.1808. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -33.6295. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 302 has negative content -34.3723. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 340 has negative content -133.713. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -117.571. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 362 has negative content -3.00937. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 389 has negative content -55.4151. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 286 has negative content -9.31332. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -538.134. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -98.9856. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 236 has negative content -35.8885. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 260 has negative content -52.9108. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 273 has negative content -211.385. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -46.4334. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 288 has negative content -32.4385. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 303 has negative content -21.9361. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 302 has negative content -36.4118. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 320 has negative content -32.7062. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -62.9894. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -9.20007. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -18.6634. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -313.499. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -75.1359. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -134.971. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -167.2. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -9.16634. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -209.949. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 293 has negative content -50.8765. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 363 has negative content -26.9017. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -13.05. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 13 has negative content -103.492. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -176.143. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -143.968. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -192.959. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 8 has negative content -29.5082. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 9 has negative content -1.42393. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 11 has negative content -169.383. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -525.765. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 13 has negative content -413.498. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 397 has negative content -133.131. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -176.966. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -112.709. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -60.763. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 282 has negative content -124.965. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 292 has negative content -92.9978. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -167.12. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -120.81. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 363 has negative content -63.0456. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -29.9989. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 385 has negative content -103.376. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 350 has negative content -114.214. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -125.192. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 390 has negative content -22.6499. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -88.4308. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -2.12031. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -96.0255. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 318 has negative content -39.0451. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -144.141. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -95.6118. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -766.795. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 302 has negative content -72.7691. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 307 has negative content -93.2149. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -324.678. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 332 has negative content -16.2817. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 336 has negative content -7.65042. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 342 has negative content -31.867. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 348 has negative content -128.234. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -346.656. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 363 has negative content -205.551. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -19.74. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -159.177. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 348 has negative content -18.719. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 353 has negative content -175.002. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -155.109. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -151.042. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -235.295. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -149.501. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 10 has negative content -9.06227. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -28.5434. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -36.0971. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 2 has negative content -161.759. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -122.856. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -146.717. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 13 has negative content -100.978. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -53.3479. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -124.899. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -328.87. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -16.9119. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -303.168. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -44.1312. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -152.088. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -228.058. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 9 has negative content -317.521. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -265.05. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -520.679. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -220.016. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -205.21. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -126.036. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -100.994. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 2 has negative content -12.5709. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -136.912. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -40.7449. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -97.3643. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 10 has negative content -355.186. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 16 has negative content -118.123. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 323 has negative content -77.985. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -347.99. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -359.508. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -12.8247. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -88.5789. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 291 has negative content -16.034. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -82.9646. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -64.2456. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 363 has negative content -162.355. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 383 has negative content -124.302. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 396 has negative content -1.2775. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 293 has negative content -25.3611. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 306 has negative content -73.6641. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -25.2564. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 318 has negative content -209.127. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -593.955. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -4.93716. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -43.7695. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -445.61. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -325.5. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -868.208. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 7 has negative content -81.4979. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -39.6548. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -247.499. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -439.462. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -110.982. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -201.874. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -112.255. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -536.365. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -269.934. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -223.864. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -206.844. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -717.072. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -287.478. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -764.738. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 13 has negative content -179.338. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 308 has negative content -1.83435. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -21.397. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 258 has negative content -111.74. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 259 has negative content -9.54467. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 260 has negative content -96.9143. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -247.088. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -454.365. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 313 has negative content -140.793. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -10.3663. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -90.8997. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -16.0119. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -101.588. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 385 has negative content -114.735. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -34.4731. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -5.39194. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 349 has negative content -47.3175. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 370 has negative content -23.0279. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -61.1854. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 313 has negative content -29.673. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -11.5388. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 307 has negative content -32.8323. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -106.14. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -187.141. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -17.2136. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 271 has negative content -83.0533. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 337 has negative content -42.7871. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -600.038. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -162.793. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 3 has negative content -68.0606. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -365.714. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -563.987. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -107.498. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -570.028. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 306 has negative content -127.015. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 308 has negative content -134.021. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -57.8429. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -60.7689. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -283.238. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -34.9485. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 366 has negative content -53.5042. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 385 has negative content -43.2841. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -144.313. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 340 has negative content -63.187. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 353 has negative content -74.388. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 373 has negative content -62.946. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -75.5778. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 395 has negative content -78.1516. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 308 has negative content -43.8215. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -92.5738. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -30.8292. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -169.701. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 343 has negative content -44.3583. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 343 has negative content -133.351. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 385 has negative content -13.2848. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -46.6674. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -30.4758. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -702.199. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 2 has negative content -38.7493. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -462.674. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -650.58. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 6 has negative content -1012.82. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 9 has negative content -372.018. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -898.078. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 13 has negative content -274.98. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 334 has negative content -278.943. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -11.8445. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -393.883. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -179.281. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 7 has negative content -441.991. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 8 has negative content -223.335. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -167.453. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 353 has negative content -65.5195. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -152.676. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -391.991. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 5 has negative content -10.8942. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 325 has negative content -21.6102. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 329 has negative content -17.899. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -61.4809. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 314 has negative content -17.039. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 326 has negative content -9.49633. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -88.9111. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 320 has negative content -41.5688. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 327 has negative content -12.6157. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -38.8456. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 4 has negative content -246.644. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 0 has negative content -191.317. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 1 has negative content -316.385. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 8 has negative content -12.4987. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 279 has negative content -292.617. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 289 has negative content -186.034. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 306 has negative content -27.2049. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 295 has negative content -68.2379. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 317 has negative content -137.928. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -118.248. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 390 has negative content -107.274. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 359 has negative content -19.5802. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 9 has negative content -252.212. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 12 has negative content -249.339. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 346 has negative content -8.07932. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 322 has negative content -56.9807. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 355 has negative content -143.366. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 357 has negative content -102.011. Setting to 0.
+2 PoissonVariation || Cannot perform Poisson variation: bin 369 has negative content -40.1323. Setting to 0.
+3 [SCALETEST] tag=pseudo_full N=1000 nbins=400 nphys=2 nnuis=10 total_us=1367478 per_call_us=1367.48
+3 [SCALETEST] tag=collapse_matrix N=1000 nbins=400 nphys=2 nnuis=10 total_us=774 per_call_us=0.774
+3 [SCALETEST] tag=mcmc_step_burnin N=1000 nbins=400 nphys=2 nnuis=10 total_us=2932 per_call_us=2.932
+3 [SCALETEST] tag=mcmc_step_post N=1000 nbins=400 nphys=2 nnuis=10 total_us=876 per_call_us=0.876
+3 run_scale_test || ===== PRObench scale-test complete: 14 tests =====
+3 main || Total run time: 335765930

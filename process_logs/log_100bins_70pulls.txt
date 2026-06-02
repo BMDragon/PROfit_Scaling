@@ -1,0 +1,541 @@
+3 Load || Loading Bounds for plot_channels 
+2  
+            ....                                                                                                  
+            .=+=-..                                            .:                                                 
+            .:=++=-.                              .-=+*****+=-+@=.   :+##-  :#%=                                 
+            .-+++=-.               .::.      .*#*=--:::--+#@@@=  :#=*@%. :@@=                                 
+            .:=+++=-.            :++=-.    ...         :**=-.  .. %@#. +@+                                  
+            .:-++++=:.        .=++++=-.                        :@@= =@+                                   
+            .-=++++=:.     -++++++++-.                      =@@=*%-                                    
+            :=+-. .-+= .:=+++++=:. .+++++++++++-.             .--.   .*%#=.                                     
+            .=+=%%:  +@*.   .-++++++==+++++++++++++-.           -+++:                                             
+            .. :%%: .##.      .:=++++++++++:.-+++++++-.        :+++++-.                                           
+            *@* .*#.      .:..:=+++++++-   .-+++++++-.     .+++++++=:                    .::.                  
+            .#@=:*+.       :*=   .-++++=.     .-+++++++-.  .=+++++++++-.                  .+*#*-.               
+            =##+-         :*=     .:==.        .-=++++++-.-+++++++++++=.                    .-*%=              
+            .:=+. ..        .:.-*+:::.                .:=++++++++++++=+++++++:                      -@*.            
+            :**%%*.          =*+++++++.       .=-.       .-++++++++++-.:=++++++-.                     :@+            
+            ..*+:*:          =*+++++++.       :++.         .-=++++++=.  .-++++++=:                     +@:           
+            -%.             =*+**++++.    .::-++:::.        .:+++++.     :+++++++-.                 .+=@==.         
+            +*              .::::++++.    -++++++++:       .. .-=+:       .=++++++=.                .+@@@*.         
+            +#          :======: -**+.    -++++++++:      .=+:  ..         .:+++++++-.                :=:           
+            :%:        .-******- .-=+.    -++++++++:       +*:               .=++++++=.                :-.   .-:.   
+            +#.   .:-==++++++++==-:.     -++++++++:   .---++=--:      .::.   .-+++++++:            .-##@@:  *@@.   
+            .-: :=+*****+++++++***++-.   -++++++++:   :***++***-      .++:     :=++++++-.          .=::@@-  *@+.   
+            .=+*+++*+++++++++*++++*+:  -++++++++:   :+++++++*-   ....=+:...   .-++++++=:     ...    +@@. =@+     
+            .=*+++++-..:*++++.-+*+++*+. -++++++++:   :+++++++*-   .===+++=+:     :+++++++-.  .=+:   .%@*.+@=      
+            .+++++++.  :*++++. .+++++=: -++++++++:   :+++++++*-   .++++++++:      .=++++++=..=++=.  .#@%##:       
+            .+++++++=..:*++++.  .....   -++++++++:   :+++++++*-   .++++++++:       .:+++++++=++++.   .-=:         
+            .-*+++++*++++++++.          -++++++++:   :+++++++*-   .++++++++:     ....:+++++++++++-                
+            .-+**++++++++++++==-:.     -++++++++:   :+++++++*-   .++++++++:  .=====++++++++++++++.               
+            .-=++***+++++++***++-.   :===++===.   :+++++++*-   .++++++++:  .:-+++++++++++++++++-               
+            ..:--=+++++**++++*+-.    :+=.      :+++++++*-   .++++++++:     .:=++++++++++++++=.              
+            .     :*++++-=++++++*-    :+=.      :++++++++-   .:::++-::.    .-: .:=++++++++++++:              
+            .=====+-    :*++++..:+++++++.   :++.      ....+*:...      .=+.    ...:*+... .:=+++++++++=.             
+            .+*****+:   :*++++.  =*+++++.   .+=.         .+*:         .++:    .+++++++=    .-=+++++++:             
+            :+++++*+=:.:*++++.:=+++++*-    ...          .+*:         .-=.    .++++++*=      ..-=++++-             
+            :+**+++**+++++++++*+++*+-.                 .++:                 .+**++**=         .:-=++.            
+            .-=+*****++++++****++=.                   ....                 .::-*+-::            .::.            
+            ..:-==++++++++==-:.                                             :*+                               
+            :******:.                                                 .-:.                              
+            .======.                                                                                    
+            .::::::::::.      .::::::::::..           .:--=--:..           .-+*####=  .--:                       
+            =@@@@@@@@@@@%*-.  =@@@@@@@@@@@%*-.     .=#%@@@@@@@@%*-.       -%@@@@@@@= :@@@@-   .----.             
+            =@@@@#**##@@@@@#. =@@@@#***#%@@@@*.  .+@@@@@#*++*%@@@@#:      #@@@*..... .#%%#:   .%%%%:             
+            =@@@@:    .+@@@@+ =@@@@-    .=@@@@+ .*@@@@+.     .:#@@@@-  -==%@@@*====. .====. -==@@@@+===:         
+            =@@@@:     -@@@@* =@@@@-     -@@@@* =@@@@+  .....  .%@@@%. %@@@@@@@@@@@- :@@@@. %@@@@@@@@@@=         
+            =@@@@-::::=%@@@@: =@@@@+--==*@@@@%: #@@@@: ........ +@@@@- ---%@@@*----. :@@@@. --=@@@@*---.         
+            =@@@@@@@@@@@@@%-  =@@@@@@@@@@@@#+.  #@@@@. ........ =@@@@-    #@@@=      :@@@@.   .@@@@-             
+            =@@@@%%%###*+-.   =@@@@*++#@@@%:    +@@@@=  ...... .#@@@@.    #@@@=      :@@@@.   .@@@@=             
+            =@@@@:            =@@@@-  .*@@@%-   .#@@@@=.      .*@@@@=     #@@@=      :@@@@.   .@@@@-             
+            =@@@@:            =@@@@-   .*@@@@=   .*@@@@%*===+*@@@@@=      #@@@=      :@@@@.   .%@@@#==+:         
+            =@@@@:            =@@@@-     +@@@@+.   -*%@@@@@@@@@@%+:       %@@@=      :@@@@.    =%@@@@@@*         
+            :===-.            :====.      -====.     .:-=++++=-:.         -===:      .===-.     .-=++=-:         
+             
+2 main || ##################################################################
+2 main || ####################### PROfit version v2.3.0 ######################
+2 main || ##################################################################
+2 main || PROfit commandline input arguments. xml: .././xml/scale_100bins_70pulls.xml, tag: scaling100bins_70pulls, output v1, nthread: 1 
+3 LoadFromXML || Correctly loaded and parsed XML, continuing
+3 LoadFromXML || num_variation_type_covariance: 36 
+3 LoadFromXML || num_variation_type_covariance_to_spline: 0 
+3 LoadFromXML || num_variation_type_external_ovariance: 0 
+3 LoadFromXML || num_variation_type_flat: 0 
+3 LoadFromXML || num_variation_type_norm: 70 
+3 LoadFromXML || num_variation_type_spline: 0 
+3 LoadFromXML || num_variation_type_spline_to_covariance: 0 
+3 LoadFromXML || Using MC intrinsic stat uncertainty. 
+3 remove_unused_channel || Remove any used channels and subchannels...
+3 remove_unused_channel || fullname of subchannel: nu_SBND_numu_numucc 
+3 CalcTotalBins || calculating number of bins involved
+3 CalcTotalBins || Generating Index maps for convenience
+3 generate_index_map || Generate map between subchannel and global indices..
+3 CalcTotalBins || On variable 0 bin widths are size 100 and  [0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.0280001, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001] 
+3 CalcTotalBins || On variable 1 bin widths are size 100 and  [0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03] 
+3 CalcTotalBins || On variable 2 bin widths are size 100 and  [0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03] 
+3 LoadFromXML || Checking number of Mode/Detector/Channel/Subchannels and BINs
+3 LoadFromXML || num_modes: 1 
+3 LoadFromXML || num_detectors: 1 
+3 LoadFromXML || num_channels: 1 
+3 LoadFromXML || num of subchannels: 1 
+3 LoadFromXML || variable 0 num_bins_total: 100
+3 LoadFromXML || variable 0 num_bins_total_collapsed: 100
+3 LoadFromXML || variable 1 num_bins_total: 100
+3 LoadFromXML || variable 1 num_bins_total_collapsed: 100
+3 LoadFromXML || variable 2 num_bins_total: 100
+3 LoadFromXML || variable 2 num_bins_total_collapsed: 100
+3 LoadFromXML || Done reading the xmls
+3 CalcHash || MurmurHash output hash 2035875017 
+3 CalcDetVarHash || MurmurHash detvar_hash output 1776439934 
+3 construct_variable_collapsing_matrices || Creating Collapsing Matrices 
+3 construct_variable_collapsing_matrices || Creating Variable 0 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  100  100
+3 construct_variable_collapsing_matrices || Creating Variable 1 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  100  100
+3 construct_variable_collapsing_matrices || Creating Variable 2 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  100  100
+3 main || Loading PROpeller and PROsysts from precalc binary input: scaling100bins_70pulls_prop.bin
+3 load || Serialization load of PROpeller from file  scaling100bins_70pulls_prop.bin took 0.00322962 seconds
+3 main || Done loading. Config hash (2035875017) and binary loaded PROpeller (2035875017) are here. 
+3 main || Done loading. Config hash (2035875017) and binary loaded PROsyst hash(2035875017) are here. 
+3 PROseed || For 1+1 threads we precalculated thread seeds as: [3937942024, 4171310701] 
+3 PROnueapp || setting up a model nueapp, with  2 params.
+3 PROnueapp || Param 0 is dmsq with lower bound/upper bound of -2/2 and default -2
+3 PROnueapp || Param 1 is sinsq2thme with lower bound/upper bound of -10/0 and default -10
+3 PROsyst || SumMatrix for index 0 
+3 PROsyst || SumMatrix for index 0 DONE 
+3 PROsyst || SumMatrix for index 1 
+3 PROsyst || SumMatrix for index 1 DONE 
+3 main || model->default_val: [-2, -10]
+3 main || fake_data_osc_param_vector: [-2, -10]
+3 main || fakedataparams (physics portion): -2 -10
+3 main || Going to get fake data set up for each variable.
+3 main || Starting from fit preset :  [good, fast].
+3 PROfitterConfig ||Fit and  L-BFGS-B parameters for the Detailed Global minimia finder.  
+3 print || Printing PROfitterConfig Values.
+3 print || ------------ PROfitter specific -------------- 
+3 print || n_latin_points: 2000  
+3 print || latin_diversity_factor: 0.5  
+3 print || n_localfit: 8  
+3 print || n_max_local_retries: 1  
+3 print || ------------ Particle Swarm Optimization -------------- 
+3 print || n_swarm_particles: 25  
+3 print || n_swarm_iterations: 100  
+3 print || n_swarm_max_stagnent_iterations: 50  
+3 print || swarm_inertia_start: 0.9  
+3 print || swarm_inertia_end: 0.6  
+3 print || swarm_cognitive_score: 2  
+3 print || swarm_social_score: 2  
+3 print || swarm_convergence_threshold: 0.0001  
+3 print || ------------ MCMC Parameters -------------- 
+3 print || MCMCiter: 20000  
+3 print || MCMCburn: 25000  
+3 print || ------------ Harmonic Seed Search -------------- 
+3 print || harmonic_min_num_seeds: 2  
+3 print || harmonic_max_num_seeds: 4  
+3 print || harmonic_num_test_points: 125  
+3 print || harmonic_raw_max_tests: 60  
+3 print || harmonic_prominence_threshold: 0.5  
+3 print || harmonic_prominence_threshold_shift: 0.2  
+3 print || harmonic_min_spacing_log: 0.025  
+3 print || harmonic_prominence_threshold_minimum: 1e-05  
+3 print || harmonic_seed_norm_tolerance: 0.0001  
+3 print || harmonic_seed_chi_tolerence: 1e-06  
+3 print || harmonic_scan_fit: 0  
+3 print || ------------ LBFGSBParam -------------- 
+3 print || m: 6   
+3 print || epsilon: 1e-05  
+3 print || epsilon_rel: 1e-05  
+3 print || past: 1   
+3 print || delta: 1e-06  
+3 print || max_iterations: 150  
+3 print || max_submin: 10   
+3 print || max_linesearch: 20   
+3 print || min_step: 1.19209e-07  ) 
+3 print || max_step: 1e+20   
+3 print || ftol: 0.0001   
+3 print || wolfe: 0.9   
+3 print || --------------------------------------- 
+3 PROfitterConfig ||Fit and  L-BFGS-B parameters for the Simplier Scan minimia finder.  
+3 print || Printing PROfitterConfig Values.
+3 print || ------------ PROfitter specific -------------- 
+3 print || n_latin_points: 750  
+3 print || latin_diversity_factor: 0.5  
+3 print || n_localfit: 4  
+3 print || n_max_local_retries: 1  
+3 print || ------------ Particle Swarm Optimization -------------- 
+3 print || n_swarm_particles: 15  
+3 print || n_swarm_iterations: 100  
+3 print || n_swarm_max_stagnent_iterations: 50  
+3 print || swarm_inertia_start: 0.9  
+3 print || swarm_inertia_end: 0.6  
+3 print || swarm_cognitive_score: 2  
+3 print || swarm_social_score: 2  
+3 print || swarm_convergence_threshold: 0.0001  
+3 print || ------------ MCMC Parameters -------------- 
+3 print || MCMCiter: 20000  
+3 print || MCMCburn: 25000  
+3 print || ------------ Harmonic Seed Search -------------- 
+3 print || harmonic_min_num_seeds: 2  
+3 print || harmonic_max_num_seeds: 4  
+3 print || harmonic_num_test_points: 125  
+3 print || harmonic_raw_max_tests: 60  
+3 print || harmonic_prominence_threshold: 0.5  
+3 print || harmonic_prominence_threshold_shift: 0.2  
+3 print || harmonic_min_spacing_log: 0.025  
+3 print || harmonic_prominence_threshold_minimum: 1e-05  
+3 print || harmonic_seed_norm_tolerance: 0.0001  
+3 print || harmonic_seed_chi_tolerence: 1e-06  
+3 print || harmonic_scan_fit: 0  
+3 print || ------------ LBFGSBParam -------------- 
+3 print || m: 6   
+3 print || epsilon: 1e-05  
+3 print || epsilon_rel: 1e-05  
+3 print || past: 1   
+3 print || delta: 1e-06  
+3 print || max_iterations: 100  
+3 print || max_submin: 10   
+3 print || max_linesearch: 20   
+3 print || min_step: 1.19209e-07  ) 
+3 print || max_step: 1e+20   
+3 print || ftol: 0.0001   
+3 print || wolfe: 0.9   
+3 print || --------------------------------------- 
+3 main || Gradient mode: central-full
+3 main || We are hoping to FIX : [] 
+3 run_scale_test || ===== PRObench scale-test starting =====
+3 run_scale_test || N_fillspectra=1000  N_metric=100  N_fit=10  grad_mode=central-full
+3 run_scale_test || nphys=2  nnuis=70  nbins=100
+3 [SCALETEST] tag=fillspectra_vary_all N=1000 nbins=100 nphys=2 nnuis=70 total_us=93115 per_call_us=93.115
+3 [SCALETEST] tag=fillspectra_vary_phys N=1000 nbins=100 nphys=2 nnuis=70 total_us=6210 per_call_us=6.21
+3 [SCALETEST] tag=fillspectra_vary_nuis N=1000 nbins=100 nphys=2 nnuis=70 total_us=80243 per_call_us=80.243
+3 [SCALETEST] tag=metric_vary_all N=100 nbins=100 nphys=2 nnuis=70 total_us=19761 per_call_us=197.61
+3 [SCALETEST] tag=metric_vary_phys N=100 nbins=100 nphys=2 nnuis=70 total_us=12164 per_call_us=121.64
+3 [SCALETEST] tag=metric_vary_nuis N=100 nbins=100 nphys=2 nnuis=70 total_us=18624 per_call_us=186.24
+3 [SCALETEST] tag=metric_grad_vary_all N=100 nbins=100 nphys=2 nnuis=70 total_us=1616655 per_call_us=16166.5
+3 [SCALETEST] tag=metric_grad_vary_phys N=100 nbins=100 nphys=2 nnuis=70 total_us=1579135 per_call_us=15791.4
+3 [SCALETEST] tag=metric_grad_vary_nuis N=100 nbins=100 nphys=2 nnuis=70 total_us=1532561 per_call_us=15325.6
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 15.461 with pts  : [0.75648, -4.26192, 0.199102, 0.17505, 0.628911, 0.541645, 0.54036, 0.444123, 0.216038, 0.650481, 0.582058, 0.418989, 0.416937, 0.590943, 0.0545417, 0.278, 0.262703, 0.427109, 0.675168, 0.430661, 0.74953, 0.540928, 0.0986554, 0.184332, 0.333036, 0.841781, 0.792155, 0.0238113, 0.0156715, 0.396252, 0.43043, 0.68461, 0.331046, 0.393604, 0.120222, 0.320857, 0.538735, 0.0864508, 0.169893, 0.813785, 0.0413369, 0.386576, 0.975013, 0.32537, 0.0612374, 0.114291, 0.1064, 0.211125, 0.0829282, 0.78637, 0.108062, 0.689214, 0.660026, 0.282597, 0.528029, 0.352723, 0.212334, 0.869249, 0.316437, 0.657123, 0.298916, 0.286931, 0.0310788, 0.08583, 0.549459, 0.825895, 0.0657412, 0.276038, 0.215628, 0.95932, 0.540073, 0.24083] 
+3 Fit || Will swarm with 25 swarm points chis of  15.460961 16.155706 16.294382 16.310396 16.747454 16.820515 17.001383 17.156105 17.183865 17.238287 17.544373 17.701551 17.751265 17.769337 17.778883 17.799175 17.808542 17.822742 17.848158 17.884779 18.034479 18.074810 18.108419 18.143335 18.151125 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.46839 at [0.114228, -4.25054, 0.0527306, 0.271292, 0.277642, 0.257624, 0.0655804, 0.130294, 0.00640912, 0.235181, 0.440202, 0.00106102, 0.0625524, -0.0684679, 0.00943609, -0.185094, -0.229884, 0.172161, 0.445179, 0.0720584, -0.140309, -0.160318, -0.0922357, 0.0878641, 0.310137, 0.193885, 0.100789, -0.323424, 0.0465225, 0.285356, 0.220876, 0.193038, 0.12156, -0.105096, 0.187032, -0.193184, 0.235603, 0.0170445, 0.317108, -0.156985, -0.196322, 0.107276, 0.00363079, -0.0759747, 0.116077, 0.0130169, 0.0160873, -0.126333, 0.0445771, 0.0373961, 0.00976408, 0.10083, -0.195028, -0.0536699, -0.410753, 0.00665772, 0.153721, -0.0789754, -0.0155432, -0.0463548, -0.284501, 0.353416, 0.000200272, -0.331517, 0.0499656, 0.184357, 0.170892, 0.144955, 0.195279, -0.0573276, 0.280685, 0.162737] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.95814e-13 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.27108e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.40731e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.18612e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.51687e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.48421e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.15718e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.01379e-15 after 4 iterations
+3 Fit || FINAL has a chi 9.01379e-15
+3 Fit || FINAL is  :  0.580122 -4.907704 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 13.9658 with pts  : [0.152571, -4.83179, 0.0162998, 0.736771, 0.893943, 0.0999127, 0.834, 0.154186, 0.75387, 0.607584, 0.0889698, 0.318934, 0.0489576, 0.478155, 0.531389, 0.382215, 0.110393, 0.441815, 0.779945, 0.194428, 0.330479, 0.564986, 0.0997057, 0.457272, 0.819963, 0.0667934, 0.684931, 0.25673, 0.270737, 0.293979, 0.177174, 0.480877, 0.393732, 0.540972, 0.435098, 0.0162919, 0.70709, 0.315382, 0.435424, 0.707372, 0.353912, 0.0679864, 0.53586, 0.306887, 0.203394, 0.258703, 0.0482425, 0.359921, 0.092029, 0.734267, 0.0478998, 0.00419217, 0.623257, 0.15199, 0.0427454, 0.228474, 0.297968, 0.889591, 0.0622688, 0.570675, 0.18051, 0.37039, 0.570236, 0.2308, 0.42688, 0.0414767, 0.56807, 0.775968, 0.10438, 0.29882, 0.228339, 0.583069] 
+3 Fit || Will swarm with 25 swarm points chis of  13.965837 15.280946 16.022404 16.172884 16.496305 16.743883 16.813803 16.818253 16.859217 16.884151 16.899282 17.010668 17.121649 17.326515 17.380497 17.387299 17.387932 17.405655 17.405989 17.408735 17.519287 17.582474 17.588949 17.684010 17.698709 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.80317 at [0.0390536, -2.47076, -0.157514, 0.365872, 0.0455809, -0.0527746, -0.00107065, -0.172747, -0.219467, 0.473527, 0.0408962, 0.0609653, -0.203671, -0.207792, -0.0914291, 0.137987, -0.19, 0.255964, 0.312195, 0.0991764, -0.202868, 0.430865, -0.190848, -0.120674, -0.0356318, 0.172329, -0.16399, 0.0113993, 0.307865, 0.076065, -0.155686, 0.225805, 0.240389, -0.313044, -0.167807, 0.194863, 0.123561, 0.225895, 0.142101, -0.142649, 0.458762, 0.267267, 0.107068, -0.104636, -0.432658, -0.0432839, 0.113038, 0.208751, -0.288435, 0.0320272, 0.0348394, -0.133191, 0.032698, 0.0548456, 0.201056, -0.0123273, 0.122734, -0.0450451, -0.296767, -0.0757915, -0.276895, -0.0235816, -0.0431571, 0.0267955, 0.0739522, -0.104279, 0.0515706, 0.494809, -0.0235153, -0.118571, 0.0565071, 0.02828] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.89242e-13 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.73292e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.01891e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.30121e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.93848e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.48238e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.05162e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.29842e-14 after 4 iterations
+3 Fit || FINAL has a chi 3.29842e-14
+3 Fit || FINAL is  :  0.601916 -4.275448 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 15.9091 with pts  : [0.856816, -4.09845, 0.595903, 0.413143, 0.082132, 0.15253, 0.0911646, 0.256182, 0.690472, 0.536286, 0.0101822, 0.375165, 0.514471, 0.39491, 0.974984, 0.00697664, 0.653071, 0.0609528, 0.304781, 0.972525, 0.193975, 0.11394, 0.740928, 0.226242, 0.193642, 0.0562052, 0.413902, 0.972536, 0.13857, 0.404761, 0.229988, 0.0958205, 0.163326, 0.616381, 0.350532, 0.0801904, 0.439803, 0.301243, 0.0625035, 0.505835, 0.720063, 0.428032, 0.738788, 0.517184, 0.448077, 0.10346, 0.304569, 0.540018, 0.266359, 0.561087, 0.282716, 0.244612, 0.349618, 0.0458102, 0.180421, 0.437481, 0.56381, 0.205648, 0.723765, 0.387449, 0.314207, 0.822845, 0.647556, 0.699286, 0.769856, 0.324799, 0.77567, 0.553737, 0.0335903, 0.446304, 0.720868, 0.609187] 
+3 Fit || Will swarm with 25 swarm points chis of  15.909106 16.125059 16.407684 16.624020 16.736158 16.752016 16.811434 17.104067 17.118294 17.241859 17.264069 17.388088 17.416859 17.475216 17.533073 17.545401 17.580160 17.691704 17.698208 17.741207 17.757242 17.853893 17.858309 17.859350 17.869619 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.48754 at [0.476222, -4.16217, 0.184224, -0.224659, 0.393138, 0.0704952, 0.437157, 0.217627, -0.0685877, 0.106768, -0.0321568, 0.159037, 0.305761, -0.317127, -0.421534, -0.256642, -0.0240692, 0.0437023, -0.126742, 0.0328104, -0.169255, -0.0267895, -0.395322, 0.186849, -0.00960553, -0.395031, 0.127133, 0.192516, 0.0536634, 0.36353, -0.116028, 0.10908, 0.312655, 0.070521, -0.164651, 0.0390802, -0.0399264, 0.104401, 0.0826466, 0.182626, -0.0648411, 0.0883958, -0.069217, -0.304891, 0.139537, 0.0750333, -0.103185, -0.0314027, -0.172516, -0.130183, 0.0249545, -0.126346, -0.12474, -0.181308, 0.031553, 0.338371, 0.061573, 0.134111, 0.00978611, 0.112301, -0.0457281, -0.193209, -0.265283, -0.0632777, 0.191502, 0.0893257, -0.130642, -0.0238442, -0.375437, 0.0508533, 0.0109734, -0.0561168] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.61865e-14 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.05055e-11 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.32023e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.29998e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.10642e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.82454e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.62467e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.31619e-14 after 4 iterations
+3 Fit || FINAL has a chi 1.31619e-14
+3 Fit || FINAL is  :  0.170301 -4.216417 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 13.1819 with pts  : [0.0382472, -3.42176, 0.126617, 0.00867165, 0.468331, 0.0734289, 0.996189, 0.24881, 0.500282, 0.450244, 0.32859, 0.244114, 0.170111, 0.116927, 0.995461, 0.269561, 0.272291, 0.220781, 0.633501, 0.26369, 0.560403, 0.497384, 0.178772, 0.607281, 0.118576, 0.163869, 0.375208, 0.0735103, 0.142696, 0.126937, 0.271326, 0.608508, 0.0145288, 0.120048, 0.974701, 0.506458, 0.224743, 0.464036, 0.111118, 0.0411779, 0.836504, 0.889805, 0.125572, 0.192206, 0.812442, 0.0941672, 0.27945, 0.510835, 0.269142, 0.564059, 0.583553, 0.126816, 0.134967, 0.920166, 0.0387825, 0.121486, 0.234559, 0.168018, 0.105007, 0.284684, 0.217962, 0.0372108, 0.19126, 0.577043, 0.140348, 0.715352, 0.528371, 0.378973, 0.597505, 0.235145, 0.541059, 0.0437798] 
+3 Fit || Will swarm with 25 swarm points chis of  13.181906 15.241821 15.311014 15.773459 16.026272 16.144026 16.378321 16.702005 16.869139 16.870306 16.942398 16.949478 17.025309 17.166082 17.257046 17.272509 17.311216 17.329891 17.342083 17.490955 17.517763 17.535580 17.559032 17.582584 17.599915 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.70804 at [-0.232755, -3.45366, 0.14543, 0.0870651, 0.159397, 0.0622028, 0.169155, 0.0471829, -0.0484819, 0.0816137, 0.0515116, -0.292821, 0.151216, 0.115977, 0.28301, 0.19711, -0.306275, 0.0331919, -0.11061, 0.142797, 0.208088, 0.217642, 0.150742, -0.104742, -0.209165, 0.223923, -0.168751, -0.00332705, 0.0642631, -0.079238, 0.366517, -0.24499, 0.0348847, -0.316492, 0.345815, -0.179911, -0.115624, 0.28971, 0.176627, 0.0778885, 0.164361, -0.132462, 0.321803, 0.0508693, -0.123996, 0.0128042, 0.230541, 0.0681012, -0.140069, 0.0440495, 0.125664, -0.0415393, -0.14195, 0.188068, 0.0204292, 0.0041288, 0.318675, -0.0136081, 0.0260557, -0.286726, 0.0101426, -0.0137641, -0.265735, -0.447789, 0.025489, 0.137146, -0.40686, 0.0275473, -0.487484, 0.133676, 0.391318, -0.173426] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.06392e-14 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.81642e-11 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.04228e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.92909e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.25899e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.80347e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.09573e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.91224e-13 after 4 iterations
+3 Fit || FINAL has a chi 2.04228e-14
+3 Fit || FINAL is  :  0.180793 -3.066008 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 15.4262 with pts  : [0.622968, -3.2559, 0.629255, 0.430499, 0.399778, 0.297093, 0.34089, 0.63825, 0.0639824, 0.154947, 0.00606453, 0.686259, 0.342336, 0.701235, 0.55386, 0.947559, 0.322004, 0.262766, 0.307595, 0.414854, 0.0881044, 0.726775, 0.149612, 0.601414, 0.212885, 0.133272, 0.941894, 0.88326, 0.127086, 0.222021, 0.214111, 0.345577, 0.364583, 0.354312, 0.322914, 0.596717, 0.0925405, 0.195697, 0.0932296, 0.794134, 0.113951, 0.455349, 0.142396, 0.062773, 0.933295, 0.428926, 0.634569, 0.897394, 0.0328486, 0.623496, 0.627421, 0.119338, 0.538494, 0.488695, 0.647521, 0.260561, 0.593151, 0.136784, 0.454379, 0.533104, 0.132025, 0.296937, 0.349131, 0.809492, 0.37542, 0.413061, 0.459829, 0.118546, 0.102437, 0.577409, 0.209847, 0.211566] 
+3 Fit || Will swarm with 25 swarm points chis of  15.426171 16.525486 16.980350 16.982439 16.984228 17.052000 17.083303 17.214458 17.285484 17.293539 17.301651 17.338890 17.367565 17.463776 17.472145 17.473661 17.498867 17.562420 17.684536 17.744986 17.810537 17.847189 17.858519 17.874844 17.907360 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.97628 at [0.901919, -2.71855, -0.169171, 0.120099, 0.426249, 0.122929, 0.0345272, -0.359288, -0.176727, -0.320968, -0.14956, -0.0895891, 0.089353, 0.191471, 0.0150558, 0.069684, -0.108204, 0.307727, -0.02679, -0.395725, 0.237774, 0.0247476, -0.205132, -0.153229, 0.00254571, 0.329597, -0.00658102, 0.250308, -0.00840318, -0.154091, 0.00997031, 0.266209, -0.238214, -0.0712603, -0.143048, -0.0645438, 0.258234, 0.0681871, -0.0472736, -0.185379, 0.0410293, -0.211502, 0.0982826, 0.0777786, -0.307828, 0.0594555, -0.241412, -0.0933011, 0.387276, 0.132876, -0.102928, 0.141622, 0.260682, -0.0208409, -0.205541, 0.0613883, 0.219059, -0.0292116, 0.308997, -0.21295, -0.530805, 0.215172, -0.311663, 0.324281, 0.286401, -0.0770282, -0.0429218, 0.138896, -0.18207, 0.333644, -0.073261, -0.160659] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.28377e-13 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.64097e-11 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.07214e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.87419e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.98582e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.67468e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.63505e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.39279e-13 after 4 iterations
+3 Fit || FINAL has a chi 5.87419e-14
+3 Fit || FINAL is  :  0.223551 -2.527951 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 14.6989 with pts  : [0.842155, -3.71676, 0.0351004, 0.937576, 0.190666, 0.366362, 0.0669862, 0.715669, 0.50549, 0.195926, 0.0289875, 0.0212275, 0.771546, 0.862785, 0.49981, 0.876191, 0.764848, 0.161467, 0.157227, 0.406405, 0.121764, 0.433633, 0.917584, 0.0696668, 0.129963, 0.642978, 0.187046, 0.506787, 0.86833, 0.325591, 0.69677, 0.692772, 0.462102, 0.851914, 0.276857, 0.0507907, 0.685185, 0.49381, 0.701576, 0.810497, 0.339619, 0.155058, 0.319655, 0.146042, 0.123999, 0.327114, 0.323071, 0.223076, 0.637104, 0.199305, 0.0750466, 0.388847, 0.28619, 0.132134, 0.068345, 0.112362, 0.78192, 0.29429, 0.543459, 0.384623, 0.16476, 0.0295458, 0.144812, 0.0364919, 0.39695, 0.0691931, 0.462044, 0.127214, 0.313744, 0.262872, 0.305872, 0.310831] 
+3 Fit || Will swarm with 25 swarm points chis of  14.698950 15.487051 15.549241 15.613117 15.669153 15.707684 16.084042 16.096004 16.519426 16.526163 16.688784 16.881023 17.036509 17.077608 17.137144 17.333147 17.336142 17.358139 17.422846 17.478542 17.561806 17.638956 17.665125 17.674784 17.677219 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.53871 at [0.246989, -3.0233, -0.194012, -0.141997, 0.0167625, 0.0766608, -0.0489595, 0.196532, 0.30586, 0.0554028, -0.17766, 0.063268, 0.184388, -0.228447, 0.0177015, -0.289536, -0.583994, -0.331905, 0.21165, -0.195922, 0.205714, 0.0775702, 0.282974, -0.281306, -0.0207835, -0.0353077, -0.159651, -0.000405036, -0.169309, -0.102708, 0.262626, 0.0849518, 0.0672329, -0.148556, -0.0434908, 0.0443774, 0.282368, -0.0647872, 0.145777, -0.130704, 0.159202, -0.0699226, -0.0699646, -0.0936782, 0.0806993, 0.285294, 0.421102, 0.114065, 0.244244, -0.0311277, 0.0913312, -0.343663, -0.130834, -0.050046, 0.111705, 0.133176, -0.158981, -0.11615, -0.00406187, 0.144558, 0.0614573, -0.164857, 0.250692, 0.287498, -0.105623, 0.111472, 0.29303, -0.0680753, 0.0606287, -0.321882, 0.020646, -0.277504] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.5464e-14 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.53399e-11 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.37286e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.48567e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.32497e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.1635e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.28287e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.38371e-14 after 4 iterations
+3 Fit || FINAL has a chi 2.48567e-14
+3 Fit || FINAL is  :  0.055448 -3.868094 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 14.7205 with pts  : [0.498731, -4.69102, 0.42313, 0.698946, 0.696, 0.528921, 0.323159, 0.617419, 0.165889, 0.0997776, 0.0670723, 0.90679, 0.190934, 0.0358982, 0.525654, 0.250092, 0.214775, 0.477532, 0.203781, 0.386767, 0.134461, 0.0216326, 0.651132, 0.211504, 0.430232, 0.420552, 0.482538, 0.484915, 0.557604, 0.985782, 0.0899297, 0.112626, 0.343472, 0.666367, 0.445321, 0.292116, 0.427893, 0.593168, 0.0862216, 0.542996, 0.55238, 0.136461, 0.602863, 0.294266, 0.388882, 0.535411, 0.245211, 0.742405, 0.207911, 0.0325703, 0.0748212, 0.260246, 0.360011, 0.137514, 0.452465, 0.473562, 0.574509, 0.607691, 0.0528415, 0.0192734, 0.151381, 0.891815, 0.586797, 0.17385, 0.363948, 0.752015, 0.3986, 0.742604, 0.195429, 0.0164378, 0.496958, 0.828436] 
+3 Fit || Will swarm with 25 swarm points chis of  14.720513 16.013535 16.315561 16.668692 16.974030 17.153677 17.194792 17.199942 17.365004 17.366798 17.481857 17.522554 17.559984 17.580589 17.654442 17.678270 17.755697 17.873077 17.894083 17.932394 17.965528 17.966019 18.013693 18.033171 18.115438 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.41615 at [-0.258851, -3.32648, -0.0376293, 0.0562281, 0.313766, -0.0436513, -0.0773172, -0.140308, 0.325529, 0.0183015, -0.0846406, -0.0160116, -0.0821129, 0.12549, -0.110301, -0.11042, 0.152277, 0.290306, 0.0225611, 0.368245, 0.223781, -0.0249712, -0.270203, -0.0266379, -0.200235, -0.000994027, -0.0698584, -0.128989, -0.0913935, 0.0688225, 0.0454123, 0.00195355, 0.151168, 0.242548, 0.225003, 0.11308, -0.00653356, 0.0765341, -0.0914214, 0.485351, -0.178959, 0.0560845, 0.263858, 0.0871876, -0.421745, 0.197865, 0.140227, -0.0449888, 0.18624, -0.0267187, -0.0551753, -0.000967264, 0.0123994, 0.0590533, 0.259124, -0.103522, -0.116951, -0.139656, 0.258876, 0.0982468, -0.198339, -0.534914, -0.0625973, 0.181044, 0.160888, -0.330072, -0.19339, 0.0867948, -0.172824, -0.0262399, 0.362036, 0.0288988] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.23406e-13 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.22208e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.27547e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.58004e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.13048e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.08441e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.9411e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.91741e-14 after 4 iterations
+3 Fit || FINAL has a chi 4.91741e-14
+3 Fit || FINAL is  :  0.175055 -3.080986 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 15.9478 with pts  : [0.0275239, -4.75756, 0.968831, 0.309982, 0.552875, 0.365284, 0.387114, 0.901802, 0.386754, 0.550703, 0.391663, 0.116296, 0.111656, 0.357818, 0.436284, 0.471126, 0.343482, 0.570032, 0.654736, 0.148244, 0.248352, 0.147832, 0.103345, 0.0883584, 0.359405, 0.217437, 0.445534, 0.985773, 0.385847, 0.576456, 0.494481, 0.170334, 0.528021, 0.404021, 0.7083, 0.783716, 0.63189, 0.742672, 0.757326, 0.281912, 0.659501, 0.230728, 0.707508, 0.0456018, 0.138858, 0.330763, 0.845456, 0.398164, 0.174687, 0.211879, 0.308235, 0.172918, 0.958176, 0.0827982, 0.0398357, 0.742173, 0.29737, 0.721729, 0.47678, 0.0235057, 0.184658, 0.05367, 0.358218, 0.20706, 0.0467855, 0.0934629, 0.994137, 0.478051, 0.217275, 0.14604, 0.247775, 0.0765338] 
+3 Fit || Will swarm with 25 swarm points chis of  15.947754 16.231335 16.318317 16.475382 16.761749 16.864458 17.098644 17.124109 17.130400 17.228987 17.284925 17.397789 17.449081 17.493572 17.532536 17.570482 17.732960 17.778057 17.821795 17.854427 17.857498 17.876305 17.909159 17.918098 17.939560 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.33647 at [0.0534254, -2.79581, 0.106678, 0.47608, -0.0559744, 0.0340493, 0.0690956, -0.0529072, 0.138917, 0.352516, -0.20372, 0.0976624, -0.161611, -0.00298417, 0.0601552, -0.207823, 0.0264829, 0.355729, 0.0420042, 0.248953, -0.337119, -0.12587, -0.313617, -0.131535, -0.0825143, 0.0662663, 0.0380859, 0.110351, 0.102236, 0.0786963, 0.0644287, 0.0785077, 0.322215, 0.141119, 0.0628743, -0.0484284, -0.04507, 0.10048, -0.319395, 0.0834954, 0.097602, -0.147615, 0.270223, -0.079368, -0.313095, -0.0854991, -0.0488688, 0.269256, -0.2556, -0.152693, -0.128882, -0.0727959, 0.0786336, 0.217526, 0.0535381, -0.312369, -0.00443104, -0.381975, 0.034619, -0.275227, 0.0175992, -0.0140363, -0.0379738, -0.287261, 0.225519, -0.0135949, 0.15543, -0.0272514, -0.0498408, -0.00988558, 0.364268, -0.0777524] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.36012e-14 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.5134e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.1226e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.16673e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.45182e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.23283e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.49716e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.9957e-14 after 4 iterations
+3 Fit || FINAL has a chi 2.45182e-14
+3 Fit || FINAL is  :  0.891482 -2.961100 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 16.1564 with pts  : [0.618946, -3.96983, 0.346925, 0.287834, 0.673674, 0.439261, 0.774749, 0.0619708, 0.578877, 0.192444, 0.115656, 0.292567, 0.797585, 0.345958, 0.472936, 0.576062, 0.987405, 0.0768444, 0.992524, 0.470719, 0.160496, 0.353495, 0.276, 0.829911, 0.129062, 0.00727485, 0.305214, 0.328022, 0.662911, 0.221535, 0.643934, 0.0835061, 0.273541, 0.682788, 0.530218, 0.650107, 0.578011, 0.159344, 0.0777021, 0.0729054, 0.722568, 0.46982, 0.499919, 0.573045, 0.185492, 0.616496, 0.669123, 0.173668, 0.0346507, 0.578055, 0.290794, 0.420037, 0.158096, 0.531495, 0.124243, 0.288595, 0.308681, 0.388084, 0.125786, 0.689442, 0.223112, 0.547737, 0.0640399, 0.992614, 0.0958431, 0.300836, 0.678855, 0.803622, 0.210956, 0.197154, 0.683444, 0.156137] 
+3 Fit || Will swarm with 25 swarm points chis of  16.156418 16.539612 16.784605 16.795036 16.902287 16.929396 16.971685 17.021997 17.026566 17.104572 17.106262 17.149864 17.150810 17.214655 17.431335 17.473345 17.473730 17.488758 17.576502 17.621120 17.720263 17.799355 17.844955 17.853380 17.873930 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.96608 at [1.08659, -1.9585, -0.216054, 0.0818793, -0.0680438, -0.0200334, 0.0958523, 0.543048, 0.149249, 0.0111844, 0.279986, 0.227772, 0.0351058, -0.110597, -0.212525, -0.117078, -0.0815379, -0.0991385, 0.192681, -0.0501204, 0.147, 0.128182, 0.0274519, 0.0520422, 0.0738389, -0.284658, -0.591046, 0.0628278, -0.324149, 0.241254, 0.0339301, 0.182527, 0.130149, -0.0945914, 0.214812, -0.373388, -0.155559, 0.201886, 0.138185, 0.0977688, -0.166721, 0.0173094, -0.0651604, -0.133875, 0.125151, -0.201412, 0.0900763, -0.418475, -0.0222534, 0.185517, -0.0878273, -0.180839, 0.0259509, 0.149696, -0.119819, 0.0341146, -0.040473, -0.0778857, 0.257051, 0.30284, -0.204981, 0.367276, -0.095889, 0.399473, 0.243225, -0.151035, 0.330846, 0.0387613, 0.319057, -0.315355, 0.133286, 0.107724] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.01729e-13 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.57167e-11 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.22892e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.33289e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.29169e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.81505e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.27905e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.93866e-14 after 4 iterations
+3 Fit || FINAL has a chi 2.33289e-14
+3 Fit || FINAL is  :  0.622748 -4.728880 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 15.3844 with pts  : [0.150174, -4.62223, 0.369372, 0.371546, 0.528774, 0.038358, 0.195216, 0.757894, 0.265727, 0.360544, 0.322074, 0.392312, 0.226128, 0.981247, 0.324435, 0.424325, 0.780461, 0.471109, 0.483188, 0.272642, 0.157509, 0.632959, 0.338544, 0.689767, 0.139549, 0.112144, 0.34999, 0.120315, 0.624144, 0.0541735, 0.12063, 0.853125, 0.901762, 0.0454496, 0.72691, 0.139714, 0.0888952, 0.082683, 0.130392, 0.524747, 0.0226443, 0.10681, 0.415134, 0.267364, 0.0455335, 0.492924, 0.148554, 0.438859, 0.0641299, 0.979285, 0.0400664, 0.173662, 0.0878528, 0.937249, 0.190121, 0.756766, 0.826826, 0.299235, 0.26087, 0.478709, 0.142912, 0.255058, 0.921077, 0.973819, 0.272107, 0.597082, 0.366788, 0.0666759, 0.294791, 0.655858, 0.268066, 0.116662] 
+3 Fit || Will swarm with 25 swarm points chis of  15.384399 16.344589 16.454044 16.501595 16.777267 16.878698 16.906694 16.923479 16.956539 17.201197 17.215605 17.216316 17.277992 17.377312 17.499561 17.573637 17.582575 17.630428 17.668028 17.669796 17.690527 17.736727 17.746605 17.754156 17.823618 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 2.97673 at [0.35071, -5.20203, 0.0184757, -0.295479, 0.0248889, 0.114695, -0.317134, -0.0678328, -0.0509436, 0.0185251, 0.0741493, 0.59682, -0.113239, -0.276788, -0.027036, 0.165162, 0.0653277, 0.205065, 0.0732918, 0.0184082, 0.108104, -0.425216, 0.411008, 0.314898, 0.0343592, 0.301234, 0.0660868, 0.0802886, 0.153408, -0.162558, -0.119024, 0.143979, -0.0726647, 0.16322, 0.0708878, 0.105788, -0.0442201, 0.137721, -0.0216532, 0.166196, -0.0175199, 0.13563, 0.0340106, 0.0718897, 0.409334, 0.126519, -0.0233534, 0.0942325, -0.0968965, 0.121791, 0.0411979, -0.320522, -0.241866, -0.0230903, -0.0124602, 0.0882181, -0.139933, 0.00858758, -0.406208, -0.147283, -0.0827674, -0.328389, -0.636379, 0.0907912, -0.395927, -0.0694543, 0.287904, 0.042641, -0.100071, 0.280294, -0.0130045, 0.0881194] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.46805e-12 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.1661e-11 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.19161e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.50199e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.22231e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.73662e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.11823e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.24367e-13 after 4 iterations
+3 Fit || FINAL has a chi 2.50199e-14
+3 Fit || FINAL is  :  0.811200 -3.033561 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+3 [SCALETEST] tag=fit N=10 nbins=100 nphys=2 nnuis=70 total_s=14.6334 per_call_s=1.46334
+3 [SCALETEST] tag=pseudo_full N=1000 nbins=100 nphys=2 nnuis=70 total_us=104964 per_call_us=104.964
+3 [SCALETEST] tag=collapse_matrix N=1000 nbins=100 nphys=2 nnuis=70 total_us=246 per_call_us=0.246
+3 [SCALETEST] tag=mcmc_step_burnin N=1000 nbins=100 nphys=2 nnuis=70 total_us=51622 per_call_us=51.622
+3 [SCALETEST] tag=mcmc_step_post N=1000 nbins=100 nphys=2 nnuis=70 total_us=5668 per_call_us=5.668
+3 run_scale_test || ===== PRObench scale-test complete: 14 tests =====
+3 main || Total run time: 20494054

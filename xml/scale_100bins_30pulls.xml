@@ -52,6 +52,26 @@
     <systematic type="norm" plotname="dummynorm7" tag="Other">dummynorm7:0.02</systematic>
     <systematic type="norm" plotname="dummynorm8" tag="Other">dummynorm8:0.02</systematic>
     <systematic type="norm" plotname="dummynorm9" tag="Other">dummynorm9:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm10" tag="Other">dummynorm10:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm11" tag="Other">dummynorm11:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm12" tag="Other">dummynorm12:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm13" tag="Other">dummynorm13:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm14" tag="Other">dummynorm14:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm15" tag="Other">dummynorm15:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm16" tag="Other">dummynorm16:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm17" tag="Other">dummynorm17:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm18" tag="Other">dummynorm18:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm19" tag="Other">dummynorm19:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm20" tag="Other">dummynorm20:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm21" tag="Other">dummynorm21:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm22" tag="Other">dummynorm22:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm23" tag="Other">dummynorm23:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm24" tag="Other">dummynorm24:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm25" tag="Other">dummynorm25:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm26" tag="Other">dummynorm26:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm27" tag="Other">dummynorm27:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm28" tag="Other">dummynorm28:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm29" tag="Other">dummynorm29:0.02</systematic>
 
 
     <systematic type="covariance" plotname="NCELVariationResponse" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisim_NCELVariationResponse</systematic>

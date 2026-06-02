@@ -1,0 +1,236 @@
+
+<?xml version="1.0" ?>
+
+<!-- One Mode -->
+<mode name="nu" />
+
+<!-- One Detector SBN Analysis-->
+<detector name="SBND" pot="9.7e20"/>
+
+<!-- Two Channels, numu and nue selections -->
+<channel name="numu" plotname="#nu_{#mu} Selection">
+    <bins unit = "Reconstructed Neutrino Energy [GeV]" min="0.2" max="3" nbins="100" />
+    <bins unit = "True Neutrino Energy [GeV]" min="0" max="3" nbins="100"/>
+    <bins unit = "True L/E" min="0" max="3" nbins="100" plot="false"/>
+    <subchannel name="numucc" plotname="#nu_{#mu} CC" color="#99CCFF"/>
+</channel>
+
+<!-- The Physics model, here nue-appearance only -->
+<model tag="nueapp">
+    <rule index="0" name="No Osc"/>
+    <rule index="1" name="Nue App"/>
+    <parameter variable_index = "2" name="L/E"/>
+</model>
+
+<!-- Where to find the Montecarlo and how to fill all the subchannels defined above-->
+<MCFile treename="events/selectedNu" filename="/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt" scale = "1.0" pot="2.15692e19">
+    <friend treename="events/multisigmaTree" />
+    <friend treename="events/multisimTree" />
+    <branch
+        associated_subchannel = "nu_SBND_numu_numucc"
+        model_rule            = "0"
+        additional_weight     = "0.9*CC*(truePDG == 14 || truePDG == -14)*(recoE>0)"
+        >
+        <variable>recoE</variable>
+        <variable>trueE</variable>
+        <variable>trueL/(trueE*1000.0)</variable>
+    </branch>
+</MCFile>
+
+
+<systematics>
+    <!-- Inlcude MC stats, uncomment out to remove -->
+    <systematic type="mcstat" plotname="MC Stats" tag="Other">MCStat</systematic>
+
+    <systematic type="norm" plotname="FiducialVol" tag="Other">FiducialVol:0.02</systematic>
+    <systematic type="norm" plotname="FluxNorm" tag="Other">FluxNorm:0.02</systematic>
+    <systematic type="norm" plotname="ICARUSDet" tag="Other">ICARUSDet:0.02</systematic>
+    <systematic type="norm" plotname="SBNDDet" tag="Other">SBNDDet:0.02</systematic>
+    <systematic type="norm" plotname="Targets_POT" tag="Other">Targets_POT:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm5" tag="Other">dummynorm5:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm6" tag="Other">dummynorm6:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm7" tag="Other">dummynorm7:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm8" tag="Other">dummynorm8:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm9" tag="Other">dummynorm9:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm10" tag="Other">dummynorm10:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm11" tag="Other">dummynorm11:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm12" tag="Other">dummynorm12:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm13" tag="Other">dummynorm13:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm14" tag="Other">dummynorm14:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm15" tag="Other">dummynorm15:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm16" tag="Other">dummynorm16:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm17" tag="Other">dummynorm17:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm18" tag="Other">dummynorm18:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm19" tag="Other">dummynorm19:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm20" tag="Other">dummynorm20:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm21" tag="Other">dummynorm21:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm22" tag="Other">dummynorm22:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm23" tag="Other">dummynorm23:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm24" tag="Other">dummynorm24:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm25" tag="Other">dummynorm25:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm26" tag="Other">dummynorm26:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm27" tag="Other">dummynorm27:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm28" tag="Other">dummynorm28:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm29" tag="Other">dummynorm29:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm30" tag="Other">dummynorm30:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm31" tag="Other">dummynorm31:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm32" tag="Other">dummynorm32:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm33" tag="Other">dummynorm33:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm34" tag="Other">dummynorm34:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm35" tag="Other">dummynorm35:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm36" tag="Other">dummynorm36:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm37" tag="Other">dummynorm37:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm38" tag="Other">dummynorm38:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm39" tag="Other">dummynorm39:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm40" tag="Other">dummynorm40:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm41" tag="Other">dummynorm41:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm42" tag="Other">dummynorm42:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm43" tag="Other">dummynorm43:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm44" tag="Other">dummynorm44:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm45" tag="Other">dummynorm45:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm46" tag="Other">dummynorm46:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm47" tag="Other">dummynorm47:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm48" tag="Other">dummynorm48:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm49" tag="Other">dummynorm49:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm50" tag="Other">dummynorm50:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm51" tag="Other">dummynorm51:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm52" tag="Other">dummynorm52:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm53" tag="Other">dummynorm53:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm54" tag="Other">dummynorm54:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm55" tag="Other">dummynorm55:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm56" tag="Other">dummynorm56:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm57" tag="Other">dummynorm57:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm58" tag="Other">dummynorm58:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm59" tag="Other">dummynorm59:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm60" tag="Other">dummynorm60:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm61" tag="Other">dummynorm61:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm62" tag="Other">dummynorm62:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm63" tag="Other">dummynorm63:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm64" tag="Other">dummynorm64:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm65" tag="Other">dummynorm65:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm66" tag="Other">dummynorm66:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm67" tag="Other">dummynorm67:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm68" tag="Other">dummynorm68:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm69" tag="Other">dummynorm69:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm70" tag="Other">dummynorm70:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm71" tag="Other">dummynorm71:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm72" tag="Other">dummynorm72:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm73" tag="Other">dummynorm73:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm74" tag="Other">dummynorm74:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm75" tag="Other">dummynorm75:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm76" tag="Other">dummynorm76:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm77" tag="Other">dummynorm77:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm78" tag="Other">dummynorm78:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm79" tag="Other">dummynorm79:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm80" tag="Other">dummynorm80:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm81" tag="Other">dummynorm81:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm82" tag="Other">dummynorm82:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm83" tag="Other">dummynorm83:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm84" tag="Other">dummynorm84:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm85" tag="Other">dummynorm85:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm86" tag="Other">dummynorm86:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm87" tag="Other">dummynorm87:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm88" tag="Other">dummynorm88:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm89" tag="Other">dummynorm89:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm90" tag="Other">dummynorm90:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm91" tag="Other">dummynorm91:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm92" tag="Other">dummynorm92:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm93" tag="Other">dummynorm93:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm94" tag="Other">dummynorm94:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm95" tag="Other">dummynorm95:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm96" tag="Other">dummynorm96:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm97" tag="Other">dummynorm97:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm98" tag="Other">dummynorm98:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm99" tag="Other">dummynorm99:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm100" tag="Other">dummynorm100:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm101" tag="Other">dummynorm101:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm102" tag="Other">dummynorm102:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm103" tag="Other">dummynorm103:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm104" tag="Other">dummynorm104:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm105" tag="Other">dummynorm105:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm106" tag="Other">dummynorm106:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm107" tag="Other">dummynorm107:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm108" tag="Other">dummynorm108:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm109" tag="Other">dummynorm109:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm110" tag="Other">dummynorm110:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm111" tag="Other">dummynorm111:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm112" tag="Other">dummynorm112:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm113" tag="Other">dummynorm113:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm114" tag="Other">dummynorm114:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm115" tag="Other">dummynorm115:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm116" tag="Other">dummynorm116:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm117" tag="Other">dummynorm117:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm118" tag="Other">dummynorm118:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm119" tag="Other">dummynorm119:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm120" tag="Other">dummynorm120:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm121" tag="Other">dummynorm121:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm122" tag="Other">dummynorm122:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm123" tag="Other">dummynorm123:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm124" tag="Other">dummynorm124:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm125" tag="Other">dummynorm125:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm126" tag="Other">dummynorm126:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm127" tag="Other">dummynorm127:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm128" tag="Other">dummynorm128:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm129" tag="Other">dummynorm129:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm130" tag="Other">dummynorm130:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm131" tag="Other">dummynorm131:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm132" tag="Other">dummynorm132:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm133" tag="Other">dummynorm133:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm134" tag="Other">dummynorm134:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm135" tag="Other">dummynorm135:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm136" tag="Other">dummynorm136:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm137" tag="Other">dummynorm137:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm138" tag="Other">dummynorm138:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm139" tag="Other">dummynorm139:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm140" tag="Other">dummynorm140:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm141" tag="Other">dummynorm141:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm142" tag="Other">dummynorm142:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm143" tag="Other">dummynorm143:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm144" tag="Other">dummynorm144:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm145" tag="Other">dummynorm145:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm146" tag="Other">dummynorm146:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm147" tag="Other">dummynorm147:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm148" tag="Other">dummynorm148:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm149" tag="Other">dummynorm149:0.02</systematic>
+
+
+    <systematic type="covariance" plotname="NCELVariationResponse" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisim_NCELVariationResponse</systematic>
+    <systematic type="covariance" plotname="NCRESVariationResponse" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisim_NCRESVariationResponse</systematic>
+    <systematic type="covariance" plotname="COHVariationResponse" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisim_COHVariationResponse</systematic>
+    <systematic type="covariance" plotname="DISBYVariationResponse" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisim_DISBYVariationResponse</systematic>
+    <systematic type="covariance" plotname="FSI_pi" tag="Cross-Section-II-FSI">GENIEReWeight_SBN_v1_multisim_FSI_pi_VariationResponse</systematic>
+    <systematic type="covariance" plotname="FSI_N" tag="Cross-Section-II-FSI">GENIEReWeight_SBN_v1_multisim_FSI_N_VariationResponse</systematic>
+    <systematic type="covariance" plotname="NormNCMEC" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisim_NormNCMEC</systematic>
+    <systematic type="covariance" plotname="NonRESBGvpCC1pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvpCC1pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvpCC2pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvpCC2pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvpNC1pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvpNC1pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvpNC2pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvpNC2pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvnCC1pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvnCC1pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvnCC2pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvnCC2pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvnNC1pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvnNC1pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvnNC2pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvnNC2pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvbarpCC1pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvbarpCC1pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvbarpCC2pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvbarpCC2pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvbarpNC1pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvbarpNC1pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvbarpNC2pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvbarpNC2pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvbarnCC1pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvbarnCC1pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvbarnCC2pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvbarnCC2pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvbarnNC1pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvbarnNC1pi</systematic>
+    <systematic type="covariance" plotname="NonRESBGvbarnNC2pi" tag="Cross-Section-III-NonRes">GENIEReWeight_SBN_v1_multisim_NonRESBGvbarnNC2pi</systematic>
+    
+    <!-- use all flux covariance systs from multisimTree-->
+    <systematic type="covariance" tag="Flux">expskin_Flux</systematic>
+    <systematic type="covariance" tag="Flux">horncurrent_Flux</systematic>
+    <systematic type="covariance" tag="Flux">nucleoninexsec_Flux</systematic>
+    <systematic type="covariance" tag="Flux">nucleonqexsec_Flux</systematic>
+    <systematic type="covariance" tag="Flux">nucleontotxsec_Flux</systematic>
+    <systematic type="covariance" tag="Flux">pioninexsec_Flux</systematic>
+    <systematic type="covariance" tag="Flux">pionqexsec_Flux</systematic>
+    <systematic type="covariance" tag="Flux">piontotxsec_Flux</systematic>
+    <systematic type="covariance" tag="Flux">piplus_Flux</systematic>
+    <systematic type="covariance" tag="Flux">piminus_Flux</systematic>
+    <systematic type="covariance" tag="Flux">kplus_Flux</systematic>
+    <systematic type="covariance" tag="Flux">kminus_Flux</systematic>
+    <systematic type="covariance" tag="Flux">kzero_Flux</systematic>
+</systematics>
+

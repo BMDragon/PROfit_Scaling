@@ -63,7 +63,7 @@ file.write('''
     <systematic type="mcstat" plotname="MC Stats" tag="Other">MCStat</systematic>
 
 ''')
-'''
+
 for i in range(int(Npulls)):
     if i < len(list_of_norms):
         norm = list_of_norms[i]
@@ -71,12 +71,11 @@ for i in range(int(Npulls)):
     else:
         file.write('    <systematic type="norm" plotname="dummynorm' + str(i) + '" tag="Other">dummynorm' + str(i) + ':0.02</systematic>\n')
 '''
-
 for i in range(int(Npulls)):
     spline = list_of_splines[i % len(list_of_splines)]
     file.write('    <systematic type="spline"  binning="var0" plotname="' + spline + '" tag="Other">' + spline + '</systematic>\n')
     #file.write('    <systematic type="spline"  binning="var0" plotname="ZExpA1CCQE" tag="Zexpansion">GENIEReWeight_SBN_v1_multisigma_ZExpA1CCQE</systematic>\n')
-
+'''
 
 file.write('''
 

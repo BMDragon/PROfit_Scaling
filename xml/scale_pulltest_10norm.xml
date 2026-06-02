@@ -1,24 +1,4 @@
-# Created by Brandon Weiss on 5/22/2026
 
-import sys
-
-assert len(sys.argv) == 4, "Usage: python generateXML.py <Nbins> <Npulls> <tag>"
-
-Nbins = sys.argv[1]
-Npulls = sys.argv[2]
-tag = sys.argv[3]
-
-list_of_norms = ["FiducialVol", "FluxNorm", "ICARUSDet", "SBNDDet", "Targets_POT"]
-
-list_of_splines = []
-with open('./listOfSplines.txt', 'r') as f:
-    for line in f:
-        list_of_splines.append(line.strip())
-
-filename = 'scale_' + str(tag)
-
-file = open('.././xml/' + filename + '.xml', 'w')
-file.write('''
 <?xml version="1.0" ?>
 
 <!-- One Mode -->
@@ -29,9 +9,9 @@ file.write('''
 
 <!-- Two Channels, numu and nue selections -->
 <channel name="numu" plotname="#nu_{#mu} Selection">
-    <bins unit = "Reconstructed Neutrino Energy [GeV]" min="0.2" max="3" nbins="''' + str(Nbins) + '''" />
-    <bins unit = "True Neutrino Energy [GeV]" min="0" max="3" nbins="''' + str(Nbins) + '''"/>
-    <bins unit = "True L/E" min="0" max="3" nbins="''' + str(Nbins) + '''" plot="false"/>
+    <bins unit = "Reconstructed Neutrino Energy [GeV]" min="0.2" max="3" nbins="100" />
+    <bins unit = "True Neutrino Energy [GeV]" min="0" max="3" nbins="100"/>
+    <bins unit = "True L/E" min="0" max="3" nbins="100" plot="false"/>
     <subchannel name="numucc" plotname="#nu_{#mu} CC" color="#99CCFF"/>
 </channel>
 
@@ -62,23 +42,17 @@ file.write('''
     <!-- Inlcude MC stats, uncomment out to remove -->
     <systematic type="mcstat" plotname="MC Stats" tag="Other">MCStat</systematic>
 
-''')
-'''
-for i in range(int(Npulls)):
-    if i < len(list_of_norms):
-        norm = list_of_norms[i]
-        file.write('    <systematic type="norm" plotname="' + norm + '" tag="Other">' + norm + ':0.02</systematic>\n')
-    else:
-        file.write('    <systematic type="norm" plotname="dummynorm' + str(i) + '" tag="Other">dummynorm' + str(i) + ':0.02</systematic>\n')
-'''
+    <systematic type="norm" plotname="FiducialVol" tag="Other">FiducialVol:0.02</systematic>
+    <systematic type="norm" plotname="FluxNorm" tag="Other">FluxNorm:0.02</systematic>
+    <systematic type="norm" plotname="ICARUSDet" tag="Other">ICARUSDet:0.02</systematic>
+    <systematic type="norm" plotname="SBNDDet" tag="Other">SBNDDet:0.02</systematic>
+    <systematic type="norm" plotname="Targets_POT" tag="Other">Targets_POT:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm5" tag="Other">dummynorm5:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm6" tag="Other">dummynorm6:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm7" tag="Other">dummynorm7:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm8" tag="Other">dummynorm8:0.02</systematic>
+    <systematic type="norm" plotname="dummynorm9" tag="Other">dummynorm9:0.02</systematic>
 
-for i in range(int(Npulls)):
-    spline = list_of_splines[i % len(list_of_splines)]
-    file.write('    <systematic type="spline"  binning="var0" plotname="' + spline + '" tag="Other">' + spline + '</systematic>\n')
-    #file.write('    <systematic type="spline"  binning="var0" plotname="ZExpA1CCQE" tag="Zexpansion">GENIEReWeight_SBN_v1_multisigma_ZExpA1CCQE</systematic>\n')
-
-
-file.write('''
 
     <systematic type="covariance" plotname="NCELVariationResponse" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisim_NCELVariationResponse</systematic>
     <systematic type="covariance" plotname="NCRESVariationResponse" tag="Cross-Section-I">GENIEReWeight_SBN_v1_multisim_NCRESVariationResponse</systematic>
@@ -120,6 +94,3 @@ file.write('''
     <systematic type="covariance" tag="Flux">kzero_Flux</systematic>
 </systematics>
 
-''')
-
-print('Finished making ' + filename +'.xml')

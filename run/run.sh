@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rerun_binaries=true
+rerun_binaries=false
 
 for Nbins in {100..1000..900}
 do

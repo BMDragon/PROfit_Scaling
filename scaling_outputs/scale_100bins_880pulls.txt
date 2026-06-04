@@ -1,0 +1,14 @@
+3 [SCALETEST] tag=fillspectra_vary_all N=1000 nbins=100 nphys=2 nnuis=880 total_us=9372553 per_call_us=9372.55
+3 [SCALETEST] tag=fillspectra_vary_phys N=1000 nbins=100 nphys=2 nnuis=880 total_us=101471 per_call_us=101.471
+3 [SCALETEST] tag=fillspectra_vary_nuis N=1000 nbins=100 nphys=2 nnuis=880 total_us=10395943 per_call_us=10395.9
+3 [SCALETEST] tag=metric_vary_all N=100 nbins=100 nphys=2 nnuis=880 total_us=938293 per_call_us=9382.93
+3 [SCALETEST] tag=metric_vary_phys N=100 nbins=100 nphys=2 nnuis=880 total_us=24454 per_call_us=244.54
+3 [SCALETEST] tag=metric_vary_nuis N=100 nbins=100 nphys=2 nnuis=880 total_us=1196094 per_call_us=11960.9
+3 [SCALETEST] tag=metric_grad_vary_all N=100 nbins=100 nphys=2 nnuis=880 total_us=90574866 per_call_us=905749
+3 [SCALETEST] tag=metric_grad_vary_phys N=100 nbins=100 nphys=2 nnuis=880 total_us=75989137 per_call_us=759891
+3 [SCALETEST] tag=metric_grad_vary_nuis N=100 nbins=100 nphys=2 nnuis=880 total_us=61481823 per_call_us=614818
+3 [SCALETEST] tag=fit N=10 nbins=100 nphys=2 nnuis=880 total_s=672.53 per_call_s=67.253
+3 [SCALETEST] tag=pseudo_full N=1000 nbins=100 nphys=2 nnuis=880 total_us=4534042 per_call_us=4534.04
+3 [SCALETEST] tag=collapse_matrix N=1000 nbins=100 nphys=2 nnuis=880 total_us=362 per_call_us=0.362
+3 [SCALETEST] tag=mcmc_step_burnin N=1000 nbins=100 nphys=2 nnuis=880 total_us=83729704 per_call_us=83729.7
+3 [SCALETEST] tag=mcmc_step_post N=1000 nbins=100 nphys=2 nnuis=880 total_us=2277062 per_call_us=2277.06

@@ -1,6 +1,9 @@
 #!/bin/bash
 
-rerun_binaries=false
+MAX_JOBS=20
+running=0
+
+rerun_binaries=true
 
 for Nbins in {100..1000..900}
 do
@@ -17,6 +20,12 @@ do
         grep SCALE .././process_logs/log_${tag}.txt > .././scaling_outputs/scale_${tag}.txt
         echo "Finished ${Nbins} bins, ${Npulls} pulls"
     ) &
+
+    ((running++))
+    if (( running >= MAX_JOBS )); then
+        wait -n    # wait for one job to finish
+        ((running--))
+    fi
     done
 done
 
@@ -35,5 +44,14 @@ do
         grep SCALE .././process_logs/log_${tag}.txt > .././scaling_outputs/scale_${tag}.txt
         echo "Finished ${Mbins} bins, ${Mpulls} pulls"
     ) &
+
+    ((running++))
+    if (( running >= MAX_JOBS )); then
+        wait -n    # wait for one job to finish
+        ((running--))
+    fi
     done
 done
+
+wait
+echo "All jobs completed."

@@ -92,7 +92,7 @@
 3 construct_variable_collapsing_matrices || Creating Variable 1 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  1450  1450
 3 construct_variable_collapsing_matrices || Creating Variable 2 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  1450  1450
 3 main || Loading PROpeller and PROsysts from precalc binary input: scaling1450bins_40pulls_prop.bin
-3 load || Serialization load of PROpeller from file  scaling1450bins_40pulls_prop.bin took 3.60207 seconds
+3 load || Serialization load of PROpeller from file  scaling1450bins_40pulls_prop.bin took 0.273494 seconds
 3 main || Done loading. Config hash (4117468768) and binary loaded PROpeller (4117468768) are here. 
 3 main || Done loading. Config hash (4117468768) and binary loaded PROsyst hash(4117468768) are here. 
 3 PROseed || For 1+1 threads we precalculated thread seeds as: [3937942024, 4171310701] 

@@ -6476,16 +6476,16 @@
 3 PROcess_CAFAna || Start reading the files..
 3 PROcess_CAFAna || Branch pruning fid=0: keeping 85 branches
 3 PROcess_CAFAna || File 0 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt) -- uni : 0 / 132217  took 0 seconds
-3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 473 seconds
-3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 469 seconds
-3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 449 seconds
-3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 466 seconds
-3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 448 seconds
-3 PROcess_CAFAna || Finish reading files, it took 2305 seconds..
+3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 126 seconds
+3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 127 seconds
+3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 127 seconds
+3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 126 seconds
+3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 124 seconds
+3 PROcess_CAFAna || Finish reading files, it took 630 seconds..
 3 PROcess_CAFAna || DONE
-3 save || Serialization save of PROpeller into file  scaling100bins_460pulls_prop.bin took 0.0126798 seconds
+3 save || Serialization save of PROpeller into file  scaling100bins_460pulls_prop.bin took 0.00457287 seconds
 3 main || Done processing PROpeller and PROsysts from XML defined root files, and saving to binary output also: scaling100bins_460pulls_prop.bin
-3 PROseed || For 1+1 threads we precalculated thread seeds as: [3477153555, 2132089217] 
+3 PROseed || For 1+1 threads we precalculated thread seeds as: [3582341506, 1400827681] 
 3 PROnueapp || setting up a model nueapp, with  2 params.
 3 PROnueapp || Param 0 is dmsq with lower bound/upper bound of -2/2 and default -2
 3 PROnueapp || Param 1 is sinsq2thme with lower bound/upper bound of -10/0 and default -10
@@ -6590,8 +6590,8 @@
 3 print || --------------------------------------- 
 3 main || Gradient mode: central-full
 3 main || We are hoping to FIX : [] 
-3 main || Total run time: 2310517898
+3 main || Total run time: 631488924
 
-real	38m30.741s
-user	15m59.843s
-sys	0m2.265s
+real	10m31.590s
+user	10m26.715s
+sys	0m1.890s

@@ -92,7 +92,7 @@
 3 construct_variable_collapsing_matrices || Creating Variable 1 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  450  450
 3 construct_variable_collapsing_matrices || Creating Variable 2 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  450  450
 3 main || Loading PROpeller and PROsysts from precalc binary input: scaling450bins_40pulls_prop.bin
-3 load || Serialization load of PROpeller from file  scaling450bins_40pulls_prop.bin took 0.423541 seconds
+3 load || Serialization load of PROpeller from file  scaling450bins_40pulls_prop.bin took 0.0286321 seconds
 3 main || Done loading. Config hash (3187214173) and binary loaded PROpeller (3187214173) are here. 
 3 main || Done loading. Config hash (3187214173) and binary loaded PROsyst hash(3187214173) are here. 
 3 PROseed || For 1+1 threads we precalculated thread seeds as: [3937942024, 4171310701] 
@@ -203,15 +203,15 @@
 3 run_scale_test || ===== PRObench scale-test starting =====
 3 run_scale_test || N_fillspectra=1000  N_metric=100  N_fit=10  grad_mode=central-full
 3 run_scale_test || nphys=2  nnuis=40  nbins=450
-3 [SCALETEST] tag=fillspectra_vary_all N=1000 nbins=450 nphys=2 nnuis=40 total_us=825659 per_call_us=825.659
-3 [SCALETEST] tag=fillspectra_vary_phys N=1000 nbins=450 nphys=2 nnuis=40 total_us=148720 per_call_us=148.72
-3 [SCALETEST] tag=fillspectra_vary_nuis N=1000 nbins=450 nphys=2 nnuis=40 total_us=333083 per_call_us=333.083
-3 [SCALETEST] tag=metric_vary_all N=100 nbins=450 nphys=2 nnuis=40 total_us=984855 per_call_us=9848.55
-3 [SCALETEST] tag=metric_vary_phys N=100 nbins=450 nphys=2 nnuis=40 total_us=842427 per_call_us=8424.27
-3 [SCALETEST] tag=metric_vary_nuis N=100 nbins=450 nphys=2 nnuis=40 total_us=825059 per_call_us=8250.59
-3 [SCALETEST] tag=metric_grad_vary_all N=100 nbins=450 nphys=2 nnuis=40 total_us=143435139 per_call_us=1.43435e+06
-3 [SCALETEST] tag=metric_grad_vary_phys N=100 nbins=450 nphys=2 nnuis=40 total_us=154055898 per_call_us=1.54056e+06
-3 [SCALETEST] tag=metric_grad_vary_nuis N=100 nbins=450 nphys=2 nnuis=40 total_us=106401666 per_call_us=1.06402e+06
+3 [SCALETEST] tag=fillspectra_vary_all N=1000 nbins=450 nphys=2 nnuis=40 total_us=274257 per_call_us=274.257
+3 [SCALETEST] tag=fillspectra_vary_phys N=1000 nbins=450 nphys=2 nnuis=40 total_us=90889 per_call_us=90.889
+3 [SCALETEST] tag=fillspectra_vary_nuis N=1000 nbins=450 nphys=2 nnuis=40 total_us=183274 per_call_us=183.274
+3 [SCALETEST] tag=metric_vary_all N=100 nbins=450 nphys=2 nnuis=40 total_us=506264 per_call_us=5062.64
+3 [SCALETEST] tag=metric_vary_phys N=100 nbins=450 nphys=2 nnuis=40 total_us=460255 per_call_us=4602.55
+3 [SCALETEST] tag=metric_vary_nuis N=100 nbins=450 nphys=2 nnuis=40 total_us=471773 per_call_us=4717.73
+3 [SCALETEST] tag=metric_grad_vary_all N=100 nbins=450 nphys=2 nnuis=40 total_us=35425652 per_call_us=354257
+3 [SCALETEST] tag=metric_grad_vary_phys N=100 nbins=450 nphys=2 nnuis=40 total_us=35687216 per_call_us=356872
+3 [SCALETEST] tag=metric_grad_vary_nuis N=100 nbins=450 nphys=2 nnuis=40 total_us=34915174 per_call_us=349152
 3 Fit || Seed point passed in. Being included.
 3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
 3 Fit || Best Point after latin hypercube has chi^2 7.80111 with pts  : [0.777972, -3.4462, 0.108368, 0.188236, 0.576872, 0.606175, 0.653336, 0.365605, 0.329981, 0.249436, 0.0506201, 0.204314, 0.249615, 0.0184805, 0.324696, 0.0603403, 0.334719, 0.433998, 0.0742657, 0.555485, 0.347223, 0.18253, 0.903628, 0.370827, 0.369132, 0.105558, 0.584834, 0.0360109, 0.267951, 0.0691017, 0.685579, 0.0530342, 0.186628, 0.175214, 0.733833, 0.569963, 0.822806, 0.13732, 0.773456, 0.838722, 0.641043, 0.0783011] 
@@ -532,7 +532,7 @@
 3 Fit || Minimization successful, chi 3.06668e-11 after 3 iterations
 3 Fit || FINAL has a chi 9.16827e-17
 3 Fit || FINAL is  :  0.355544 -3.820727 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 
-3 [SCALETEST] tag=fit N=10 nbins=450 nphys=2 nnuis=40 total_s=750.453 per_call_s=75.0453
+3 [SCALETEST] tag=fit N=10 nbins=450 nphys=2 nnuis=40 total_s=349.441 per_call_s=34.9441
 2 PoissonVariation || Cannot perform Poisson variation: bin 428 has negative content -223.792. Setting to 0.
 2 PoissonVariation || Cannot perform Poisson variation: bin 352 has negative content -311.297. Setting to 0.
 2 PoissonVariation || Cannot perform Poisson variation: bin 361 has negative content -41.5534. Setting to 0.
@@ -948,9 +948,9 @@
 2 PoissonVariation || Cannot perform Poisson variation: bin 393 has negative content -66.5451. Setting to 0.
 2 PoissonVariation || Cannot perform Poisson variation: bin 396 has negative content -22.2759. Setting to 0.
 2 PoissonVariation || Cannot perform Poisson variation: bin 400 has negative content -27.6506. Setting to 0.
-3 [SCALETEST] tag=pseudo_full N=1000 nbins=450 nphys=2 nnuis=40 total_us=1966474 per_call_us=1966.47
-3 [SCALETEST] tag=collapse_matrix N=1000 nbins=450 nphys=2 nnuis=40 total_us=1820 per_call_us=1.82
-3 [SCALETEST] tag=mcmc_step_burnin N=1000 nbins=450 nphys=2 nnuis=40 total_us=57756 per_call_us=57.756
-3 [SCALETEST] tag=mcmc_step_post N=1000 nbins=450 nphys=2 nnuis=40 total_us=16864 per_call_us=16.864
+3 [SCALETEST] tag=pseudo_full N=1000 nbins=450 nphys=2 nnuis=40 total_us=432529 per_call_us=432.529
+3 [SCALETEST] tag=collapse_matrix N=1000 nbins=450 nphys=2 nnuis=40 total_us=910 per_call_us=0.91
+3 [SCALETEST] tag=mcmc_step_burnin N=1000 nbins=450 nphys=2 nnuis=40 total_us=19377 per_call_us=19.377
+3 [SCALETEST] tag=mcmc_step_post N=1000 nbins=450 nphys=2 nnuis=40 total_us=3354 per_call_us=3.354
 3 run_scale_test || ===== PRObench scale-test complete: 14 tests =====
-3 main || Total run time: 1188899725
+3 main || Total run time: 469699915

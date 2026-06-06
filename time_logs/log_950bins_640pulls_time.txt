@@ -8096,17 +8096,122 @@
 3 PROcess_CAFAna || Start reading the files..
 3 PROcess_CAFAna || Branch pruning fid=0: keeping 85 branches
 3 PROcess_CAFAna || File 0 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt) -- uni : 0 / 132217  took 1 seconds
-3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 663 seconds
-3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 681 seconds
-3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 630 seconds
-3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 553 seconds
-3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 569 seconds
-3 PROcess_CAFAna || Finish reading files, it took 3097 seconds..
+3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 276 seconds
+3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 286 seconds
+3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 284 seconds
+3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 284 seconds
+3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 283 seconds
+3 PROcess_CAFAna || Finish reading files, it took 1414 seconds..
 3 PROcess_CAFAna || DONE
-terminate called after throwing an instance of 'boost::archive::archive_exception'
-  what():  output stream error
-run.sh: line 31: 369344 Aborted                 (core dumped) PROfit -x .././xml/scale_${tag}.xml -t scaling${tag} process
+3 save || Serialization save of PROpeller into file  scaling950bins_640pulls_prop.bin took 0.116747 seconds
+3 main || Done processing PROpeller and PROsysts from XML defined root files, and saving to binary output also: scaling950bins_640pulls_prop.bin
+3 PROseed || For 1+1 threads we precalculated thread seeds as: [2888867379, 2548892826] 
+3 PROnueapp || setting up a model nueapp, with  2 params.
+3 PROnueapp || Param 0 is dmsq with lower bound/upper bound of -2/2 and default -2
+3 PROnueapp || Param 1 is sinsq2thme with lower bound/upper bound of -10/0 and default -10
+3 PROsyst || SumMatrix for index 0 
+3 PROsyst || SumMatrix for index 0 DONE 
+3 PROsyst || SumMatrix for index 1 
+3 PROsyst || SumMatrix for index 1 DONE 
+3 main || model->default_val: [-2, -10]
+3 main || fake_data_osc_param_vector: [-2, -10]
+3 main || fakedataparams (physics portion): -2 -10
+3 main || Going to get fake data set up for each variable.
+3 main || Starting from fit preset :  [good, fast].
+3 PROfitterConfig ||Fit and  L-BFGS-B parameters for the Detailed Global minimia finder.  
+3 print || Printing PROfitterConfig Values.
+3 print || ------------ PROfitter specific -------------- 
+3 print || n_latin_points: 2000  
+3 print || latin_diversity_factor: 0.5  
+3 print || n_localfit: 8  
+3 print || n_max_local_retries: 1  
+3 print || ------------ Particle Swarm Optimization -------------- 
+3 print || n_swarm_particles: 25  
+3 print || n_swarm_iterations: 100  
+3 print || n_swarm_max_stagnent_iterations: 50  
+3 print || swarm_inertia_start: 0.9  
+3 print || swarm_inertia_end: 0.6  
+3 print || swarm_cognitive_score: 2  
+3 print || swarm_social_score: 2  
+3 print || swarm_convergence_threshold: 0.0001  
+3 print || ------------ MCMC Parameters -------------- 
+3 print || MCMCiter: 20000  
+3 print || MCMCburn: 25000  
+3 print || ------------ Harmonic Seed Search -------------- 
+3 print || harmonic_min_num_seeds: 2  
+3 print || harmonic_max_num_seeds: 4  
+3 print || harmonic_num_test_points: 125  
+3 print || harmonic_raw_max_tests: 60  
+3 print || harmonic_prominence_threshold: 0.5  
+3 print || harmonic_prominence_threshold_shift: 0.2  
+3 print || harmonic_min_spacing_log: 0.025  
+3 print || harmonic_prominence_threshold_minimum: 1e-05  
+3 print || harmonic_seed_norm_tolerance: 0.0001  
+3 print || harmonic_seed_chi_tolerence: 1e-06  
+3 print || harmonic_scan_fit: 0  
+3 print || ------------ LBFGSBParam -------------- 
+3 print || m: 6   
+3 print || epsilon: 1e-05  
+3 print || epsilon_rel: 1e-05  
+3 print || past: 1   
+3 print || delta: 1e-06  
+3 print || max_iterations: 150  
+3 print || max_submin: 10   
+3 print || max_linesearch: 20   
+3 print || min_step: 1.19209e-07  ) 
+3 print || max_step: 1e+20   
+3 print || ftol: 0.0001   
+3 print || wolfe: 0.9   
+3 print || --------------------------------------- 
+3 PROfitterConfig ||Fit and  L-BFGS-B parameters for the Simplier Scan minimia finder.  
+3 print || Printing PROfitterConfig Values.
+3 print || ------------ PROfitter specific -------------- 
+3 print || n_latin_points: 750  
+3 print || latin_diversity_factor: 0.5  
+3 print || n_localfit: 4  
+3 print || n_max_local_retries: 1  
+3 print || ------------ Particle Swarm Optimization -------------- 
+3 print || n_swarm_particles: 15  
+3 print || n_swarm_iterations: 100  
+3 print || n_swarm_max_stagnent_iterations: 50  
+3 print || swarm_inertia_start: 0.9  
+3 print || swarm_inertia_end: 0.6  
+3 print || swarm_cognitive_score: 2  
+3 print || swarm_social_score: 2  
+3 print || swarm_convergence_threshold: 0.0001  
+3 print || ------------ MCMC Parameters -------------- 
+3 print || MCMCiter: 20000  
+3 print || MCMCburn: 25000  
+3 print || ------------ Harmonic Seed Search -------------- 
+3 print || harmonic_min_num_seeds: 2  
+3 print || harmonic_max_num_seeds: 4  
+3 print || harmonic_num_test_points: 125  
+3 print || harmonic_raw_max_tests: 60  
+3 print || harmonic_prominence_threshold: 0.5  
+3 print || harmonic_prominence_threshold_shift: 0.2  
+3 print || harmonic_min_spacing_log: 0.025  
+3 print || harmonic_prominence_threshold_minimum: 1e-05  
+3 print || harmonic_seed_norm_tolerance: 0.0001  
+3 print || harmonic_seed_chi_tolerence: 1e-06  
+3 print || harmonic_scan_fit: 0  
+3 print || ------------ LBFGSBParam -------------- 
+3 print || m: 6   
+3 print || epsilon: 1e-05  
+3 print || epsilon_rel: 1e-05  
+3 print || past: 1   
+3 print || delta: 1e-06  
+3 print || max_iterations: 100  
+3 print || max_submin: 10   
+3 print || max_linesearch: 20   
+3 print || min_step: 1.19209e-07  ) 
+3 print || max_step: 1e+20   
+3 print || ftol: 0.0001   
+3 print || wolfe: 0.9   
+3 print || --------------------------------------- 
+3 main || Gradient mode: central-full
+3 main || We are hoping to FIX : [] 
+3 main || Total run time: 1481028255
 
-real	51m45.902s
-user	25m33.839s
-sys	0m3.334s
+real	24m41.222s
+user	24m33.395s
+sys	0m2.634s

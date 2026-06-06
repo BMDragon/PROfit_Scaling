@@ -934,16 +934,16 @@
 3 PROcess_CAFAna || Start reading the files..
 3 PROcess_CAFAna || Branch pruning fid=0: keeping 85 branches
 3 PROcess_CAFAna || File 0 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt) -- uni : 0 / 132217  took 0 seconds
-3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 520 seconds
-3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 524 seconds
-3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 497 seconds
-3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 465 seconds
-3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 409 seconds
-3 PROcess_CAFAna || Finish reading files, it took 2415 seconds..
+3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 211 seconds
+3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 213 seconds
+3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 215 seconds
+3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 221 seconds
+3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 217 seconds
+3 PROcess_CAFAna || Finish reading files, it took 1077 seconds..
 3 PROcess_CAFAna || DONE
-3 save || Serialization save of PROpeller into file  scaling1500bins_40pulls_prop.bin took 2.45806 seconds
+3 save || Serialization save of PROpeller into file  scaling1500bins_40pulls_prop.bin took 0.284975 seconds
 3 main || Done processing PROpeller and PROsysts from XML defined root files, and saving to binary output also: scaling1500bins_40pulls_prop.bin
-3 PROseed || For 1+1 threads we precalculated thread seeds as: [2378881446, 4047757479] 
+3 PROseed || For 1+1 threads we precalculated thread seeds as: [733992880, 2283792873] 
 3 PROnueapp || setting up a model nueapp, with  2 params.
 3 PROnueapp || Param 0 is dmsq with lower bound/upper bound of -2/2 and default -2
 3 PROnueapp || Param 1 is sinsq2thme with lower bound/upper bound of -10/0 and default -10
@@ -963,6 +963,6 @@
 1 main || Default-CV collapsed bin 1488 has 0 expected events (<=0). Empty-bin would make CNP/stat covariance singular.
 1 main || 6 collapsed CV bins are empty. Aborting. Re-run with --force to override (NOT recommended).
 
-real	50m40.613s
-user	25m8.737s
-sys	0m3.662s
+real	22m3.857s
+user	21m55.698s
+sys	0m2.809s

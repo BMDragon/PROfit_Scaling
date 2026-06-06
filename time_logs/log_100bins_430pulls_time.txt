@@ -6205,17 +6205,17 @@
 3 PROcess_CAFAna || found mode covariance for systematic piplus_Flux: 
 3 PROcess_CAFAna || Start reading the files..
 3 PROcess_CAFAna || Branch pruning fid=0: keeping 85 branches
-3 PROcess_CAFAna || File 0 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt) -- uni : 0 / 132217  took 1 seconds
-3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 440 seconds
-3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 458 seconds
-3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 430 seconds
-3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 455 seconds
-3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 446 seconds
-3 PROcess_CAFAna || Finish reading files, it took 2230 seconds..
+3 PROcess_CAFAna || File 0 (/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt) -- uni : 0 / 132217  took 0 seconds
+3 PROcess_CAFAna || File 0 -- uni : 26443 / 132217  took 122 seconds
+3 PROcess_CAFAna || File 0 -- uni : 52886 / 132217  took 123 seconds
+3 PROcess_CAFAna || File 0 -- uni : 79329 / 132217  took 123 seconds
+3 PROcess_CAFAna || File 0 -- uni : 105772 / 132217  took 124 seconds
+3 PROcess_CAFAna || File 0 -- uni : 132215 / 132217  took 121 seconds
+3 PROcess_CAFAna || Finish reading files, it took 613 seconds..
 3 PROcess_CAFAna || DONE
-3 save || Serialization save of PROpeller into file  scaling100bins_430pulls_prop.bin took 0.0436708 seconds
+3 save || Serialization save of PROpeller into file  scaling100bins_430pulls_prop.bin took 0.00421251 seconds
 3 main || Done processing PROpeller and PROsysts from XML defined root files, and saving to binary output also: scaling100bins_430pulls_prop.bin
-3 PROseed || For 1+1 threads we precalculated thread seeds as: [182044600, 1252818522] 
+3 PROseed || For 1+1 threads we precalculated thread seeds as: [3386110885, 855271708] 
 3 PROnueapp || setting up a model nueapp, with  2 params.
 3 PROnueapp || Param 0 is dmsq with lower bound/upper bound of -2/2 and default -2
 3 PROnueapp || Param 1 is sinsq2thme with lower bound/upper bound of -10/0 and default -10
@@ -6320,8 +6320,8 @@
 3 print || --------------------------------------- 
 3 main || Gradient mode: central-full
 3 main || We are hoping to FIX : [] 
-3 main || Total run time: 2233943226
+3 main || Total run time: 614738974
 
-real	37m14.121s
-user	15m37.956s
-sys	0m2.243s
+real	10m14.847s
+user	10m10.309s
+sys	0m1.760s

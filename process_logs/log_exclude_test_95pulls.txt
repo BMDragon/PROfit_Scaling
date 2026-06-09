@@ -1,0 +1,1447 @@
+3 Load || Loading Bounds for plot_channels 
+2  
+            ....                                                                                                  
+            .=+=-..                                            .:                                                 
+            .:=++=-.                              .-=+*****+=-+@=.   :+##-  :#%=                                 
+            .-+++=-.               .::.      .*#*=--:::--+#@@@=  :#=*@%. :@@=                                 
+            .:=+++=-.            :++=-.    ...         :**=-.  .. %@#. +@+                                  
+            .:-++++=:.        .=++++=-.                        :@@= =@+                                   
+            .-=++++=:.     -++++++++-.                      =@@=*%-                                    
+            :=+-. .-+= .:=+++++=:. .+++++++++++-.             .--.   .*%#=.                                     
+            .=+=%%:  +@*.   .-++++++==+++++++++++++-.           -+++:                                             
+            .. :%%: .##.      .:=++++++++++:.-+++++++-.        :+++++-.                                           
+            *@* .*#.      .:..:=+++++++-   .-+++++++-.     .+++++++=:                    .::.                  
+            .#@=:*+.       :*=   .-++++=.     .-+++++++-.  .=+++++++++-.                  .+*#*-.               
+            =##+-         :*=     .:==.        .-=++++++-.-+++++++++++=.                    .-*%=              
+            .:=+. ..        .:.-*+:::.                .:=++++++++++++=+++++++:                      -@*.            
+            :**%%*.          =*+++++++.       .=-.       .-++++++++++-.:=++++++-.                     :@+            
+            ..*+:*:          =*+++++++.       :++.         .-=++++++=.  .-++++++=:                     +@:           
+            -%.             =*+**++++.    .::-++:::.        .:+++++.     :+++++++-.                 .+=@==.         
+            +*              .::::++++.    -++++++++:       .. .-=+:       .=++++++=.                .+@@@*.         
+            +#          :======: -**+.    -++++++++:      .=+:  ..         .:+++++++-.                :=:           
+            :%:        .-******- .-=+.    -++++++++:       +*:               .=++++++=.                :-.   .-:.   
+            +#.   .:-==++++++++==-:.     -++++++++:   .---++=--:      .::.   .-+++++++:            .-##@@:  *@@.   
+            .-: :=+*****+++++++***++-.   -++++++++:   :***++***-      .++:     :=++++++-.          .=::@@-  *@+.   
+            .=+*+++*+++++++++*++++*+:  -++++++++:   :+++++++*-   ....=+:...   .-++++++=:     ...    +@@. =@+     
+            .=*+++++-..:*++++.-+*+++*+. -++++++++:   :+++++++*-   .===+++=+:     :+++++++-.  .=+:   .%@*.+@=      
+            .+++++++.  :*++++. .+++++=: -++++++++:   :+++++++*-   .++++++++:      .=++++++=..=++=.  .#@%##:       
+            .+++++++=..:*++++.  .....   -++++++++:   :+++++++*-   .++++++++:       .:+++++++=++++.   .-=:         
+            .-*+++++*++++++++.          -++++++++:   :+++++++*-   .++++++++:     ....:+++++++++++-                
+            .-+**++++++++++++==-:.     -++++++++:   :+++++++*-   .++++++++:  .=====++++++++++++++.               
+            .-=++***+++++++***++-.   :===++===.   :+++++++*-   .++++++++:  .:-+++++++++++++++++-               
+            ..:--=+++++**++++*+-.    :+=.      :+++++++*-   .++++++++:     .:=++++++++++++++=.              
+            .     :*++++-=++++++*-    :+=.      :++++++++-   .:::++-::.    .-: .:=++++++++++++:              
+            .=====+-    :*++++..:+++++++.   :++.      ....+*:...      .=+.    ...:*+... .:=+++++++++=.             
+            .+*****+:   :*++++.  =*+++++.   .+=.         .+*:         .++:    .+++++++=    .-=+++++++:             
+            :+++++*+=:.:*++++.:=+++++*-    ...          .+*:         .-=.    .++++++*=      ..-=++++-             
+            :+**+++**+++++++++*+++*+-.                 .++:                 .+**++**=         .:-=++.            
+            .-=+*****++++++****++=.                   ....                 .::-*+-::            .::.            
+            ..:-==++++++++==-:.                                             :*+                               
+            :******:.                                                 .-:.                              
+            .======.                                                                                    
+            .::::::::::.      .::::::::::..           .:--=--:..           .-+*####=  .--:                       
+            =@@@@@@@@@@@%*-.  =@@@@@@@@@@@%*-.     .=#%@@@@@@@@%*-.       -%@@@@@@@= :@@@@-   .----.             
+            =@@@@#**##@@@@@#. =@@@@#***#%@@@@*.  .+@@@@@#*++*%@@@@#:      #@@@*..... .#%%#:   .%%%%:             
+            =@@@@:    .+@@@@+ =@@@@-    .=@@@@+ .*@@@@+.     .:#@@@@-  -==%@@@*====. .====. -==@@@@+===:         
+            =@@@@:     -@@@@* =@@@@-     -@@@@* =@@@@+  .....  .%@@@%. %@@@@@@@@@@@- :@@@@. %@@@@@@@@@@=         
+            =@@@@-::::=%@@@@: =@@@@+--==*@@@@%: #@@@@: ........ +@@@@- ---%@@@*----. :@@@@. --=@@@@*---.         
+            =@@@@@@@@@@@@@%-  =@@@@@@@@@@@@#+.  #@@@@. ........ =@@@@-    #@@@=      :@@@@.   .@@@@-             
+            =@@@@%%%###*+-.   =@@@@*++#@@@%:    +@@@@=  ...... .#@@@@.    #@@@=      :@@@@.   .@@@@=             
+            =@@@@:            =@@@@-  .*@@@%-   .#@@@@=.      .*@@@@=     #@@@=      :@@@@.   .@@@@-             
+            =@@@@:            =@@@@-   .*@@@@=   .*@@@@%*===+*@@@@@=      #@@@=      :@@@@.   .%@@@#==+:         
+            =@@@@:            =@@@@-     +@@@@+.   -*%@@@@@@@@@@%+:       %@@@=      :@@@@.    =%@@@@@@*         
+            :===-.            :====.      -====.     .:-=++++=-:.         -===:      .===-.     .-=++=-:         
+             
+2 main || ##################################################################
+2 main || ####################### PROfit version v2.3.0 ######################
+2 main || ##################################################################
+2 main || PROfit commandline input arguments. xml: .././xml/scale_100bins_1000pulls.xml, tag: scaling100bins_1000pulls, output v1, nthread: 1 
+3 LoadFromXML || Correctly loaded and parsed XML, continuing
+3 LoadFromXML || num_variation_type_covariance: 36 
+3 LoadFromXML || num_variation_type_covariance_to_spline: 0 
+3 LoadFromXML || num_variation_type_external_ovariance: 0 
+3 LoadFromXML || num_variation_type_flat: 0 
+3 LoadFromXML || num_variation_type_norm: 1000 
+3 LoadFromXML || num_variation_type_spline: 0 
+3 LoadFromXML || num_variation_type_spline_to_covariance: 0 
+3 LoadFromXML || Using MC intrinsic stat uncertainty. 
+3 remove_unused_channel || Remove any used channels and subchannels...
+3 remove_unused_channel || fullname of subchannel: nu_SBND_numu_numucc 
+3 CalcTotalBins || calculating number of bins involved
+3 CalcTotalBins || Generating Index maps for convenience
+3 generate_index_map || Generate map between subchannel and global indices..
+3 CalcTotalBins || On variable 0 bin widths are size 100 and  [0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.0280001, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.028, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001, 0.0279999, 0.0280001] 
+3 CalcTotalBins || On variable 1 bin widths are size 100 and  [0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03] 
+3 CalcTotalBins || On variable 2 bin widths are size 100 and  [0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.0300001, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.0300002, 0.03] 
+3 LoadFromXML || Checking number of Mode/Detector/Channel/Subchannels and BINs
+3 LoadFromXML || num_modes: 1 
+3 LoadFromXML || num_detectors: 1 
+3 LoadFromXML || num_channels: 1 
+3 LoadFromXML || num of subchannels: 1 
+3 LoadFromXML || variable 0 num_bins_total: 100
+3 LoadFromXML || variable 0 num_bins_total_collapsed: 100
+3 LoadFromXML || variable 1 num_bins_total: 100
+3 LoadFromXML || variable 1 num_bins_total_collapsed: 100
+3 LoadFromXML || variable 2 num_bins_total: 100
+3 LoadFromXML || variable 2 num_bins_total_collapsed: 100
+3 LoadFromXML || Done reading the xmls
+3 CalcHash || MurmurHash output hash 3282056619 
+3 CalcDetVarHash || MurmurHash detvar_hash output 1776439934 
+3 construct_variable_collapsing_matrices || Creating Collapsing Matrices 
+3 construct_variable_collapsing_matrices || Creating Variable 0 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  100  100
+3 construct_variable_collapsing_matrices || Creating Variable 1 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  100  100
+3 construct_variable_collapsing_matrices || Creating Variable 2 Collapsing Matrix. m_num_variable_bins_total[io], m_num_variable_bins_total[io]_collapsed:  100  100
+3 main || Loading PROpeller and PROsysts from precalc binary input: scaling100bins_1000pulls_prop.bin
+3 load || Serialization load of PROpeller from file  scaling100bins_1000pulls_prop.bin took 0.0500098 seconds
+3 main || Done loading. Config hash (3282056619) and binary loaded PROpeller (3282056619) are here. 
+3 main || Done loading. Config hash (3282056619) and binary loaded PROsyst hash(3282056619) are here. 
+3 PROseed || For 1+1 threads we precalculated thread seeds as: [3937942024, 4171310701] 
+3 PROnueapp || setting up a model nueapp, with  2 params.
+3 PROnueapp || Param 0 is dmsq with lower bound/upper bound of -2/2 and default -2
+3 PROnueapp || Param 1 is sinsq2thme with lower bound/upper bound of -10/0 and default -10
+3 PROsyst || SumMatrix for index 0 
+3 PROsyst || SumMatrix for index 0 DONE 
+3 PROsyst || SumMatrix for index 1 
+3 PROsyst || SumMatrix for index 1 DONE 
+3 main || model->default_val: [-2, -10]
+3 main || fake_data_osc_param_vector: [-2, -10]
+3 main || fakedataparams (physics portion): -2 -10
+3 main || Going to get fake data set up for each variable.
+3 main || Excluding systematic dummynorm95 by command line argument.
+3 main || Excluding systematic dummynorm96 by command line argument.
+3 main || Excluding systematic dummynorm97 by command line argument.
+3 main || Excluding systematic dummynorm98 by command line argument.
+3 main || Excluding systematic dummynorm99 by command line argument.
+3 main || Excluding systematic dummynorm100 by command line argument.
+3 main || Excluding systematic dummynorm101 by command line argument.
+3 main || Excluding systematic dummynorm102 by command line argument.
+3 main || Excluding systematic dummynorm103 by command line argument.
+3 main || Excluding systematic dummynorm104 by command line argument.
+3 main || Excluding systematic dummynorm105 by command line argument.
+3 main || Excluding systematic dummynorm106 by command line argument.
+3 main || Excluding systematic dummynorm107 by command line argument.
+3 main || Excluding systematic dummynorm108 by command line argument.
+3 main || Excluding systematic dummynorm109 by command line argument.
+3 main || Excluding systematic dummynorm110 by command line argument.
+3 main || Excluding systematic dummynorm111 by command line argument.
+3 main || Excluding systematic dummynorm112 by command line argument.
+3 main || Excluding systematic dummynorm113 by command line argument.
+3 main || Excluding systematic dummynorm114 by command line argument.
+3 main || Excluding systematic dummynorm115 by command line argument.
+3 main || Excluding systematic dummynorm116 by command line argument.
+3 main || Excluding systematic dummynorm117 by command line argument.
+3 main || Excluding systematic dummynorm118 by command line argument.
+3 main || Excluding systematic dummynorm119 by command line argument.
+3 main || Excluding systematic dummynorm120 by command line argument.
+3 main || Excluding systematic dummynorm121 by command line argument.
+3 main || Excluding systematic dummynorm122 by command line argument.
+3 main || Excluding systematic dummynorm123 by command line argument.
+3 main || Excluding systematic dummynorm124 by command line argument.
+3 main || Excluding systematic dummynorm125 by command line argument.
+3 main || Excluding systematic dummynorm126 by command line argument.
+3 main || Excluding systematic dummynorm127 by command line argument.
+3 main || Excluding systematic dummynorm128 by command line argument.
+3 main || Excluding systematic dummynorm129 by command line argument.
+3 main || Excluding systematic dummynorm130 by command line argument.
+3 main || Excluding systematic dummynorm131 by command line argument.
+3 main || Excluding systematic dummynorm132 by command line argument.
+3 main || Excluding systematic dummynorm133 by command line argument.
+3 main || Excluding systematic dummynorm134 by command line argument.
+3 main || Excluding systematic dummynorm135 by command line argument.
+3 main || Excluding systematic dummynorm136 by command line argument.
+3 main || Excluding systematic dummynorm137 by command line argument.
+3 main || Excluding systematic dummynorm138 by command line argument.
+3 main || Excluding systematic dummynorm139 by command line argument.
+3 main || Excluding systematic dummynorm140 by command line argument.
+3 main || Excluding systematic dummynorm141 by command line argument.
+3 main || Excluding systematic dummynorm142 by command line argument.
+3 main || Excluding systematic dummynorm143 by command line argument.
+3 main || Excluding systematic dummynorm144 by command line argument.
+3 main || Excluding systematic dummynorm145 by command line argument.
+3 main || Excluding systematic dummynorm146 by command line argument.
+3 main || Excluding systematic dummynorm147 by command line argument.
+3 main || Excluding systematic dummynorm148 by command line argument.
+3 main || Excluding systematic dummynorm149 by command line argument.
+3 main || Excluding systematic dummynorm150 by command line argument.
+3 main || Excluding systematic dummynorm151 by command line argument.
+3 main || Excluding systematic dummynorm152 by command line argument.
+3 main || Excluding systematic dummynorm153 by command line argument.
+3 main || Excluding systematic dummynorm154 by command line argument.
+3 main || Excluding systematic dummynorm155 by command line argument.
+3 main || Excluding systematic dummynorm156 by command line argument.
+3 main || Excluding systematic dummynorm157 by command line argument.
+3 main || Excluding systematic dummynorm158 by command line argument.
+3 main || Excluding systematic dummynorm159 by command line argument.
+3 main || Excluding systematic dummynorm160 by command line argument.
+3 main || Excluding systematic dummynorm161 by command line argument.
+3 main || Excluding systematic dummynorm162 by command line argument.
+3 main || Excluding systematic dummynorm163 by command line argument.
+3 main || Excluding systematic dummynorm164 by command line argument.
+3 main || Excluding systematic dummynorm165 by command line argument.
+3 main || Excluding systematic dummynorm166 by command line argument.
+3 main || Excluding systematic dummynorm167 by command line argument.
+3 main || Excluding systematic dummynorm168 by command line argument.
+3 main || Excluding systematic dummynorm169 by command line argument.
+3 main || Excluding systematic dummynorm170 by command line argument.
+3 main || Excluding systematic dummynorm171 by command line argument.
+3 main || Excluding systematic dummynorm172 by command line argument.
+3 main || Excluding systematic dummynorm173 by command line argument.
+3 main || Excluding systematic dummynorm174 by command line argument.
+3 main || Excluding systematic dummynorm175 by command line argument.
+3 main || Excluding systematic dummynorm176 by command line argument.
+3 main || Excluding systematic dummynorm177 by command line argument.
+3 main || Excluding systematic dummynorm178 by command line argument.
+3 main || Excluding systematic dummynorm179 by command line argument.
+3 main || Excluding systematic dummynorm180 by command line argument.
+3 main || Excluding systematic dummynorm181 by command line argument.
+3 main || Excluding systematic dummynorm182 by command line argument.
+3 main || Excluding systematic dummynorm183 by command line argument.
+3 main || Excluding systematic dummynorm184 by command line argument.
+3 main || Excluding systematic dummynorm185 by command line argument.
+3 main || Excluding systematic dummynorm186 by command line argument.
+3 main || Excluding systematic dummynorm187 by command line argument.
+3 main || Excluding systematic dummynorm188 by command line argument.
+3 main || Excluding systematic dummynorm189 by command line argument.
+3 main || Excluding systematic dummynorm190 by command line argument.
+3 main || Excluding systematic dummynorm191 by command line argument.
+3 main || Excluding systematic dummynorm192 by command line argument.
+3 main || Excluding systematic dummynorm193 by command line argument.
+3 main || Excluding systematic dummynorm194 by command line argument.
+3 main || Excluding systematic dummynorm195 by command line argument.
+3 main || Excluding systematic dummynorm196 by command line argument.
+3 main || Excluding systematic dummynorm197 by command line argument.
+3 main || Excluding systematic dummynorm198 by command line argument.
+3 main || Excluding systematic dummynorm199 by command line argument.
+3 main || Excluding systematic dummynorm200 by command line argument.
+3 main || Excluding systematic dummynorm201 by command line argument.
+3 main || Excluding systematic dummynorm202 by command line argument.
+3 main || Excluding systematic dummynorm203 by command line argument.
+3 main || Excluding systematic dummynorm204 by command line argument.
+3 main || Excluding systematic dummynorm205 by command line argument.
+3 main || Excluding systematic dummynorm206 by command line argument.
+3 main || Excluding systematic dummynorm207 by command line argument.
+3 main || Excluding systematic dummynorm208 by command line argument.
+3 main || Excluding systematic dummynorm209 by command line argument.
+3 main || Excluding systematic dummynorm210 by command line argument.
+3 main || Excluding systematic dummynorm211 by command line argument.
+3 main || Excluding systematic dummynorm212 by command line argument.
+3 main || Excluding systematic dummynorm213 by command line argument.
+3 main || Excluding systematic dummynorm214 by command line argument.
+3 main || Excluding systematic dummynorm215 by command line argument.
+3 main || Excluding systematic dummynorm216 by command line argument.
+3 main || Excluding systematic dummynorm217 by command line argument.
+3 main || Excluding systematic dummynorm218 by command line argument.
+3 main || Excluding systematic dummynorm219 by command line argument.
+3 main || Excluding systematic dummynorm220 by command line argument.
+3 main || Excluding systematic dummynorm221 by command line argument.
+3 main || Excluding systematic dummynorm222 by command line argument.
+3 main || Excluding systematic dummynorm223 by command line argument.
+3 main || Excluding systematic dummynorm224 by command line argument.
+3 main || Excluding systematic dummynorm225 by command line argument.
+3 main || Excluding systematic dummynorm226 by command line argument.
+3 main || Excluding systematic dummynorm227 by command line argument.
+3 main || Excluding systematic dummynorm228 by command line argument.
+3 main || Excluding systematic dummynorm229 by command line argument.
+3 main || Excluding systematic dummynorm230 by command line argument.
+3 main || Excluding systematic dummynorm231 by command line argument.
+3 main || Excluding systematic dummynorm232 by command line argument.
+3 main || Excluding systematic dummynorm233 by command line argument.
+3 main || Excluding systematic dummynorm234 by command line argument.
+3 main || Excluding systematic dummynorm235 by command line argument.
+3 main || Excluding systematic dummynorm236 by command line argument.
+3 main || Excluding systematic dummynorm237 by command line argument.
+3 main || Excluding systematic dummynorm238 by command line argument.
+3 main || Excluding systematic dummynorm239 by command line argument.
+3 main || Excluding systematic dummynorm240 by command line argument.
+3 main || Excluding systematic dummynorm241 by command line argument.
+3 main || Excluding systematic dummynorm242 by command line argument.
+3 main || Excluding systematic dummynorm243 by command line argument.
+3 main || Excluding systematic dummynorm244 by command line argument.
+3 main || Excluding systematic dummynorm245 by command line argument.
+3 main || Excluding systematic dummynorm246 by command line argument.
+3 main || Excluding systematic dummynorm247 by command line argument.
+3 main || Excluding systematic dummynorm248 by command line argument.
+3 main || Excluding systematic dummynorm249 by command line argument.
+3 main || Excluding systematic dummynorm250 by command line argument.
+3 main || Excluding systematic dummynorm251 by command line argument.
+3 main || Excluding systematic dummynorm252 by command line argument.
+3 main || Excluding systematic dummynorm253 by command line argument.
+3 main || Excluding systematic dummynorm254 by command line argument.
+3 main || Excluding systematic dummynorm255 by command line argument.
+3 main || Excluding systematic dummynorm256 by command line argument.
+3 main || Excluding systematic dummynorm257 by command line argument.
+3 main || Excluding systematic dummynorm258 by command line argument.
+3 main || Excluding systematic dummynorm259 by command line argument.
+3 main || Excluding systematic dummynorm260 by command line argument.
+3 main || Excluding systematic dummynorm261 by command line argument.
+3 main || Excluding systematic dummynorm262 by command line argument.
+3 main || Excluding systematic dummynorm263 by command line argument.
+3 main || Excluding systematic dummynorm264 by command line argument.
+3 main || Excluding systematic dummynorm265 by command line argument.
+3 main || Excluding systematic dummynorm266 by command line argument.
+3 main || Excluding systematic dummynorm267 by command line argument.
+3 main || Excluding systematic dummynorm268 by command line argument.
+3 main || Excluding systematic dummynorm269 by command line argument.
+3 main || Excluding systematic dummynorm270 by command line argument.
+3 main || Excluding systematic dummynorm271 by command line argument.
+3 main || Excluding systematic dummynorm272 by command line argument.
+3 main || Excluding systematic dummynorm273 by command line argument.
+3 main || Excluding systematic dummynorm274 by command line argument.
+3 main || Excluding systematic dummynorm275 by command line argument.
+3 main || Excluding systematic dummynorm276 by command line argument.
+3 main || Excluding systematic dummynorm277 by command line argument.
+3 main || Excluding systematic dummynorm278 by command line argument.
+3 main || Excluding systematic dummynorm279 by command line argument.
+3 main || Excluding systematic dummynorm280 by command line argument.
+3 main || Excluding systematic dummynorm281 by command line argument.
+3 main || Excluding systematic dummynorm282 by command line argument.
+3 main || Excluding systematic dummynorm283 by command line argument.
+3 main || Excluding systematic dummynorm284 by command line argument.
+3 main || Excluding systematic dummynorm285 by command line argument.
+3 main || Excluding systematic dummynorm286 by command line argument.
+3 main || Excluding systematic dummynorm287 by command line argument.
+3 main || Excluding systematic dummynorm288 by command line argument.
+3 main || Excluding systematic dummynorm289 by command line argument.
+3 main || Excluding systematic dummynorm290 by command line argument.
+3 main || Excluding systematic dummynorm291 by command line argument.
+3 main || Excluding systematic dummynorm292 by command line argument.
+3 main || Excluding systematic dummynorm293 by command line argument.
+3 main || Excluding systematic dummynorm294 by command line argument.
+3 main || Excluding systematic dummynorm295 by command line argument.
+3 main || Excluding systematic dummynorm296 by command line argument.
+3 main || Excluding systematic dummynorm297 by command line argument.
+3 main || Excluding systematic dummynorm298 by command line argument.
+3 main || Excluding systematic dummynorm299 by command line argument.
+3 main || Excluding systematic dummynorm300 by command line argument.
+3 main || Excluding systematic dummynorm301 by command line argument.
+3 main || Excluding systematic dummynorm302 by command line argument.
+3 main || Excluding systematic dummynorm303 by command line argument.
+3 main || Excluding systematic dummynorm304 by command line argument.
+3 main || Excluding systematic dummynorm305 by command line argument.
+3 main || Excluding systematic dummynorm306 by command line argument.
+3 main || Excluding systematic dummynorm307 by command line argument.
+3 main || Excluding systematic dummynorm308 by command line argument.
+3 main || Excluding systematic dummynorm309 by command line argument.
+3 main || Excluding systematic dummynorm310 by command line argument.
+3 main || Excluding systematic dummynorm311 by command line argument.
+3 main || Excluding systematic dummynorm312 by command line argument.
+3 main || Excluding systematic dummynorm313 by command line argument.
+3 main || Excluding systematic dummynorm314 by command line argument.
+3 main || Excluding systematic dummynorm315 by command line argument.
+3 main || Excluding systematic dummynorm316 by command line argument.
+3 main || Excluding systematic dummynorm317 by command line argument.
+3 main || Excluding systematic dummynorm318 by command line argument.
+3 main || Excluding systematic dummynorm319 by command line argument.
+3 main || Excluding systematic dummynorm320 by command line argument.
+3 main || Excluding systematic dummynorm321 by command line argument.
+3 main || Excluding systematic dummynorm322 by command line argument.
+3 main || Excluding systematic dummynorm323 by command line argument.
+3 main || Excluding systematic dummynorm324 by command line argument.
+3 main || Excluding systematic dummynorm325 by command line argument.
+3 main || Excluding systematic dummynorm326 by command line argument.
+3 main || Excluding systematic dummynorm327 by command line argument.
+3 main || Excluding systematic dummynorm328 by command line argument.
+3 main || Excluding systematic dummynorm329 by command line argument.
+3 main || Excluding systematic dummynorm330 by command line argument.
+3 main || Excluding systematic dummynorm331 by command line argument.
+3 main || Excluding systematic dummynorm332 by command line argument.
+3 main || Excluding systematic dummynorm333 by command line argument.
+3 main || Excluding systematic dummynorm334 by command line argument.
+3 main || Excluding systematic dummynorm335 by command line argument.
+3 main || Excluding systematic dummynorm336 by command line argument.
+3 main || Excluding systematic dummynorm337 by command line argument.
+3 main || Excluding systematic dummynorm338 by command line argument.
+3 main || Excluding systematic dummynorm339 by command line argument.
+3 main || Excluding systematic dummynorm340 by command line argument.
+3 main || Excluding systematic dummynorm341 by command line argument.
+3 main || Excluding systematic dummynorm342 by command line argument.
+3 main || Excluding systematic dummynorm343 by command line argument.
+3 main || Excluding systematic dummynorm344 by command line argument.
+3 main || Excluding systematic dummynorm345 by command line argument.
+3 main || Excluding systematic dummynorm346 by command line argument.
+3 main || Excluding systematic dummynorm347 by command line argument.
+3 main || Excluding systematic dummynorm348 by command line argument.
+3 main || Excluding systematic dummynorm349 by command line argument.
+3 main || Excluding systematic dummynorm350 by command line argument.
+3 main || Excluding systematic dummynorm351 by command line argument.
+3 main || Excluding systematic dummynorm352 by command line argument.
+3 main || Excluding systematic dummynorm353 by command line argument.
+3 main || Excluding systematic dummynorm354 by command line argument.
+3 main || Excluding systematic dummynorm355 by command line argument.
+3 main || Excluding systematic dummynorm356 by command line argument.
+3 main || Excluding systematic dummynorm357 by command line argument.
+3 main || Excluding systematic dummynorm358 by command line argument.
+3 main || Excluding systematic dummynorm359 by command line argument.
+3 main || Excluding systematic dummynorm360 by command line argument.
+3 main || Excluding systematic dummynorm361 by command line argument.
+3 main || Excluding systematic dummynorm362 by command line argument.
+3 main || Excluding systematic dummynorm363 by command line argument.
+3 main || Excluding systematic dummynorm364 by command line argument.
+3 main || Excluding systematic dummynorm365 by command line argument.
+3 main || Excluding systematic dummynorm366 by command line argument.
+3 main || Excluding systematic dummynorm367 by command line argument.
+3 main || Excluding systematic dummynorm368 by command line argument.
+3 main || Excluding systematic dummynorm369 by command line argument.
+3 main || Excluding systematic dummynorm370 by command line argument.
+3 main || Excluding systematic dummynorm371 by command line argument.
+3 main || Excluding systematic dummynorm372 by command line argument.
+3 main || Excluding systematic dummynorm373 by command line argument.
+3 main || Excluding systematic dummynorm374 by command line argument.
+3 main || Excluding systematic dummynorm375 by command line argument.
+3 main || Excluding systematic dummynorm376 by command line argument.
+3 main || Excluding systematic dummynorm377 by command line argument.
+3 main || Excluding systematic dummynorm378 by command line argument.
+3 main || Excluding systematic dummynorm379 by command line argument.
+3 main || Excluding systematic dummynorm380 by command line argument.
+3 main || Excluding systematic dummynorm381 by command line argument.
+3 main || Excluding systematic dummynorm382 by command line argument.
+3 main || Excluding systematic dummynorm383 by command line argument.
+3 main || Excluding systematic dummynorm384 by command line argument.
+3 main || Excluding systematic dummynorm385 by command line argument.
+3 main || Excluding systematic dummynorm386 by command line argument.
+3 main || Excluding systematic dummynorm387 by command line argument.
+3 main || Excluding systematic dummynorm388 by command line argument.
+3 main || Excluding systematic dummynorm389 by command line argument.
+3 main || Excluding systematic dummynorm390 by command line argument.
+3 main || Excluding systematic dummynorm391 by command line argument.
+3 main || Excluding systematic dummynorm392 by command line argument.
+3 main || Excluding systematic dummynorm393 by command line argument.
+3 main || Excluding systematic dummynorm394 by command line argument.
+3 main || Excluding systematic dummynorm395 by command line argument.
+3 main || Excluding systematic dummynorm396 by command line argument.
+3 main || Excluding systematic dummynorm397 by command line argument.
+3 main || Excluding systematic dummynorm398 by command line argument.
+3 main || Excluding systematic dummynorm399 by command line argument.
+3 main || Excluding systematic dummynorm400 by command line argument.
+3 main || Excluding systematic dummynorm401 by command line argument.
+3 main || Excluding systematic dummynorm402 by command line argument.
+3 main || Excluding systematic dummynorm403 by command line argument.
+3 main || Excluding systematic dummynorm404 by command line argument.
+3 main || Excluding systematic dummynorm405 by command line argument.
+3 main || Excluding systematic dummynorm406 by command line argument.
+3 main || Excluding systematic dummynorm407 by command line argument.
+3 main || Excluding systematic dummynorm408 by command line argument.
+3 main || Excluding systematic dummynorm409 by command line argument.
+3 main || Excluding systematic dummynorm410 by command line argument.
+3 main || Excluding systematic dummynorm411 by command line argument.
+3 main || Excluding systematic dummynorm412 by command line argument.
+3 main || Excluding systematic dummynorm413 by command line argument.
+3 main || Excluding systematic dummynorm414 by command line argument.
+3 main || Excluding systematic dummynorm415 by command line argument.
+3 main || Excluding systematic dummynorm416 by command line argument.
+3 main || Excluding systematic dummynorm417 by command line argument.
+3 main || Excluding systematic dummynorm418 by command line argument.
+3 main || Excluding systematic dummynorm419 by command line argument.
+3 main || Excluding systematic dummynorm420 by command line argument.
+3 main || Excluding systematic dummynorm421 by command line argument.
+3 main || Excluding systematic dummynorm422 by command line argument.
+3 main || Excluding systematic dummynorm423 by command line argument.
+3 main || Excluding systematic dummynorm424 by command line argument.
+3 main || Excluding systematic dummynorm425 by command line argument.
+3 main || Excluding systematic dummynorm426 by command line argument.
+3 main || Excluding systematic dummynorm427 by command line argument.
+3 main || Excluding systematic dummynorm428 by command line argument.
+3 main || Excluding systematic dummynorm429 by command line argument.
+3 main || Excluding systematic dummynorm430 by command line argument.
+3 main || Excluding systematic dummynorm431 by command line argument.
+3 main || Excluding systematic dummynorm432 by command line argument.
+3 main || Excluding systematic dummynorm433 by command line argument.
+3 main || Excluding systematic dummynorm434 by command line argument.
+3 main || Excluding systematic dummynorm435 by command line argument.
+3 main || Excluding systematic dummynorm436 by command line argument.
+3 main || Excluding systematic dummynorm437 by command line argument.
+3 main || Excluding systematic dummynorm438 by command line argument.
+3 main || Excluding systematic dummynorm439 by command line argument.
+3 main || Excluding systematic dummynorm440 by command line argument.
+3 main || Excluding systematic dummynorm441 by command line argument.
+3 main || Excluding systematic dummynorm442 by command line argument.
+3 main || Excluding systematic dummynorm443 by command line argument.
+3 main || Excluding systematic dummynorm444 by command line argument.
+3 main || Excluding systematic dummynorm445 by command line argument.
+3 main || Excluding systematic dummynorm446 by command line argument.
+3 main || Excluding systematic dummynorm447 by command line argument.
+3 main || Excluding systematic dummynorm448 by command line argument.
+3 main || Excluding systematic dummynorm449 by command line argument.
+3 main || Excluding systematic dummynorm450 by command line argument.
+3 main || Excluding systematic dummynorm451 by command line argument.
+3 main || Excluding systematic dummynorm452 by command line argument.
+3 main || Excluding systematic dummynorm453 by command line argument.
+3 main || Excluding systematic dummynorm454 by command line argument.
+3 main || Excluding systematic dummynorm455 by command line argument.
+3 main || Excluding systematic dummynorm456 by command line argument.
+3 main || Excluding systematic dummynorm457 by command line argument.
+3 main || Excluding systematic dummynorm458 by command line argument.
+3 main || Excluding systematic dummynorm459 by command line argument.
+3 main || Excluding systematic dummynorm460 by command line argument.
+3 main || Excluding systematic dummynorm461 by command line argument.
+3 main || Excluding systematic dummynorm462 by command line argument.
+3 main || Excluding systematic dummynorm463 by command line argument.
+3 main || Excluding systematic dummynorm464 by command line argument.
+3 main || Excluding systematic dummynorm465 by command line argument.
+3 main || Excluding systematic dummynorm466 by command line argument.
+3 main || Excluding systematic dummynorm467 by command line argument.
+3 main || Excluding systematic dummynorm468 by command line argument.
+3 main || Excluding systematic dummynorm469 by command line argument.
+3 main || Excluding systematic dummynorm470 by command line argument.
+3 main || Excluding systematic dummynorm471 by command line argument.
+3 main || Excluding systematic dummynorm472 by command line argument.
+3 main || Excluding systematic dummynorm473 by command line argument.
+3 main || Excluding systematic dummynorm474 by command line argument.
+3 main || Excluding systematic dummynorm475 by command line argument.
+3 main || Excluding systematic dummynorm476 by command line argument.
+3 main || Excluding systematic dummynorm477 by command line argument.
+3 main || Excluding systematic dummynorm478 by command line argument.
+3 main || Excluding systematic dummynorm479 by command line argument.
+3 main || Excluding systematic dummynorm480 by command line argument.
+3 main || Excluding systematic dummynorm481 by command line argument.
+3 main || Excluding systematic dummynorm482 by command line argument.
+3 main || Excluding systematic dummynorm483 by command line argument.
+3 main || Excluding systematic dummynorm484 by command line argument.
+3 main || Excluding systematic dummynorm485 by command line argument.
+3 main || Excluding systematic dummynorm486 by command line argument.
+3 main || Excluding systematic dummynorm487 by command line argument.
+3 main || Excluding systematic dummynorm488 by command line argument.
+3 main || Excluding systematic dummynorm489 by command line argument.
+3 main || Excluding systematic dummynorm490 by command line argument.
+3 main || Excluding systematic dummynorm491 by command line argument.
+3 main || Excluding systematic dummynorm492 by command line argument.
+3 main || Excluding systematic dummynorm493 by command line argument.
+3 main || Excluding systematic dummynorm494 by command line argument.
+3 main || Excluding systematic dummynorm495 by command line argument.
+3 main || Excluding systematic dummynorm496 by command line argument.
+3 main || Excluding systematic dummynorm497 by command line argument.
+3 main || Excluding systematic dummynorm498 by command line argument.
+3 main || Excluding systematic dummynorm499 by command line argument.
+3 main || Excluding systematic dummynorm500 by command line argument.
+3 main || Excluding systematic dummynorm501 by command line argument.
+3 main || Excluding systematic dummynorm502 by command line argument.
+3 main || Excluding systematic dummynorm503 by command line argument.
+3 main || Excluding systematic dummynorm504 by command line argument.
+3 main || Excluding systematic dummynorm505 by command line argument.
+3 main || Excluding systematic dummynorm506 by command line argument.
+3 main || Excluding systematic dummynorm507 by command line argument.
+3 main || Excluding systematic dummynorm508 by command line argument.
+3 main || Excluding systematic dummynorm509 by command line argument.
+3 main || Excluding systematic dummynorm510 by command line argument.
+3 main || Excluding systematic dummynorm511 by command line argument.
+3 main || Excluding systematic dummynorm512 by command line argument.
+3 main || Excluding systematic dummynorm513 by command line argument.
+3 main || Excluding systematic dummynorm514 by command line argument.
+3 main || Excluding systematic dummynorm515 by command line argument.
+3 main || Excluding systematic dummynorm516 by command line argument.
+3 main || Excluding systematic dummynorm517 by command line argument.
+3 main || Excluding systematic dummynorm518 by command line argument.
+3 main || Excluding systematic dummynorm519 by command line argument.
+3 main || Excluding systematic dummynorm520 by command line argument.
+3 main || Excluding systematic dummynorm521 by command line argument.
+3 main || Excluding systematic dummynorm522 by command line argument.
+3 main || Excluding systematic dummynorm523 by command line argument.
+3 main || Excluding systematic dummynorm524 by command line argument.
+3 main || Excluding systematic dummynorm525 by command line argument.
+3 main || Excluding systematic dummynorm526 by command line argument.
+3 main || Excluding systematic dummynorm527 by command line argument.
+3 main || Excluding systematic dummynorm528 by command line argument.
+3 main || Excluding systematic dummynorm529 by command line argument.
+3 main || Excluding systematic dummynorm530 by command line argument.
+3 main || Excluding systematic dummynorm531 by command line argument.
+3 main || Excluding systematic dummynorm532 by command line argument.
+3 main || Excluding systematic dummynorm533 by command line argument.
+3 main || Excluding systematic dummynorm534 by command line argument.
+3 main || Excluding systematic dummynorm535 by command line argument.
+3 main || Excluding systematic dummynorm536 by command line argument.
+3 main || Excluding systematic dummynorm537 by command line argument.
+3 main || Excluding systematic dummynorm538 by command line argument.
+3 main || Excluding systematic dummynorm539 by command line argument.
+3 main || Excluding systematic dummynorm540 by command line argument.
+3 main || Excluding systematic dummynorm541 by command line argument.
+3 main || Excluding systematic dummynorm542 by command line argument.
+3 main || Excluding systematic dummynorm543 by command line argument.
+3 main || Excluding systematic dummynorm544 by command line argument.
+3 main || Excluding systematic dummynorm545 by command line argument.
+3 main || Excluding systematic dummynorm546 by command line argument.
+3 main || Excluding systematic dummynorm547 by command line argument.
+3 main || Excluding systematic dummynorm548 by command line argument.
+3 main || Excluding systematic dummynorm549 by command line argument.
+3 main || Excluding systematic dummynorm550 by command line argument.
+3 main || Excluding systematic dummynorm551 by command line argument.
+3 main || Excluding systematic dummynorm552 by command line argument.
+3 main || Excluding systematic dummynorm553 by command line argument.
+3 main || Excluding systematic dummynorm554 by command line argument.
+3 main || Excluding systematic dummynorm555 by command line argument.
+3 main || Excluding systematic dummynorm556 by command line argument.
+3 main || Excluding systematic dummynorm557 by command line argument.
+3 main || Excluding systematic dummynorm558 by command line argument.
+3 main || Excluding systematic dummynorm559 by command line argument.
+3 main || Excluding systematic dummynorm560 by command line argument.
+3 main || Excluding systematic dummynorm561 by command line argument.
+3 main || Excluding systematic dummynorm562 by command line argument.
+3 main || Excluding systematic dummynorm563 by command line argument.
+3 main || Excluding systematic dummynorm564 by command line argument.
+3 main || Excluding systematic dummynorm565 by command line argument.
+3 main || Excluding systematic dummynorm566 by command line argument.
+3 main || Excluding systematic dummynorm567 by command line argument.
+3 main || Excluding systematic dummynorm568 by command line argument.
+3 main || Excluding systematic dummynorm569 by command line argument.
+3 main || Excluding systematic dummynorm570 by command line argument.
+3 main || Excluding systematic dummynorm571 by command line argument.
+3 main || Excluding systematic dummynorm572 by command line argument.
+3 main || Excluding systematic dummynorm573 by command line argument.
+3 main || Excluding systematic dummynorm574 by command line argument.
+3 main || Excluding systematic dummynorm575 by command line argument.
+3 main || Excluding systematic dummynorm576 by command line argument.
+3 main || Excluding systematic dummynorm577 by command line argument.
+3 main || Excluding systematic dummynorm578 by command line argument.
+3 main || Excluding systematic dummynorm579 by command line argument.
+3 main || Excluding systematic dummynorm580 by command line argument.
+3 main || Excluding systematic dummynorm581 by command line argument.
+3 main || Excluding systematic dummynorm582 by command line argument.
+3 main || Excluding systematic dummynorm583 by command line argument.
+3 main || Excluding systematic dummynorm584 by command line argument.
+3 main || Excluding systematic dummynorm585 by command line argument.
+3 main || Excluding systematic dummynorm586 by command line argument.
+3 main || Excluding systematic dummynorm587 by command line argument.
+3 main || Excluding systematic dummynorm588 by command line argument.
+3 main || Excluding systematic dummynorm589 by command line argument.
+3 main || Excluding systematic dummynorm590 by command line argument.
+3 main || Excluding systematic dummynorm591 by command line argument.
+3 main || Excluding systematic dummynorm592 by command line argument.
+3 main || Excluding systematic dummynorm593 by command line argument.
+3 main || Excluding systematic dummynorm594 by command line argument.
+3 main || Excluding systematic dummynorm595 by command line argument.
+3 main || Excluding systematic dummynorm596 by command line argument.
+3 main || Excluding systematic dummynorm597 by command line argument.
+3 main || Excluding systematic dummynorm598 by command line argument.
+3 main || Excluding systematic dummynorm599 by command line argument.
+3 main || Excluding systematic dummynorm600 by command line argument.
+3 main || Excluding systematic dummynorm601 by command line argument.
+3 main || Excluding systematic dummynorm602 by command line argument.
+3 main || Excluding systematic dummynorm603 by command line argument.
+3 main || Excluding systematic dummynorm604 by command line argument.
+3 main || Excluding systematic dummynorm605 by command line argument.
+3 main || Excluding systematic dummynorm606 by command line argument.
+3 main || Excluding systematic dummynorm607 by command line argument.
+3 main || Excluding systematic dummynorm608 by command line argument.
+3 main || Excluding systematic dummynorm609 by command line argument.
+3 main || Excluding systematic dummynorm610 by command line argument.
+3 main || Excluding systematic dummynorm611 by command line argument.
+3 main || Excluding systematic dummynorm612 by command line argument.
+3 main || Excluding systematic dummynorm613 by command line argument.
+3 main || Excluding systematic dummynorm614 by command line argument.
+3 main || Excluding systematic dummynorm615 by command line argument.
+3 main || Excluding systematic dummynorm616 by command line argument.
+3 main || Excluding systematic dummynorm617 by command line argument.
+3 main || Excluding systematic dummynorm618 by command line argument.
+3 main || Excluding systematic dummynorm619 by command line argument.
+3 main || Excluding systematic dummynorm620 by command line argument.
+3 main || Excluding systematic dummynorm621 by command line argument.
+3 main || Excluding systematic dummynorm622 by command line argument.
+3 main || Excluding systematic dummynorm623 by command line argument.
+3 main || Excluding systematic dummynorm624 by command line argument.
+3 main || Excluding systematic dummynorm625 by command line argument.
+3 main || Excluding systematic dummynorm626 by command line argument.
+3 main || Excluding systematic dummynorm627 by command line argument.
+3 main || Excluding systematic dummynorm628 by command line argument.
+3 main || Excluding systematic dummynorm629 by command line argument.
+3 main || Excluding systematic dummynorm630 by command line argument.
+3 main || Excluding systematic dummynorm631 by command line argument.
+3 main || Excluding systematic dummynorm632 by command line argument.
+3 main || Excluding systematic dummynorm633 by command line argument.
+3 main || Excluding systematic dummynorm634 by command line argument.
+3 main || Excluding systematic dummynorm635 by command line argument.
+3 main || Excluding systematic dummynorm636 by command line argument.
+3 main || Excluding systematic dummynorm637 by command line argument.
+3 main || Excluding systematic dummynorm638 by command line argument.
+3 main || Excluding systematic dummynorm639 by command line argument.
+3 main || Excluding systematic dummynorm640 by command line argument.
+3 main || Excluding systematic dummynorm641 by command line argument.
+3 main || Excluding systematic dummynorm642 by command line argument.
+3 main || Excluding systematic dummynorm643 by command line argument.
+3 main || Excluding systematic dummynorm644 by command line argument.
+3 main || Excluding systematic dummynorm645 by command line argument.
+3 main || Excluding systematic dummynorm646 by command line argument.
+3 main || Excluding systematic dummynorm647 by command line argument.
+3 main || Excluding systematic dummynorm648 by command line argument.
+3 main || Excluding systematic dummynorm649 by command line argument.
+3 main || Excluding systematic dummynorm650 by command line argument.
+3 main || Excluding systematic dummynorm651 by command line argument.
+3 main || Excluding systematic dummynorm652 by command line argument.
+3 main || Excluding systematic dummynorm653 by command line argument.
+3 main || Excluding systematic dummynorm654 by command line argument.
+3 main || Excluding systematic dummynorm655 by command line argument.
+3 main || Excluding systematic dummynorm656 by command line argument.
+3 main || Excluding systematic dummynorm657 by command line argument.
+3 main || Excluding systematic dummynorm658 by command line argument.
+3 main || Excluding systematic dummynorm659 by command line argument.
+3 main || Excluding systematic dummynorm660 by command line argument.
+3 main || Excluding systematic dummynorm661 by command line argument.
+3 main || Excluding systematic dummynorm662 by command line argument.
+3 main || Excluding systematic dummynorm663 by command line argument.
+3 main || Excluding systematic dummynorm664 by command line argument.
+3 main || Excluding systematic dummynorm665 by command line argument.
+3 main || Excluding systematic dummynorm666 by command line argument.
+3 main || Excluding systematic dummynorm667 by command line argument.
+3 main || Excluding systematic dummynorm668 by command line argument.
+3 main || Excluding systematic dummynorm669 by command line argument.
+3 main || Excluding systematic dummynorm670 by command line argument.
+3 main || Excluding systematic dummynorm671 by command line argument.
+3 main || Excluding systematic dummynorm672 by command line argument.
+3 main || Excluding systematic dummynorm673 by command line argument.
+3 main || Excluding systematic dummynorm674 by command line argument.
+3 main || Excluding systematic dummynorm675 by command line argument.
+3 main || Excluding systematic dummynorm676 by command line argument.
+3 main || Excluding systematic dummynorm677 by command line argument.
+3 main || Excluding systematic dummynorm678 by command line argument.
+3 main || Excluding systematic dummynorm679 by command line argument.
+3 main || Excluding systematic dummynorm680 by command line argument.
+3 main || Excluding systematic dummynorm681 by command line argument.
+3 main || Excluding systematic dummynorm682 by command line argument.
+3 main || Excluding systematic dummynorm683 by command line argument.
+3 main || Excluding systematic dummynorm684 by command line argument.
+3 main || Excluding systematic dummynorm685 by command line argument.
+3 main || Excluding systematic dummynorm686 by command line argument.
+3 main || Excluding systematic dummynorm687 by command line argument.
+3 main || Excluding systematic dummynorm688 by command line argument.
+3 main || Excluding systematic dummynorm689 by command line argument.
+3 main || Excluding systematic dummynorm690 by command line argument.
+3 main || Excluding systematic dummynorm691 by command line argument.
+3 main || Excluding systematic dummynorm692 by command line argument.
+3 main || Excluding systematic dummynorm693 by command line argument.
+3 main || Excluding systematic dummynorm694 by command line argument.
+3 main || Excluding systematic dummynorm695 by command line argument.
+3 main || Excluding systematic dummynorm696 by command line argument.
+3 main || Excluding systematic dummynorm697 by command line argument.
+3 main || Excluding systematic dummynorm698 by command line argument.
+3 main || Excluding systematic dummynorm699 by command line argument.
+3 main || Excluding systematic dummynorm700 by command line argument.
+3 main || Excluding systematic dummynorm701 by command line argument.
+3 main || Excluding systematic dummynorm702 by command line argument.
+3 main || Excluding systematic dummynorm703 by command line argument.
+3 main || Excluding systematic dummynorm704 by command line argument.
+3 main || Excluding systematic dummynorm705 by command line argument.
+3 main || Excluding systematic dummynorm706 by command line argument.
+3 main || Excluding systematic dummynorm707 by command line argument.
+3 main || Excluding systematic dummynorm708 by command line argument.
+3 main || Excluding systematic dummynorm709 by command line argument.
+3 main || Excluding systematic dummynorm710 by command line argument.
+3 main || Excluding systematic dummynorm711 by command line argument.
+3 main || Excluding systematic dummynorm712 by command line argument.
+3 main || Excluding systematic dummynorm713 by command line argument.
+3 main || Excluding systematic dummynorm714 by command line argument.
+3 main || Excluding systematic dummynorm715 by command line argument.
+3 main || Excluding systematic dummynorm716 by command line argument.
+3 main || Excluding systematic dummynorm717 by command line argument.
+3 main || Excluding systematic dummynorm718 by command line argument.
+3 main || Excluding systematic dummynorm719 by command line argument.
+3 main || Excluding systematic dummynorm720 by command line argument.
+3 main || Excluding systematic dummynorm721 by command line argument.
+3 main || Excluding systematic dummynorm722 by command line argument.
+3 main || Excluding systematic dummynorm723 by command line argument.
+3 main || Excluding systematic dummynorm724 by command line argument.
+3 main || Excluding systematic dummynorm725 by command line argument.
+3 main || Excluding systematic dummynorm726 by command line argument.
+3 main || Excluding systematic dummynorm727 by command line argument.
+3 main || Excluding systematic dummynorm728 by command line argument.
+3 main || Excluding systematic dummynorm729 by command line argument.
+3 main || Excluding systematic dummynorm730 by command line argument.
+3 main || Excluding systematic dummynorm731 by command line argument.
+3 main || Excluding systematic dummynorm732 by command line argument.
+3 main || Excluding systematic dummynorm733 by command line argument.
+3 main || Excluding systematic dummynorm734 by command line argument.
+3 main || Excluding systematic dummynorm735 by command line argument.
+3 main || Excluding systematic dummynorm736 by command line argument.
+3 main || Excluding systematic dummynorm737 by command line argument.
+3 main || Excluding systematic dummynorm738 by command line argument.
+3 main || Excluding systematic dummynorm739 by command line argument.
+3 main || Excluding systematic dummynorm740 by command line argument.
+3 main || Excluding systematic dummynorm741 by command line argument.
+3 main || Excluding systematic dummynorm742 by command line argument.
+3 main || Excluding systematic dummynorm743 by command line argument.
+3 main || Excluding systematic dummynorm744 by command line argument.
+3 main || Excluding systematic dummynorm745 by command line argument.
+3 main || Excluding systematic dummynorm746 by command line argument.
+3 main || Excluding systematic dummynorm747 by command line argument.
+3 main || Excluding systematic dummynorm748 by command line argument.
+3 main || Excluding systematic dummynorm749 by command line argument.
+3 main || Excluding systematic dummynorm750 by command line argument.
+3 main || Excluding systematic dummynorm751 by command line argument.
+3 main || Excluding systematic dummynorm752 by command line argument.
+3 main || Excluding systematic dummynorm753 by command line argument.
+3 main || Excluding systematic dummynorm754 by command line argument.
+3 main || Excluding systematic dummynorm755 by command line argument.
+3 main || Excluding systematic dummynorm756 by command line argument.
+3 main || Excluding systematic dummynorm757 by command line argument.
+3 main || Excluding systematic dummynorm758 by command line argument.
+3 main || Excluding systematic dummynorm759 by command line argument.
+3 main || Excluding systematic dummynorm760 by command line argument.
+3 main || Excluding systematic dummynorm761 by command line argument.
+3 main || Excluding systematic dummynorm762 by command line argument.
+3 main || Excluding systematic dummynorm763 by command line argument.
+3 main || Excluding systematic dummynorm764 by command line argument.
+3 main || Excluding systematic dummynorm765 by command line argument.
+3 main || Excluding systematic dummynorm766 by command line argument.
+3 main || Excluding systematic dummynorm767 by command line argument.
+3 main || Excluding systematic dummynorm768 by command line argument.
+3 main || Excluding systematic dummynorm769 by command line argument.
+3 main || Excluding systematic dummynorm770 by command line argument.
+3 main || Excluding systematic dummynorm771 by command line argument.
+3 main || Excluding systematic dummynorm772 by command line argument.
+3 main || Excluding systematic dummynorm773 by command line argument.
+3 main || Excluding systematic dummynorm774 by command line argument.
+3 main || Excluding systematic dummynorm775 by command line argument.
+3 main || Excluding systematic dummynorm776 by command line argument.
+3 main || Excluding systematic dummynorm777 by command line argument.
+3 main || Excluding systematic dummynorm778 by command line argument.
+3 main || Excluding systematic dummynorm779 by command line argument.
+3 main || Excluding systematic dummynorm780 by command line argument.
+3 main || Excluding systematic dummynorm781 by command line argument.
+3 main || Excluding systematic dummynorm782 by command line argument.
+3 main || Excluding systematic dummynorm783 by command line argument.
+3 main || Excluding systematic dummynorm784 by command line argument.
+3 main || Excluding systematic dummynorm785 by command line argument.
+3 main || Excluding systematic dummynorm786 by command line argument.
+3 main || Excluding systematic dummynorm787 by command line argument.
+3 main || Excluding systematic dummynorm788 by command line argument.
+3 main || Excluding systematic dummynorm789 by command line argument.
+3 main || Excluding systematic dummynorm790 by command line argument.
+3 main || Excluding systematic dummynorm791 by command line argument.
+3 main || Excluding systematic dummynorm792 by command line argument.
+3 main || Excluding systematic dummynorm793 by command line argument.
+3 main || Excluding systematic dummynorm794 by command line argument.
+3 main || Excluding systematic dummynorm795 by command line argument.
+3 main || Excluding systematic dummynorm796 by command line argument.
+3 main || Excluding systematic dummynorm797 by command line argument.
+3 main || Excluding systematic dummynorm798 by command line argument.
+3 main || Excluding systematic dummynorm799 by command line argument.
+3 main || Excluding systematic dummynorm800 by command line argument.
+3 main || Excluding systematic dummynorm801 by command line argument.
+3 main || Excluding systematic dummynorm802 by command line argument.
+3 main || Excluding systematic dummynorm803 by command line argument.
+3 main || Excluding systematic dummynorm804 by command line argument.
+3 main || Excluding systematic dummynorm805 by command line argument.
+3 main || Excluding systematic dummynorm806 by command line argument.
+3 main || Excluding systematic dummynorm807 by command line argument.
+3 main || Excluding systematic dummynorm808 by command line argument.
+3 main || Excluding systematic dummynorm809 by command line argument.
+3 main || Excluding systematic dummynorm810 by command line argument.
+3 main || Excluding systematic dummynorm811 by command line argument.
+3 main || Excluding systematic dummynorm812 by command line argument.
+3 main || Excluding systematic dummynorm813 by command line argument.
+3 main || Excluding systematic dummynorm814 by command line argument.
+3 main || Excluding systematic dummynorm815 by command line argument.
+3 main || Excluding systematic dummynorm816 by command line argument.
+3 main || Excluding systematic dummynorm817 by command line argument.
+3 main || Excluding systematic dummynorm818 by command line argument.
+3 main || Excluding systematic dummynorm819 by command line argument.
+3 main || Excluding systematic dummynorm820 by command line argument.
+3 main || Excluding systematic dummynorm821 by command line argument.
+3 main || Excluding systematic dummynorm822 by command line argument.
+3 main || Excluding systematic dummynorm823 by command line argument.
+3 main || Excluding systematic dummynorm824 by command line argument.
+3 main || Excluding systematic dummynorm825 by command line argument.
+3 main || Excluding systematic dummynorm826 by command line argument.
+3 main || Excluding systematic dummynorm827 by command line argument.
+3 main || Excluding systematic dummynorm828 by command line argument.
+3 main || Excluding systematic dummynorm829 by command line argument.
+3 main || Excluding systematic dummynorm830 by command line argument.
+3 main || Excluding systematic dummynorm831 by command line argument.
+3 main || Excluding systematic dummynorm832 by command line argument.
+3 main || Excluding systematic dummynorm833 by command line argument.
+3 main || Excluding systematic dummynorm834 by command line argument.
+3 main || Excluding systematic dummynorm835 by command line argument.
+3 main || Excluding systematic dummynorm836 by command line argument.
+3 main || Excluding systematic dummynorm837 by command line argument.
+3 main || Excluding systematic dummynorm838 by command line argument.
+3 main || Excluding systematic dummynorm839 by command line argument.
+3 main || Excluding systematic dummynorm840 by command line argument.
+3 main || Excluding systematic dummynorm841 by command line argument.
+3 main || Excluding systematic dummynorm842 by command line argument.
+3 main || Excluding systematic dummynorm843 by command line argument.
+3 main || Excluding systematic dummynorm844 by command line argument.
+3 main || Excluding systematic dummynorm845 by command line argument.
+3 main || Excluding systematic dummynorm846 by command line argument.
+3 main || Excluding systematic dummynorm847 by command line argument.
+3 main || Excluding systematic dummynorm848 by command line argument.
+3 main || Excluding systematic dummynorm849 by command line argument.
+3 main || Excluding systematic dummynorm850 by command line argument.
+3 main || Excluding systematic dummynorm851 by command line argument.
+3 main || Excluding systematic dummynorm852 by command line argument.
+3 main || Excluding systematic dummynorm853 by command line argument.
+3 main || Excluding systematic dummynorm854 by command line argument.
+3 main || Excluding systematic dummynorm855 by command line argument.
+3 main || Excluding systematic dummynorm856 by command line argument.
+3 main || Excluding systematic dummynorm857 by command line argument.
+3 main || Excluding systematic dummynorm858 by command line argument.
+3 main || Excluding systematic dummynorm859 by command line argument.
+3 main || Excluding systematic dummynorm860 by command line argument.
+3 main || Excluding systematic dummynorm861 by command line argument.
+3 main || Excluding systematic dummynorm862 by command line argument.
+3 main || Excluding systematic dummynorm863 by command line argument.
+3 main || Excluding systematic dummynorm864 by command line argument.
+3 main || Excluding systematic dummynorm865 by command line argument.
+3 main || Excluding systematic dummynorm866 by command line argument.
+3 main || Excluding systematic dummynorm867 by command line argument.
+3 main || Excluding systematic dummynorm868 by command line argument.
+3 main || Excluding systematic dummynorm869 by command line argument.
+3 main || Excluding systematic dummynorm870 by command line argument.
+3 main || Excluding systematic dummynorm871 by command line argument.
+3 main || Excluding systematic dummynorm872 by command line argument.
+3 main || Excluding systematic dummynorm873 by command line argument.
+3 main || Excluding systematic dummynorm874 by command line argument.
+3 main || Excluding systematic dummynorm875 by command line argument.
+3 main || Excluding systematic dummynorm876 by command line argument.
+3 main || Excluding systematic dummynorm877 by command line argument.
+3 main || Excluding systematic dummynorm878 by command line argument.
+3 main || Excluding systematic dummynorm879 by command line argument.
+3 main || Excluding systematic dummynorm880 by command line argument.
+3 main || Excluding systematic dummynorm881 by command line argument.
+3 main || Excluding systematic dummynorm882 by command line argument.
+3 main || Excluding systematic dummynorm883 by command line argument.
+3 main || Excluding systematic dummynorm884 by command line argument.
+3 main || Excluding systematic dummynorm885 by command line argument.
+3 main || Excluding systematic dummynorm886 by command line argument.
+3 main || Excluding systematic dummynorm887 by command line argument.
+3 main || Excluding systematic dummynorm888 by command line argument.
+3 main || Excluding systematic dummynorm889 by command line argument.
+3 main || Excluding systematic dummynorm890 by command line argument.
+3 main || Excluding systematic dummynorm891 by command line argument.
+3 main || Excluding systematic dummynorm892 by command line argument.
+3 main || Excluding systematic dummynorm893 by command line argument.
+3 main || Excluding systematic dummynorm894 by command line argument.
+3 main || Excluding systematic dummynorm895 by command line argument.
+3 main || Excluding systematic dummynorm896 by command line argument.
+3 main || Excluding systematic dummynorm897 by command line argument.
+3 main || Excluding systematic dummynorm898 by command line argument.
+3 main || Excluding systematic dummynorm899 by command line argument.
+3 main || Excluding systematic dummynorm900 by command line argument.
+3 main || Excluding systematic dummynorm901 by command line argument.
+3 main || Excluding systematic dummynorm902 by command line argument.
+3 main || Excluding systematic dummynorm903 by command line argument.
+3 main || Excluding systematic dummynorm904 by command line argument.
+3 main || Excluding systematic dummynorm905 by command line argument.
+3 main || Excluding systematic dummynorm906 by command line argument.
+3 main || Excluding systematic dummynorm907 by command line argument.
+3 main || Excluding systematic dummynorm908 by command line argument.
+3 main || Excluding systematic dummynorm909 by command line argument.
+3 main || Excluding systematic dummynorm910 by command line argument.
+3 main || Excluding systematic dummynorm911 by command line argument.
+3 main || Excluding systematic dummynorm912 by command line argument.
+3 main || Excluding systematic dummynorm913 by command line argument.
+3 main || Excluding systematic dummynorm914 by command line argument.
+3 main || Excluding systematic dummynorm915 by command line argument.
+3 main || Excluding systematic dummynorm916 by command line argument.
+3 main || Excluding systematic dummynorm917 by command line argument.
+3 main || Excluding systematic dummynorm918 by command line argument.
+3 main || Excluding systematic dummynorm919 by command line argument.
+3 main || Excluding systematic dummynorm920 by command line argument.
+3 main || Excluding systematic dummynorm921 by command line argument.
+3 main || Excluding systematic dummynorm922 by command line argument.
+3 main || Excluding systematic dummynorm923 by command line argument.
+3 main || Excluding systematic dummynorm924 by command line argument.
+3 main || Excluding systematic dummynorm925 by command line argument.
+3 main || Excluding systematic dummynorm926 by command line argument.
+3 main || Excluding systematic dummynorm927 by command line argument.
+3 main || Excluding systematic dummynorm928 by command line argument.
+3 main || Excluding systematic dummynorm929 by command line argument.
+3 main || Excluding systematic dummynorm930 by command line argument.
+3 main || Excluding systematic dummynorm931 by command line argument.
+3 main || Excluding systematic dummynorm932 by command line argument.
+3 main || Excluding systematic dummynorm933 by command line argument.
+3 main || Excluding systematic dummynorm934 by command line argument.
+3 main || Excluding systematic dummynorm935 by command line argument.
+3 main || Excluding systematic dummynorm936 by command line argument.
+3 main || Excluding systematic dummynorm937 by command line argument.
+3 main || Excluding systematic dummynorm938 by command line argument.
+3 main || Excluding systematic dummynorm939 by command line argument.
+3 main || Excluding systematic dummynorm940 by command line argument.
+3 main || Excluding systematic dummynorm941 by command line argument.
+3 main || Excluding systematic dummynorm942 by command line argument.
+3 main || Excluding systematic dummynorm943 by command line argument.
+3 main || Excluding systematic dummynorm944 by command line argument.
+3 main || Excluding systematic dummynorm945 by command line argument.
+3 main || Excluding systematic dummynorm946 by command line argument.
+3 main || Excluding systematic dummynorm947 by command line argument.
+3 main || Excluding systematic dummynorm948 by command line argument.
+3 main || Excluding systematic dummynorm949 by command line argument.
+3 main || Excluding systematic dummynorm950 by command line argument.
+3 main || Excluding systematic dummynorm951 by command line argument.
+3 main || Excluding systematic dummynorm952 by command line argument.
+3 main || Excluding systematic dummynorm953 by command line argument.
+3 main || Excluding systematic dummynorm954 by command line argument.
+3 main || Excluding systematic dummynorm955 by command line argument.
+3 main || Excluding systematic dummynorm956 by command line argument.
+3 main || Excluding systematic dummynorm957 by command line argument.
+3 main || Excluding systematic dummynorm958 by command line argument.
+3 main || Excluding systematic dummynorm959 by command line argument.
+3 main || Excluding systematic dummynorm960 by command line argument.
+3 main || Excluding systematic dummynorm961 by command line argument.
+3 main || Excluding systematic dummynorm962 by command line argument.
+3 main || Excluding systematic dummynorm963 by command line argument.
+3 main || Excluding systematic dummynorm964 by command line argument.
+3 main || Excluding systematic dummynorm965 by command line argument.
+3 main || Excluding systematic dummynorm966 by command line argument.
+3 main || Excluding systematic dummynorm967 by command line argument.
+3 main || Excluding systematic dummynorm968 by command line argument.
+3 main || Excluding systematic dummynorm969 by command line argument.
+3 main || Excluding systematic dummynorm970 by command line argument.
+3 main || Excluding systematic dummynorm971 by command line argument.
+3 main || Excluding systematic dummynorm972 by command line argument.
+3 main || Excluding systematic dummynorm973 by command line argument.
+3 main || Excluding systematic dummynorm974 by command line argument.
+3 main || Excluding systematic dummynorm975 by command line argument.
+3 main || Excluding systematic dummynorm976 by command line argument.
+3 main || Excluding systematic dummynorm977 by command line argument.
+3 main || Excluding systematic dummynorm978 by command line argument.
+3 main || Excluding systematic dummynorm979 by command line argument.
+3 main || Excluding systematic dummynorm980 by command line argument.
+3 main || Excluding systematic dummynorm981 by command line argument.
+3 main || Excluding systematic dummynorm982 by command line argument.
+3 main || Excluding systematic dummynorm983 by command line argument.
+3 main || Excluding systematic dummynorm984 by command line argument.
+3 main || Excluding systematic dummynorm985 by command line argument.
+3 main || Excluding systematic dummynorm986 by command line argument.
+3 main || Excluding systematic dummynorm987 by command line argument.
+3 main || Excluding systematic dummynorm988 by command line argument.
+3 main || Excluding systematic dummynorm989 by command line argument.
+3 main || Excluding systematic dummynorm990 by command line argument.
+3 main || Excluding systematic dummynorm991 by command line argument.
+3 main || Excluding systematic dummynorm992 by command line argument.
+3 main || Excluding systematic dummynorm993 by command line argument.
+3 main || Excluding systematic dummynorm994 by command line argument.
+3 main || Excluding systematic dummynorm995 by command line argument.
+3 main || Excluding systematic dummynorm996 by command line argument.
+3 main || Excluding systematic dummynorm997 by command line argument.
+3 main || Excluding systematic dummynorm998 by command line argument.
+3 main || Excluding systematic dummynorm999 by command line argument.
+3 main || Starting from fit preset :  [good, fast].
+3 PROfitterConfig ||Fit and  L-BFGS-B parameters for the Detailed Global minimia finder.  
+3 print || Printing PROfitterConfig Values.
+3 print || ------------ PROfitter specific -------------- 
+3 print || n_latin_points: 2000  
+3 print || latin_diversity_factor: 0.5  
+3 print || n_localfit: 8  
+3 print || n_max_local_retries: 1  
+3 print || ------------ Particle Swarm Optimization -------------- 
+3 print || n_swarm_particles: 25  
+3 print || n_swarm_iterations: 100  
+3 print || n_swarm_max_stagnent_iterations: 50  
+3 print || swarm_inertia_start: 0.9  
+3 print || swarm_inertia_end: 0.6  
+3 print || swarm_cognitive_score: 2  
+3 print || swarm_social_score: 2  
+3 print || swarm_convergence_threshold: 0.0001  
+3 print || ------------ MCMC Parameters -------------- 
+3 print || MCMCiter: 20000  
+3 print || MCMCburn: 25000  
+3 print || ------------ Harmonic Seed Search -------------- 
+3 print || harmonic_min_num_seeds: 2  
+3 print || harmonic_max_num_seeds: 4  
+3 print || harmonic_num_test_points: 125  
+3 print || harmonic_raw_max_tests: 60  
+3 print || harmonic_prominence_threshold: 0.5  
+3 print || harmonic_prominence_threshold_shift: 0.2  
+3 print || harmonic_min_spacing_log: 0.025  
+3 print || harmonic_prominence_threshold_minimum: 1e-05  
+3 print || harmonic_seed_norm_tolerance: 0.0001  
+3 print || harmonic_seed_chi_tolerence: 1e-06  
+3 print || harmonic_scan_fit: 0  
+3 print || ------------ LBFGSBParam -------------- 
+3 print || m: 6   
+3 print || epsilon: 1e-05  
+3 print || epsilon_rel: 1e-05  
+3 print || past: 1   
+3 print || delta: 1e-06  
+3 print || max_iterations: 150  
+3 print || max_submin: 10   
+3 print || max_linesearch: 20   
+3 print || min_step: 1.19209e-07  ) 
+3 print || max_step: 1e+20   
+3 print || ftol: 0.0001   
+3 print || wolfe: 0.9   
+3 print || --------------------------------------- 
+3 PROfitterConfig ||Fit and  L-BFGS-B parameters for the Simplier Scan minimia finder.  
+3 print || Printing PROfitterConfig Values.
+3 print || ------------ PROfitter specific -------------- 
+3 print || n_latin_points: 750  
+3 print || latin_diversity_factor: 0.5  
+3 print || n_localfit: 4  
+3 print || n_max_local_retries: 1  
+3 print || ------------ Particle Swarm Optimization -------------- 
+3 print || n_swarm_particles: 15  
+3 print || n_swarm_iterations: 100  
+3 print || n_swarm_max_stagnent_iterations: 50  
+3 print || swarm_inertia_start: 0.9  
+3 print || swarm_inertia_end: 0.6  
+3 print || swarm_cognitive_score: 2  
+3 print || swarm_social_score: 2  
+3 print || swarm_convergence_threshold: 0.0001  
+3 print || ------------ MCMC Parameters -------------- 
+3 print || MCMCiter: 20000  
+3 print || MCMCburn: 25000  
+3 print || ------------ Harmonic Seed Search -------------- 
+3 print || harmonic_min_num_seeds: 2  
+3 print || harmonic_max_num_seeds: 4  
+3 print || harmonic_num_test_points: 125  
+3 print || harmonic_raw_max_tests: 60  
+3 print || harmonic_prominence_threshold: 0.5  
+3 print || harmonic_prominence_threshold_shift: 0.2  
+3 print || harmonic_min_spacing_log: 0.025  
+3 print || harmonic_prominence_threshold_minimum: 1e-05  
+3 print || harmonic_seed_norm_tolerance: 0.0001  
+3 print || harmonic_seed_chi_tolerence: 1e-06  
+3 print || harmonic_scan_fit: 0  
+3 print || ------------ LBFGSBParam -------------- 
+3 print || m: 6   
+3 print || epsilon: 1e-05  
+3 print || epsilon_rel: 1e-05  
+3 print || past: 1   
+3 print || delta: 1e-06  
+3 print || max_iterations: 100  
+3 print || max_submin: 10   
+3 print || max_linesearch: 20   
+3 print || min_step: 1.19209e-07  ) 
+3 print || max_step: 1e+20   
+3 print || ftol: 0.0001   
+3 print || wolfe: 0.9   
+3 print || --------------------------------------- 
+3 main || Gradient mode: central-full
+3 main || We are hoping to FIX : [] 
+3 run_scale_test || ===== PRObench scale-test starting =====
+3 run_scale_test || N_fillspectra=1000  N_metric=100  N_fit=10  grad_mode=central-full
+3 run_scale_test || nphys=2  nnuis=95  nbins=100
+3 [SCALETEST] tag=fillspectra_vary_all N=1000 nbins=100 nphys=2 nnuis=95 total_us=118717 per_call_us=118.717
+3 [SCALETEST] tag=fillspectra_vary_phys N=1000 nbins=100 nphys=2 nnuis=95 total_us=6152 per_call_us=6.152
+3 [SCALETEST] tag=fillspectra_vary_nuis N=1000 nbins=100 nphys=2 nnuis=95 total_us=111805 per_call_us=111.805
+3 [SCALETEST] tag=metric_vary_all N=100 nbins=100 nphys=2 nnuis=95 total_us=23325 per_call_us=233.25
+3 [SCALETEST] tag=metric_vary_phys N=100 nbins=100 nphys=2 nnuis=95 total_us=12260 per_call_us=122.6
+3 [SCALETEST] tag=metric_vary_nuis N=100 nbins=100 nphys=2 nnuis=95 total_us=22554 per_call_us=225.54
+3 [SCALETEST] tag=metric_grad_vary_all N=100 nbins=100 nphys=2 nnuis=95 total_us=2161473 per_call_us=21614.7
+3 [SCALETEST] tag=metric_grad_vary_phys N=100 nbins=100 nphys=2 nnuis=95 total_us=2129294 per_call_us=21292.9
+3 [SCALETEST] tag=metric_grad_vary_nuis N=100 nbins=100 nphys=2 nnuis=95 total_us=2108956 per_call_us=21089.6
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 21.9439 with pts  : [0.856804, -3.40475, 0.624171, 0.755934, 0.827409, 0.75137, 0.442084, 0.106066, 0.434466, 0.304542, 0.167702, 0.366681, 0.0424959, 0.891198, 0.426278, 0.441415, 0.686979, 0.333929, 0.00846905, 0.269962, 0.429635, 0.30951, 0.977224, 0.051962, 0.215722, 0.182382, 0.392069, 0.138965, 0.185439, 0.347066, 0.973896, 0.106089, 0.126015, 0.89224, 0.845825, 0.479594, 0.421246, 0.157989, 0.157692, 0.04501, 0.0737677, 0.15276, 0.0804322, 0.564127, 0.802112, 0.446657, 0.197456, 0.333569, 0.566087, 0.331716, 0.545959, 0.270232, 0.37171, 0.0699204, 0.15966, 0.725783, 0.382341, 0.765588, 0.311304, 0.297228, 0.159629, 0.274135, 0.889219, 0.570078, 0.462973, 0.703844, 0.838443, 0.254969, 0.689558, 0.121337, 0.755464, 0.149347, 0.546726, 0.265114, 0.231432, 0.119274, 0.490063, 0.310508, 0.236348, 0.397973, 0.654618, 0.675438, 0.626697, 0.0768134, 0.651022, 0.0261448, 0.406361, 0.320864, 0.865565, 0.633962, 0.344631, 0.00722413, 0.144969, 0.136071, 0.214298, 0.255547, 0.859594] 
+3 Fit || Will swarm with 25 swarm points chis of  21.943899 22.810055 23.121820 23.141977 23.207514 23.289078 23.386150 23.465149 23.707148 23.744682 23.751610 24.032434 24.072184 24.124941 24.136011 24.167267 24.196800 24.291277 24.472019 24.577084 24.593868 24.656622 24.720472 24.763597 24.794939 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 5.44746 at [0.451273, -3.40525, -0.231623, 0.38472, 0.260083, -0.296583, 0.168133, 0.56389, 0.260834, 0.192198, -0.0451944, -0.0529349, 0.00488402, -0.157599, 0.539376, -0.16236, -0.121459, 0.283709, 0.0757717, 0.105777, -0.120587, -0.0127979, 0.156683, 0.105955, 0.084162, 0.226648, -0.101426, 0.100682, -0.0574567, -0.0226027, 0.753157, 0.17497, -0.246883, -0.277093, 0.117421, -0.363409, -0.0521277, 0.162009, -0.499877, 0.266722, 0.184271, 0.0523008, -0.173671, -0.0155443, 0.164253, -0.113111, 0.0601921, -0.0449936, 0.0883257, 0.147479, -0.136716, -0.237452, 0.26508, -0.183206, -0.0568234, 0.323921, 0.290908, 0.447738, 0.177221, -0.0527893, -0.0405596, 0.0195263, -0.146102, 0.134532, 0.108728, -0.0186385, -0.337574, -0.0256463, 0.254034, 0.0681313, -0.718463, -0.0797561, 0.16796, 0.0328778, -0.0969921, -0.202829, 0.190768, 0.387921, -0.109498, -0.0618369, -0.00927861, -0.153132, 0.439984, -0.0842264, 0.260123, 0.305558, -0.0284337, 0.399779, -0.0288281, -0.0413332, 0.420017, 0.230818, -0.284707, -0.01561, 0.225991, -0.326273, -0.0857684] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.52787e-10 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.19938e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.55859e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.42973e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.71821e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.01158e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.01952e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.44273e-13 after 4 iterations
+3 Fit || FINAL has a chi 3.55859e-14
+3 Fit || FINAL is  :  0.552895 -2.903698 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 22.5006 with pts  : [0.252748, -3.68908, 0.255225, 0.375968, 0.305476, 0.814525, 0.452492, 0.131093, 0.780896, 0.803441, 0.142707, 0.79295, 0.477269, 0.245366, 0.376328, 0.720534, 0.11728, 0.205981, 0.643303, 0.260369, 0.220309, 0.134331, 0.975066, 0.457489, 0.157363, 0.255221, 0.136085, 0.361671, 0.0958129, 0.611123, 0.387546, 0.407707, 0.573145, 0.105812, 0.174213, 0.407036, 0.211326, 0.562578, 0.669528, 0.715393, 0.133131, 0.37514, 0.91207, 0.291595, 0.928834, 0.0837391, 0.342172, 0.466132, 0.629408, 0.277179, 0.0880752, 0.473131, 0.446002, 0.458178, 0.668271, 0.223686, 0.436342, 0.369266, 0.0754811, 0.0648975, 0.779923, 0.709455, 0.229706, 0.0625121, 0.179875, 0.499695, 0.512844, 0.254224, 0.483098, 0.100474, 0.617364, 0.232579, 0.731659, 0.940348, 0.297473, 0.460719, 0.579399, 0.105865, 0.890214, 0.61342, 0.0895859, 0.373548, 0.379906, 0.436362, 0.0786289, 0.218959, 0.211606, 0.20544, 0.0124046, 0.50571, 0.515141, 0.7559, 0.0458285, 0.966433, 0.658023, 0.945209, 0.0713195] 
+3 Fit || Will swarm with 25 swarm points chis of  22.500612 22.501335 22.721794 22.992020 23.105955 23.165939 23.630209 23.727093 23.740450 24.131424 24.193167 24.234430 24.473295 24.473530 24.484104 24.730185 24.737297 24.801329 24.916765 24.936846 24.978304 25.017574 25.113920 25.143040 25.178070 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 6.12369 at [0.00656778, -4.51098, 0.151745, 0.203897, 0.0328872, 0.148912, -0.0802761, 0.309116, 0.201453, -0.178147, -0.106704, -0.19896, 0.0788724, 0.253008, 0.100542, 0.306809, -0.135509, 0.168823, 0.483715, 0.281281, 0.0277817, 0.0276119, -0.285173, 0.142225, -0.206433, -0.0367975, -0.0959832, 0.127563, 0.17325, -0.165197, -0.0878037, -0.0710111, -0.330959, 0.411473, 0.14853, -0.0543584, 0.491692, -0.0289585, 0.0719986, -0.262083, 0.148568, -0.169074, -0.0168737, 0.552465, -0.206718, -0.113692, 0.0376979, -0.145825, -0.550514, 0.159438, 0.201757, -0.143559, -0.124439, -0.15605, 0.116497, 0.252627, 0.129546, -0.288879, -0.628629, 0.537455, 0.0934768, -0.198158, -0.196408, 0.671694, -0.0842434, -0.565154, -0.315244, -0.353507, 0.114267, 0.28256, 0.289309, 0.0279326, 0.00301492, -0.405791, 0.472668, 0.149902, 0.37931, -0.388335, -0.240879, 0.0340714, -0.101445, 0.0321981, -0.131765, -0.0379294, -0.274044, -0.0403234, 0.124049, -0.025254, 0.0517013, 0.190882, -0.232173, -0.26674, 0.128619, 0.0360619, 0.128671, -0.578357, -0.0323168] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.67694e-11 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.02947e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.54389e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.02068e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.99726e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.62994e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.42024e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.08916e-13 after 4 iterations
+3 Fit || FINAL has a chi 2.54389e-14
+3 Fit || FINAL is  :  0.152571 -4.831789 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 21.9088 with pts  : [0.134268, -2.51799, 0.153425, 0.180467, 0.130937, 0.51528, 0.938671, 0.445669, 0.234753, 0.405312, 0.559726, 0.0294917, 0.0992021, 0.384521, 0.447565, 0.701806, 0.0652183, 0.52391, 0.244307, 0.0205662, 0.071677, 0.156042, 0.614501, 0.869077, 0.680301, 0.978839, 0.820256, 0.765378, 0.531033, 0.556491, 0.249292, 0.656864, 0.550731, 0.21181, 0.278557, 0.220738, 0.724828, 0.5149, 0.189342, 0.0490522, 0.318619, 0.0415418, 0.975535, 0.257267, 0.472737, 0.00427473, 0.321977, 0.282688, 0.503467, 0.627988, 0.655756, 0.472189, 0.526043, 0.37953, 0.61957, 0.31757, 0.802333, 0.388761, 0.6229, 0.65093, 0.0259882, 0.529465, 0.272049, 0.822822, 0.0913936, 0.608798, 0.120268, 0.34054, 0.468145, 0.265079, 0.222711, 0.377708, 0.699113, 0.475182, 0.340055, 0.508653, 0.208687, 0.44709, 0.136706, 0.503971, 0.416782, 0.495111, 0.250932, 0.283621, 0.259714, 0.804196, 0.244609, 0.813715, 0.486039, 0.485073, 0.127743, 0.239031, 0.326977, 0.190968, 0.233326, 0.14345, 0.897654] 
+3 Fit || Will swarm with 25 swarm points chis of  21.908760 23.031050 23.038116 23.112637 23.325760 23.478230 23.711208 23.835882 24.003223 24.056915 24.150524 24.187647 24.260683 24.299074 24.386946 24.416288 24.429760 24.555546 24.589520 24.709185 24.785912 24.847229 24.881083 24.931139 24.941196 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 5.19347 at [0.66894, -2.03666, 0.247799, 0.104985, 0.242303, 0.240068, 0.0703968, 0.0223171, 0.162435, 0.182145, 0.0809914, -0.104121, 0.184361, 0.093307, 0.131569, 0.0633986, 0.0868334, 0.0216691, -0.0577328, -0.373628, -0.181454, -0.329596, -0.300802, 0.137898, 0.18954, -0.271619, -0.00411903, 0.437422, -0.133315, 0.0402483, 0.0854526, 0.189943, 0.180031, 0.0449286, 0.330487, 0.143556, 0.312219, -0.475859, 0.206406, 0.0633351, 0.0633069, 0.076219, 0.411231, -0.27115, 0.338817, 0.149001, 0.192074, 0.0213044, 0.241974, 0.180715, 0.0390773, -0.419982, 0.00704302, 0.19175, 0.302067, 0.209913, -0.371919, -0.0610534, 0.0435921, 0.05944, -0.303622, 0.0501156, 0.258127, 0.0718051, 0.0217014, 0.345295, -0.0791423, 0.00833965, 0.200857, 0.173337, 0.45815, -0.122051, 0.262595, -0.384174, 0.634361, 0.504819, -0.280775, -0.338193, -0.291064, 0.218869, -0.157838, -0.174797, 0.112627, 0.0155586, 0.0815158, 0.360646, 0.0451143, 0.369939, -0.253958, -0.398611, 0.112869, 0.181103, 0.0562126, -0.21179, 0.00178485, 0.0919822, 0.292188] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.26078e-11 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.93076e-09 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.41766e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.03152e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.42158e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.52812e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.71255e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.59435e-13 after 4 iterations
+3 Fit || FINAL has a chi 2.41766e-14
+3 Fit || FINAL is  :  0.441340 -3.530909 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 21.4688 with pts  : [0.500416, -3.82115, 0.00537338, 0.153412, 0.807065, 0.0401752, 0.0612842, 0.230749, 0.430304, 0.539139, 0.257191, 0.288086, 0.347208, 0.602174, 0.323606, 0.497175, 0.561686, 0.111131, 0.195202, 0.545052, 0.192026, 0.633515, 0.958316, 0.897006, 0.43227, 0.679788, 0.281829, 0.622806, 0.0189486, 0.0260898, 0.837595, 0.103107, 0.0990694, 0.280672, 0.889313, 0.211596, 0.0839085, 0.529656, 0.245688, 0.118169, 0.572379, 0.447946, 0.51613, 0.853824, 0.0292363, 0.371887, 0.655256, 0.94314, 0.209922, 0.615174, 0.426078, 0.500718, 0.257313, 0.0854348, 0.0098156, 0.562189, 0.716862, 0.948378, 0.431132, 0.0944009, 0.622602, 0.0400852, 0.184746, 0.671034, 0.504317, 0.581779, 0.155504, 0.201841, 0.188732, 0.63311, 0.305989, 0.590889, 0.223214, 0.812966, 0.706346, 0.00364501, 0.384409, 0.346018, 0.790709, 0.300693, 0.548115, 0.0831283, 0.349849, 0.507503, 0.423228, 0.125443, 0.40915, 0.162029, 0.0406968, 0.198516, 0.431603, 0.355671, 0.653273, 0.0512998, 0.877392, 0.486775, 0.178322] 
+3 Fit || Will swarm with 25 swarm points chis of  21.468752 22.174545 22.864933 23.443956 23.980991 24.204849 24.283550 24.326616 24.457409 24.576345 24.657345 24.676334 24.819761 24.873741 24.935368 24.985989 25.119150 25.140167 25.162333 25.170794 25.174078 25.229082 25.236012 25.291359 25.303255 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 5.72186 at [0.287847, -4.16921, -0.216577, -0.168999, 0.0182257, -0.326349, 0.174759, 0.0189883, 0.490812, 0.0196144, 0.00609351, 0.272935, 0.304124, 0.341754, -0.0701298, 0.344856, -0.00454499, -0.0745341, -0.13977, -0.104205, 0.0459733, 0.373228, 0.255306, 0.258224, 0.413736, -0.0224492, 0.244265, 0.0467071, -0.00450076, -0.312424, -0.103154, -0.118258, -0.320533, 0.451082, 0.476514, -0.0082809, 0.260335, -0.00924151, 0.0838145, 0.0749407, -0.167526, -0.188094, 0.53804, 0.00670469, -0.0402243, 0.207353, -0.140637, -0.387333, -0.422271, -0.0508597, 0.215883, -0.197763, -0.112038, 0.497496, 0.263448, -0.295706, -0.0291027, -0.106392, -0.326993, 0.16339, -0.0923447, 0.0907601, 0.142645, 0.203827, -0.0988984, 0.278374, 0.288601, 0.302218, 0.0830483, -0.145297, -0.128081, 0.102361, -0.104725, 0.0419639, 0.401016, -0.205463, -0.18242, 0.296453, -0.199431, -0.152701, 0.177779, 0.102244, 0.176282, -0.141778, -0.334145, 0.00658646, 0.0260807, -0.496751, 0.188353, 0.540074, 0.333201, -0.260681, 0.103887, -0.265922, -0.569026, 0.149223, -0.0510468] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.52049e-12 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.45268e-12 after 5 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.15106e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.11629e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.11917e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.44859e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.69409e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.52086e-13 after 4 iterations
+3 Fit || FINAL has a chi 4.15106e-14
+3 Fit || FINAL is  :  0.038247 -3.421762 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 22.0121 with pts  : [0.994559, -3.76604, 0.321723, 0.269869, 0.750314, 0.810234, 0.241438, 0.296416, 0.582801, 0.322942, 0.121924, 0.0676346, 0.598244, 0.435259, 0.00775044, 0.00791079, 0.724945, 0.213243, 0.143108, 0.919637, 0.77287, 0.467163, 0.0617349, 0.881452, 0.0026122, 0.11048, 0.677339, 0.275932, 0.60451, 0.0813539, 0.875781, 0.287359, 0.249518, 0.345478, 0.221153, 0.404519, 0.355642, 0.00510079, 0.291567, 0.543337, 0.366818, 0.540368, 0.669776, 0.0452103, 0.875234, 0.126923, 0.291432, 0.704314, 0.670428, 0.413536, 0.653631, 0.567438, 0.557846, 0.192466, 0.282782, 0.933532, 0.167665, 0.470899, 0.344411, 0.368333, 0.587766, 0.238872, 0.142188, 0.66448, 0.521412, 0.879848, 0.250588, 0.682504, 0.998404, 0.933819, 0.423825, 0.056984, 0.0453859, 0.411184, 0.265537, 0.0586488, 0.177563, 0.210447, 0.0422321, 0.809049, 0.00634307, 0.0834614, 0.0988323, 0.341786, 0.578612, 0.0270163, 0.547502, 0.50167, 0.520615, 0.781351, 0.192194, 0.233065, 0.431969, 0.65841, 0.490394, 0.142406, 0.0113642] 
+3 Fit || Will swarm with 25 swarm points chis of  22.012058 23.106853 23.575787 23.711067 23.936949 24.309332 24.421675 24.544931 24.562763 24.696283 24.714659 24.715664 24.738482 24.760063 24.940693 24.944557 24.964924 25.057556 25.079025 25.148729 25.262171 25.322058 25.393259 25.395309 25.405821 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 5.41384 at [0.902733, -6.76152, -0.0545477, 0.0417231, 0.358816, 0.136705, 0.0191753, 0.00977209, -0.638688, -0.301707, 0.292047, -0.652329, -0.164816, 0.312359, -0.101069, 0.206544, 0.304715, 0.0842277, -0.49167, 0.174276, 0.28458, -0.106256, -0.439419, 0.113178, -0.510728, 0.241034, -0.287463, 0.676254, -0.030498, -0.0731568, -0.0400924, 0.00651633, -0.213388, 0.277828, 0.100572, 0.0140991, 0.0785101, -0.448606, -0.0717428, 0.0828396, 0.216653, -0.29898, -0.0317377, 0.180291, 0.259441, -0.0221327, 0.244988, 0.0820711, 0.0827147, 0.0881023, 0.158755, -0.0498059, 0.0624324, 0.21423, -0.0991242, 0.0727862, 0.40034, 0.11804, -0.0545748, 0.0245254, -0.152704, -0.115155, 0.0811363, 0.282244, 0.155391, 0.400761, 0.278438, -0.311206, 0.216337, 0.130006, -0.0493677, -0.111758, 0.107477, -0.354067, -0.267647, 0.127158, 0.423715, 0.121454, -0.0795667, -0.224722, -0.200003, 0.0994707, 0.142414, -0.356111, -0.0640756, -0.0614605, 0.0675312, -0.120516, -0.209183, 0.283805, -0.214255, -0.151431, -0.046422, -0.225473, 0.0330497, -0.150134, 0.254554] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.12499e-11 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.82829e-15 after 5 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.46694e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.92102e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.58509e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.18496e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.00766e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.26517e-14 after 4 iterations
+3 Fit || FINAL has a chi 2.82829e-15
+3 Fit || FINAL is  :  0.450067 -1.835996 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 22.1985 with pts  : [0.842155, -3.71676, 0.0351004, 0.937576, 0.190666, 0.366362, 0.0669862, 0.715669, 0.50549, 0.195926, 0.0289875, 0.0212275, 0.771546, 0.862785, 0.49981, 0.876191, 0.764848, 0.161467, 0.157227, 0.406405, 0.121764, 0.433633, 0.917584, 0.0696668, 0.129963, 0.642978, 0.187046, 0.506787, 0.86833, 0.325591, 0.69677, 0.692772, 0.462102, 0.851914, 0.276857, 0.0507907, 0.685185, 0.49381, 0.701576, 0.810497, 0.339619, 0.155058, 0.319655, 0.146042, 0.123999, 0.327114, 0.323071, 0.223076, 0.637104, 0.199305, 0.0750466, 0.388847, 0.28619, 0.132134, 0.068345, 0.112362, 0.78192, 0.29429, 0.543459, 0.384623, 0.16476, 0.0295458, 0.144812, 0.0364919, 0.39695, 0.0691931, 0.462044, 0.127214, 0.313744, 0.262872, 0.305872, 0.310831, 0.875766, 0.993288, 0.78066, 0.095535, 0.117459, 0.217506, 0.492156, 0.0614254, 0.513298, 0.355498, 0.267019, 0.666246, 0.301477, 0.304923, 0.702537, 0.791197, 0.330562, 0.794836, 0.841302, 0.434079, 0.551625, 0.0848992, 0.359708, 0.646403, 0.340404] 
+3 Fit || Will swarm with 25 swarm points chis of  22.198492 23.120234 23.371384 23.423126 23.898754 24.015154 24.096172 24.162107 24.203094 24.339621 24.512877 24.640863 24.734276 24.764832 24.858253 24.864487 24.991085 25.040928 25.087475 25.133606 25.137264 25.164356 25.195889 25.197739 25.206108 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 5.50217 at [0.111557, -3.86273, -0.350833, 0.517365, 0.163623, -0.00948428, -0.0979824, 0.320419, -0.171632, -0.137812, 0.424235, -0.0177287, -0.425465, -0.0909329, 0.0372205, 0.200476, 0.232664, -0.218717, -0.0723912, -0.163321, -0.36994, -0.0207558, -0.0566102, 0.0878696, 0.215481, 0.133091, -0.105384, -0.259165, 0.27657, 0.289255, 0.0728601, 0.0954311, 0.171007, 0.19928, 0.22248, -0.315176, -0.544432, 0.0692659, -0.237157, 0.134188, -0.130023, -0.219936, -0.242045, 0.086454, 0.121001, 0.500286, -0.241246, 0.188017, 0.154473, -0.0992268, -0.419606, -0.0806301, -0.077354, 0.0368998, 0.269881, -0.0474565, -0.245889, -0.435337, -0.066097, 0.127547, -0.419714, 0.0800592, 0.118004, -0.280363, 0.358706, -0.0242398, 0.0981612, -0.0115529, 0.557442, -0.30112, -0.0969243, -0.109887, -0.056745, 0.217705, 0.0269376, 0.0857986, 0.293662, -0.020919, 0.136623, 0.0411353, 0.0178191, -0.224057, -0.396422, 0.297955, -0.408456, 0.36652, 0.360402, 0.158345, -0.0461722, 0.0976951, 0.121789, 0.487904, -0.163545, -0.118948, -0.150216, -0.393905, 0.150675] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.00979e-11 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.18233e-09 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.86234e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.78609e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.40275e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.56892e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.57119e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.14644e-15 after 4 iterations
+3 Fit || FINAL has a chi 9.14644e-15
+3 Fit || FINAL is  :  0.643210 -3.103443 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 20.9787 with pts  : [0.498731, -4.69102, 0.42313, 0.698946, 0.696, 0.528921, 0.323159, 0.617419, 0.165889, 0.0997776, 0.0670723, 0.90679, 0.190934, 0.0358982, 0.525654, 0.250092, 0.214775, 0.477532, 0.203781, 0.386767, 0.134461, 0.0216326, 0.651132, 0.211504, 0.430232, 0.420552, 0.482538, 0.484915, 0.557604, 0.985782, 0.0899297, 0.112626, 0.343472, 0.666367, 0.445321, 0.292116, 0.427893, 0.593168, 0.0862216, 0.542996, 0.55238, 0.136461, 0.602863, 0.294266, 0.388882, 0.535411, 0.245211, 0.742405, 0.207911, 0.0325703, 0.0748212, 0.260246, 0.360011, 0.137514, 0.452465, 0.473562, 0.574509, 0.607691, 0.0528415, 0.0192734, 0.151381, 0.891815, 0.586797, 0.17385, 0.363948, 0.752015, 0.3986, 0.742604, 0.195429, 0.0164378, 0.496958, 0.828436, 0.813384, 0.940677, 0.131135, 0.069218, 0.159073, 0.0918977, 0.419229, 0.208607, 0.264534, 0.911884, 0.0221607, 0.857434, 0.801996, 0.456009, 0.363903, 0.0856319, 0.283438, 0.497076, 0.629657, 0.379079, 0.399194, 0.253475, 0.207127, 0.807065, 0.152155] 
+3 Fit || Will swarm with 25 swarm points chis of  20.978683 23.373779 23.816021 23.833797 23.894516 23.901251 24.125872 24.240068 24.277822 24.517878 24.741280 24.761911 24.774429 24.860483 24.893627 24.962067 24.969204 25.022625 25.088547 25.155422 25.346468 25.360781 25.461929 25.482407 25.503733 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 6.03284 at [0.444767, -5.30708, -0.0639417, -0.144728, 0.260929, -0.0698422, -0.148638, -0.279592, 0.399005, -0.260923, -0.305994, -0.0827098, -0.386605, 0.205728, -0.259934, 0.100961, 0.0785292, 0.0227336, -0.105152, -0.525216, 0.797881, 0.416642, 0.346652, 0.44524, -0.0611579, -0.0172431, -0.341987, 0.0425188, -0.494651, 0.0569472, 0.120382, 0.0631731, 0.240997, -0.172004, 0.245039, -0.233473, -0.129636, -0.201129, 0.240953, -0.119766, -0.110312, 0.109066, -0.363695, -0.0738857, -0.0392483, 0.0506495, -0.103646, -0.351881, 0.421353, 0.15364, 0.186467, -0.122465, 0.173905, 0.22741, 0.101149, -0.0585796, -0.0277888, -0.0756545, -0.0521513, 0.163767, -0.063485, 0.0225669, 0.252837, -0.116465, -0.0248204, 0.227481, -0.044006, 0.222169, -0.0109266, -0.260698, 0.598968, 0.0690387, 0.0680321, 0.495153, -0.0101508, -0.195365, 0.515288, 0.20358, 0.243481, 0.386439, -0.371359, 0.137461, -0.193123, -0.272651, -0.0538873, -0.165471, -0.0427867, 0.188271, 0.275817, 0.493169, 0.198295, 0.269348, 0.179575, 0.0766269, -0.173954, 0.180893, 0.348896] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.1947e-10 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.00854e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 5.87171e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.91345e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.31475e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.76967e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.54707e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.12515e-13 after 4 iterations
+3 Fit || FINAL has a chi 5.87171e-14
+3 Fit || FINAL is  :  0.364184 -4.461020 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 22.8608 with pts  : [0.891482, -2.9611, 0.103868, 0.320893, 0.101637, 0.322153, 0.134421, 0.190477, 0.539155, 0.21472, 0.887865, 0.565524, 0.920113, 0.442999, 0.0132958, 0.744704, 0.89999, 0.918924, 0.20642, 0.313045, 0.202121, 0.212945, 0.686962, 0.160053, 0.196036, 0.75074, 0.539553, 0.528702, 0.223192, 0.335539, 0.0512825, 0.385738, 0.259296, 0.356382, 0.135282, 0.469259, 0.0179695, 0.864441, 0.316361, 0.393327, 0.410713, 0.936919, 0.379924, 0.0922527, 0.640221, 0.471585, 0.0909786, 0.519115, 0.384436, 0.376399, 0.916526, 0.643767, 0.261453, 0.386741, 0.592967, 0.657569, 0.0550408, 0.550843, 0.78299, 0.204603, 0.227851, 0.350843, 0.0825422, 0.28178, 0.332227, 0.0461016, 0.334256, 0.14037, 0.0887989, 0.940257, 0.134135, 0.904713, 0.069696, 0.739605, 0.109315, 0.955895, 0.801315, 0.599916, 0.91422, 0.269262, 0.755252, 0.069757, 0.379502, 0.141454, 0.169855, 0.367973, 0.309633, 0.524125, 0.100773, 0.228878, 0.413046, 0.242603, 0.668544, 0.0468819, 0.262932, 0.137344, 0.945653] 
+3 Fit || Will swarm with 25 swarm points chis of  22.860790 23.349400 23.369452 23.907120 24.340912 24.424292 24.472898 24.558643 24.589466 24.650501 24.682524 24.702131 24.709814 24.724016 24.733566 24.788225 24.807076 24.813051 24.991222 24.993660 25.082811 25.096458 25.106709 25.178549 25.188248 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 4.40896 at [0.59344, -4.4837, 0.0175821, 0.205944, 0.0224442, -0.0176285, 0.375257, 0.35349, 0.145629, 0.170045, 0.224518, 0.0735994, 0.297993, 0.119618, 0.362026, -0.306215, 0.150681, -0.138083, 0.200021, 0.0951272, 0.0414124, -0.0100549, 0.336603, 0.0737151, 0.175472, 0.0740341, 0.0301449, -0.390774, 0.36522, -0.271424, -0.434073, 0.118246, 0.0494085, -0.255642, -0.128346, 0.00425379, 0.224031, -0.229682, 0.0878999, -0.053986, 0.0474462, -0.0183549, -0.0853086, 0.0349291, 0.0427135, -0.124294, 0.0285994, -0.274747, -0.356617, 0.360193, 0.199389, 0.108288, 0.610584, 0.0600563, 0.204914, -0.149841, -0.18435, -0.440515, 0.35808, 0.0583761, -0.204913, -0.131562, 0.022103, 0.380364, 0.14543, 0.0642418, 0.0253897, 0.271303, 0.000382572, 0.156478, 0.244351, -0.277565, -0.202467, 0.451927, 0.113378, 0.0229459, -0.112676, 0.0601528, 0.237179, -0.216903, -0.063855, -0.45098, -0.0436028, -0.113647, -0.0111789, 0.21842, -0.0545078, 0.104963, -0.0287701, -0.330639, -0.0335508, 0.368055, -0.221771, -0.0307943, 0.0832807, -0.00979617, -0.110113] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 9.03914e-12 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.2929e-13 after 5 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.80711e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 8.60474e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.72214e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.31654e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 6.36504e-14 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.15983e-13 after 4 iterations
+3 Fit || FINAL has a chi 2.80711e-14
+3 Fit || FINAL is  :  0.369704 -3.415694 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 20.4292 with pts  : [0.170922, -4.23362, 0.36338, 0.8041, 0.712676, 0.403589, 0.299121, 0.492841, 0.191724, 0.113985, 0.0916918, 0.828146, 0.234291, 0.518802, 0.457309, 0.0126794, 0.230762, 0.628727, 0.0764458, 0.0915922, 0.0862987, 0.724356, 0.521159, 0.00366512, 0.799212, 0.642368, 0.614499, 0.22711, 0.703911, 0.542444, 0.688975, 0.650518, 0.645501, 0.79522, 0.150551, 0.677974, 0.181376, 0.515686, 0.725576, 0.0350138, 0.72607, 0.0193457, 0.698937, 0.171366, 0.370851, 0.212706, 0.539425, 0.000287545, 0.189108, 0.67322, 0.984921, 0.189253, 0.136713, 0.89308, 0.704798, 0.324886, 0.299223, 0.215671, 0.0357931, 0.446942, 0.0349689, 0.31516, 0.226484, 0.436044, 0.674422, 0.194588, 0.134895, 0.540716, 0.0984814, 0.237887, 0.93353, 0.44482, 0.0687402, 0.635212, 0.36878, 0.425443, 0.411191, 0.0605598, 0.472521, 0.476987, 0.329177, 0.618774, 0.0505158, 0.0563803, 0.233109, 0.317008, 0.485765, 0.00479209, 0.149592, 0.173287, 0.548034, 0.0703083, 0.16593, 0.65138, 0.537777, 0.20187, 0.388376] 
+3 Fit || Will swarm with 25 swarm points chis of  20.429152 23.402012 23.484392 23.978849 24.013285 24.043650 24.200136 24.287048 24.513273 24.560829 24.604433 24.678057 24.822224 24.881653 25.007017 25.012970 25.055805 25.062435 25.105927 25.120707 25.204653 25.235334 25.245529 25.288637 25.393311 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 6.3072 at [0.0042063, -2.0498, -0.0788241, -0.240006, -0.0247245, -0.123137, 0.137476, -0.144636, 0.358353, 0.21552, -0.526114, 0.274307, -0.0883329, -0.127482, -0.0856605, -0.496795, 0.297617, 0.0099185, 0.0599367, 0.25059, 0.143141, -0.0244955, 0.562914, -0.13371, 0.456252, 0.0875626, 0.216919, 0.325243, 0.262758, -0.0439241, -0.201242, 0.142897, -0.512664, 0.616337, 0.0133547, 0.316239, 0.306863, 0.107122, 0.192345, -0.195659, 0.713047, -0.433829, 0.139481, 0.417918, 0.123605, 0.141085, 0.281726, -0.159794, 0.115121, 0.0526292, 0.0231841, 0.227546, -0.00350778, 0.104967, -0.0374604, -0.503249, -0.0485488, -0.200178, 0.173869, -0.093329, 0.165416, 0.287614, 0.37685, 0.176254, -0.0493699, 0.0263421, 0.303681, 0.123219, 0.122079, 0.192417, 0.194862, 0.334295, 0.42904, 0.372968, -0.126456, 0.404249, 0.188913, 0.122434, 0.0508654, 0.277422, -0.0434947, -0.071755, 0.100687, 0.264719, -0.158538, -0.0568744, 0.0857373, 0.0651617, 0.165976, -0.261856, 0.118037, 0.446733, 0.298587, -0.339833, 0.0379411, 0.140161, -0.332341] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.00283e-10 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.62526e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.71647e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.31086e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.97923e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 7.25249e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 1.02481e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.60566e-13 after 4 iterations
+3 Fit || FINAL has a chi 1.02481e-13
+3 Fit || FINAL is  :  0.400173 -3.704047 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 
+3 Fit || Seed point passed in. Being included.
+3 Fit || Starting MultiGlobal runs (i.e latin hypercube runs, pure chi^2 no grad) : 2000
+3 Fit || Best Point after latin hypercube has chi^2 21.7617 with pts  : [0.133598, -3.32064, 0.384693, 0.83512, 0.284263, 0.451169, 0.625372, 0.00860399, 0.89091, 0.90429, 0.00933742, 0.152283, 0.571312, 0.73718, 0.0409596, 0.361201, 0.208204, 0.546712, 0.0722866, 0.844419, 0.620199, 0.891658, 0.435392, 0.338604, 0.109326, 0.433417, 0.190166, 0.386816, 0.370747, 0.663406, 0.213462, 0.599123, 0.521448, 0.621745, 0.228308, 0.104993, 0.268583, 0.639083, 0.586322, 0.0860448, 0.724789, 0.582572, 0.180727, 0.420886, 0.589385, 0.813882, 0.160995, 0.493264, 0.645702, 0.0758265, 0.359325, 0.164782, 0.78031, 0.434281, 0.175363, 0.771313, 0.337941, 0.526027, 0.104298, 0.439459, 0.354395, 0.17132, 0.0288056, 0.331381, 0.214353, 0.00918729, 0.911973, 0.0741138, 0.31435, 0.313247, 0.549402, 0.351198, 0.26075, 0.0390803, 0.1487, 0.762776, 0.680414, 0.0548678, 0.466299, 0.741859, 0.24862, 0.27108, 0.546342, 0.0863629, 0.829723, 0.591908, 0.489443, 0.502399, 0.41612, 0.0871607, 0.793622, 0.0454655, 0.121631, 0.613963, 0.44154, 0.00763174, 0.37216] 
+3 Fit || Will swarm with 25 swarm points chis of  21.761724 23.647032 23.863619 24.110945 24.548382 24.617874 24.629608 24.669271 24.696117 24.842777 24.857838 24.887661 24.905416 24.960152 25.025858 25.026199 25.046606 25.105579 25.153753 25.159481 25.186209 25.247234 25.278915 25.411488 25.426191 
+3 runSwarm ||  Swarm starting with 0.9 inertia, 2 cognitive and 2 social weights  
+3 runSwarm ||  Swarm ran for 100 and the best particle got 6.83997 at [-0.188502, -6.5878, 0.0746072, 0.474551, -0.2727, -0.0417775, 0.121963, 0.0122189, -0.191521, -0.247987, -0.146772, 0.236038, 0.00533938, 0.312749, -0.221088, 0.284263, 0.000766741, 0.519971, 0.166752, 0.153498, -0.271749, 0.379824, 0.459221, 0.0685504, 0.163248, -0.0144886, -0.122388, -0.0995315, 0.643398, -0.412241, 0.223458, 0.1759, 0.217751, -0.0641714, 0.258746, -0.303227, 0.162416, -0.394836, -0.171636, 0.293411, 0.165527, -0.0532836, 0.391663, 0.620423, 0.242337, 0.0541773, 0.095919, -0.354045, 0.100909, 0.123605, 0.215857, 0.282005, -0.132934, 0.106041, 0.118922, -0.293712, -0.0841953, 0.406344, -0.142298, -0.0247529, 0.00908599, 0.159995, 0.188012, 0.768985, -0.149289, -0.158564, -0.23858, 0.252087, 0.588753, 0.289576, -0.306464, -0.374116, -0.0746385, -0.0436992, 0.556672, 0.0917213, 0.111142, 0.195405, 0.325879, 0.217061, 0.282112, 0.0430586, -0.327274, -0.0448706, 0.14281, 0.0843315, 0.356259, 0.286277, 0.0224193, 0.170775, -0.156735, -0.105352, 0.282057, 0.120619, 0.494746, 0.15171, 0.166505] 
+3 Fit || Starting local fit of best swarm point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.9329e-10 after 3 iterations
+3 Fit || Starting local fit of seed point. 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.36003e-10 after 4 iterations
+3 Fit || Starting n_localfit local fit number 0/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.94672e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 1/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.56125e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 2/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 3.14328e-12 after 4 iterations
+3 Fit || Starting n_localfit local fit number 3/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.43332e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 4/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 2.05266e-13 after 4 iterations
+3 Fit || Starting n_localfit local fit number 5/8 
+3 Fit || Starting local minimization attempt 1/1
+3 Fit || Minimization successful, chi 4.32971e-14 after 4 iterations
+3 Fit || FINAL has a chi 4.32971e-14
+3 Fit || FINAL is  :  0.150174 -4.622229 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 
+3 [SCALETEST] tag=fit N=10 nbins=100 nphys=2 nnuis=95 total_s=18.7788 per_call_s=1.87788
+2 PoissonVariation || Cannot perform Poisson variation: bin 75 has negative content -58.0059. Setting to 0.
+3 [SCALETEST] tag=pseudo_full N=1000 nbins=100 nphys=2 nnuis=95 total_us=128339 per_call_us=128.339
+3 [SCALETEST] tag=collapse_matrix N=1000 nbins=100 nphys=2 nnuis=95 total_us=222 per_call_us=0.222
+3 [SCALETEST] tag=mcmc_step_burnin N=1000 nbins=100 nphys=2 nnuis=95 total_us=99437 per_call_us=99.437
+3 [SCALETEST] tag=mcmc_step_post N=1000 nbins=100 nphys=2 nnuis=95 total_us=9432 per_call_us=9.432
+3 run_scale_test || ===== PRObench scale-test complete: 14 tests =====
+3 main || Total run time: 27187470

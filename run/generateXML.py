@@ -8,13 +8,6 @@ Nbins = sys.argv[1]
 Npulls = sys.argv[2]
 tag = sys.argv[3]
 
-list_of_norms = ["FiducialVol", "FluxNorm", "ICARUSDet", "SBNDDet", "Targets_POT"]
-
-list_of_splines = []
-with open('./listOfSplines.txt', 'r') as f:
-    for line in f:
-        list_of_splines.append(line.strip())
-
 filename = 'scale_' + str(tag)
 
 file = open('.././xml/' + filename + '.xml', 'w')
@@ -65,11 +58,7 @@ file.write('''
 ''')
 
 for i in range(int(Npulls)):
-    if i < len(list_of_norms):
-        norm = list_of_norms[i]
-        file.write('    <systematic type="norm" plotname="' + norm + '" tag="Other">' + norm + ':0.02</systematic>\n')
-    else:
-        file.write('    <systematic type="norm" plotname="dummynorm' + str(i) + '" tag="Other">dummynorm' + str(i) + ':0.02</systematic>\n')
+    file.write('    <systematic type="norm" plotname="dummynorm' + str(i) + '" tag="Other">dummynorm' + str(i) + ':0.02</systematic>\n')
 
 file.write('''
 

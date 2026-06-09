@@ -25,7 +25,12 @@ if (( running >= MAX_JOBS )); then
     ((running--))
 fi
 done
-done
 
 wait
+
+for Nbins in {10..2010..50}
+do
+    python make_ex_syst_bash.py $Nbins
+    bash ex_syst_${Nbins}bins.sh
+done
 echo "All jobs completed."

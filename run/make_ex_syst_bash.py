@@ -1,9 +1,8 @@
 import sys
 
-assert len(sys.argv) == 3, "Usage: python generateXML.py <Nbins> <tag>"
+assert len(sys.argv) == 2, "Usage: python generateXML.py <Nbins>"
 
 Nbins = sys.argv[1]
-tag = sys.argv[2]
 
 filename = 'ex_syst_' + str(Nbins) + 'bins'
 

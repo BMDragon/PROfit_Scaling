@@ -19,11 +19,9 @@ file.write('''<?xml version="1.0" ?>
 
 <mode name="nu" />
 <detector name="ND" pot="1e+21"/>
-<detector name="FD" pot="1e+21"/>
 
 <channel name="numu" plotname="Fake CC #nu_{#mu} Selection">
-        <bins unit="True Neutrino Energy [GeV]" min="0" max="3" nbins="''' + str(Nbins) + '''" plot="false"/>
-        <bins unit="True L/E [km/GeV]" min="0" max="3" nbins="''' + str(Nbins) + '''" plot="false"/>
+    <bins unit="Random Value" min="0" max="1" nbins="''' + str(Nbins) + '''"/>
     <subchannel name="numu_signal" plotname="#nu_{#mu} CC" color="#99CCFF"/>
     <subchannel name="numu_background" plotname="#nu_{#mu} Backgrounds" color="#FF6961"/>
     <subchannel name="numu_cosmic" plotname="Cosmics" color="#E37400"/>
@@ -37,17 +35,16 @@ file.write('''<?xml version="1.0" ?>
     <parameter name="L/E" variable_index="1"/>
 </model>
 
-<MCFile treename="events/selectedNu" filename="/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt" scale = "1.0" pot="2.15692e19">
+<MCFile treename="events/selected" filename="/nevis/houston/home/markrl/fake_sbn_mc_ND.root" scale = "1.0" pot="1e+21">
     <friend treename="events/multisigmaTree" />
     <friend treename="events/multisimTree" />
+    <friend treename="events/variationTree" />
     <branch
-        associated_subchannel = "nu_SBND_numu_numucc"
-        model_rule            = "0"
-        additional_weight     = "0.9*CC*(truePDG == 14 || truePDG == -14)*(recoE>0)"
-        >
-        <variable>recoE</variable>
-        <variable>trueE</variable>
-        <variable>trueL/(trueE*1000.0)</variable>
+        associated_subchannel = "nu_ND_nue_intrinsic"
+        model_rule            = "3"
+        additional_weight     = "5*mcweight*(category == 0)"
+    >
+        <variable>random_value</variable>
     </branch>
 </MCFile>
            

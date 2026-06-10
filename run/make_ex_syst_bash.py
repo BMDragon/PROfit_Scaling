@@ -13,9 +13,11 @@ MAX_JOBS=20
 running=0
 ''')
 
-for Npulls in range(0, 250, 5):
+pull_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 16, 18, 20, 22, 25, 28, 31, 34, 38, 43, 48, 53, 60, 67, 74, 83, 93, 104, 116, 129, 145, 161, 180, 201, 225]
+
+for Npulls in pull_list:
     systs = ''
-    for i in range(0, Npulls, 1):
+    for i in range(Npulls, 250, 1):
         systs += ' dummynorm' + str(i)
 
     file.write('''

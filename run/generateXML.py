@@ -21,20 +21,9 @@ file.write('''<?xml version="1.0" ?>
 <detector name="ND" pot="1e+21"/>
 <detector name="FD" pot="1e+21"/>
 
-<channel name="nue" plotname="Fake CC #nu_{e} Selection">
-        <bins unit="Reconstructed Neutrino Energy [GeV]" edges="0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2 2.5 3"/>
-        <bins unit="True Neutrino Energy [GeV]" min="0" max="3" nbins="20" plot="false"/>
-        <bins unit="True L/E [km/GeV]" min="0" max="3" nbins="150" plot="false"/>
-    <subchannel name="nue_intrinsic" plotname="Intrinsic #nu_{e} CC" color="#34A853"/>
-    <subchannel name="nue_background" plotname="#nu_{e} Backgrounds" color="#FF6961"/>
-    <subchannel name="nue_fullosc" plotname="#nu_{#mu}#rightarrow#nu_{e} (full osc)" color="#4285F4"/>
-    <subchannel name="nue_cosmic" plotname="Cosmics" color="#E37400"/>
-</channel>
-
 <channel name="numu" plotname="Fake CC #nu_{#mu} Selection">
-        <bins unit="Reconstructed Neutrino Energy [GeV]" edges="0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2 2.5 3"/>
-        <bins unit="True Neutrino Energy [GeV]" min="0" max="3" nbins="20" plot="false"/>
-        <bins unit="True L/E [km/GeV]" min="0" max="3" nbins="150" plot="false"/>
+        <bins unit="True Neutrino Energy [GeV]" min="0" max="3" nbins="''' + str(Nbins) + '''" plot="false"/>
+        <bins unit="True L/E [km/GeV]" min="0" max="3" nbins="''' + str(Nbins) + '''" plot="false"/>
     <subchannel name="numu_signal" plotname="#nu_{#mu} CC" color="#99CCFF"/>
     <subchannel name="numu_background" plotname="#nu_{#mu} Backgrounds" color="#FF6961"/>
     <subchannel name="numu_cosmic" plotname="Cosmics" color="#E37400"/>
@@ -48,151 +37,17 @@ file.write('''<?xml version="1.0" ?>
     <parameter name="L/E" variable_index="1"/>
 </model>
 
-<MCFile treename="events/selected" filename="fake_sbn_mc_ND.root" scale="1.0" pot="1e+21">
+<MCFile treename="events/selectedNu" filename="/nevis/riverside/data/leehagaman/PROfit_files/Tutorial2025/sbnd_bnbcv_files_localtest.txt" scale = "1.0" pot="2.15692e19">
     <friend treename="events/multisigmaTree" />
     <friend treename="events/multisimTree" />
-    <friend treename="events/variationTree" />
     <branch
-        associated_subchannel = "nu_ND_nue_nue_intrinsic"
-        model_rule            = "3"
-        additional_weight     = "category == 0"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_ND_nue_nue_background"
+        associated_subchannel = "nu_SBND_numu_numucc"
         model_rule            = "0"
-        additional_weight     = "category == 1"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_ND_nue_nue_fullosc"
-        model_rule            = "2"
-        additional_weight     = "category == 2"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_ND_numu_numu_signal"
-        model_rule            = "1"
-        additional_weight     = "category == 3"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_ND_numu_numu_background"
-        model_rule            = "0"
-        additional_weight     = "category == 4"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-</MCFile>
-
-<MCFile treename="events/offbeam" filename="fake_sbn_mc_ND.root" scale="1.0" pot="1e+21">
-    <branch
-        associated_subchannel = "nu_ND_nue_nue_cosmic"
-        incl_systematics      = "false"
-        model_rule            = "0"
-        additional_weight     = "category == 10"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_ND_numu_numu_cosmic"
-        incl_systematics      = "false"
-        model_rule            = "0"
-        additional_weight     = "category == 11"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-</MCFile>
-
-<MCFile treename="events/selected" filename="fake_sbn_mc_FD.root" scale="1.0" pot="1e+21">
-    <friend treename="events/multisigmaTree" />
-    <friend treename="events/multisimTree" />
-    <friend treename="events/variationTree" />
-    <branch
-        associated_subchannel = "nu_FD_nue_nue_intrinsic"
-        model_rule            = "3"
-        additional_weight     = "category == 0"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_FD_nue_nue_background"
-        model_rule            = "0"
-        additional_weight     = "category == 1"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_FD_nue_nue_fullosc"
-        model_rule            = "2"
-        additional_weight     = "category == 2"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_FD_numu_numu_signal"
-        model_rule            = "1"
-        additional_weight     = "category == 3"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_FD_numu_numu_background"
-        model_rule            = "0"
-        additional_weight     = "category == 4"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-</MCFile>
-           
-<MCFile treename="events/offbeam" filename="fake_sbn_mc_FD.root" scale="1.0" pot="1e+21">
-    <branch
-        associated_subchannel = "nu_FD_nue_nue_cosmic"
-        incl_systematics      = "false"
-        model_rule            = "0"
-        additional_weight     = "category == 10"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
-    </branch>
-    <branch
-        associated_subchannel = "nu_FD_numu_numu_cosmic"
-        incl_systematics      = "false"
-        model_rule            = "0"
-        additional_weight     = "category == 11"
-    >
-        <variable>reco_visible_energy</variable>
-        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
-        <variable>true_neutrino_energy</variable>
+        additional_weight     = "0.9*CC*(truePDG == 14 || truePDG == -14)*(recoE>0)"
+        >
+        <variable>recoE</variable>
+        <variable>trueE</variable>
+        <variable>trueL/(trueE*1000.0)</variable>
     </branch>
 </MCFile>
            

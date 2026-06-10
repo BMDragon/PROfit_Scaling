@@ -15,7 +15,7 @@ for Mbins in "${binvals[@]}"; do
         (time PROfit -x .././xml/scale_${tag}.xml -t scaling_${tag} process) > .././time_logs/log_${tag}_time.txt 2>&1
         grep user .././time_logs/log_${tag}_time.txt > .././time_logs/user_${tag}_time.txt
     fi
-    PROfit -x .././xml/scale_${tag}.xml --tag scaling_${tag} -v 1 -w 3 --log .././process_logs/log_${tag}.txt --progress --seed 314 --scale-by-width scale-test
+    PROfit -x .././xml/scale_${tag}.xml --tag scaling_${tag} -v 1 -w 3 --log .././process_logs/log_${tag}.txt --progress --seed 314 --scale-by-width scale-test -N 10000 
     grep SCALE .././process_logs/log_${tag}.txt > .././scaling_outputs/scale_${tag}.txt
     echo "Finished ${Mbins} bins, 250 pulls"
 ) &

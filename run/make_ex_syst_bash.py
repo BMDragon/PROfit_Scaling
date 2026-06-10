@@ -23,7 +23,7 @@ for Npulls in pull_list:
     file.write('''
 (
     tag="''' + str(Nbins) + '''bins_''' + str(Npulls) + '''pulls"
-    PROfit -x .././xml/scale_''' + str(Nbins) + '''bins_250pulls.xml --tag scaling_''' + str(Nbins) + '''bins_250pulls -v 1 -w 3 --log .././process_logs/log_${tag}.txt --progress --seed 314 --scale-by-width --exclude-systs''' + systs + ''' scale-test
+    PROfit -x .././xml/scale_''' + str(Nbins) + '''bins_250pulls.xml --tag scaling_''' + str(Nbins) + '''bins_250pulls -v 1 -w 3 --log .././process_logs/log_${tag}.txt --progress --seed 314 --scale-by-width --exclude-systs''' + systs + ''' scale-test -N 10000
     grep SCALE .././process_logs/log_${tag}.txt > .././scaling_outputs/scale_${tag}.txt
     echo "Finished $tag"
 ) &

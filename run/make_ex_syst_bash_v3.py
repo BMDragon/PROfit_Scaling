@@ -1,0 +1,41 @@
+import sys
+
+assert len(sys.argv) == 2, "Usage: python generateXML.py <Nbins>"
+
+Nbins = sys.argv[1]
+
+filename = 'ex_syst_' + str(Nbins) + 'bins_v3'
+
+file = open('./' + filename + '.sh', 'w')
+file.write('''#!/bin/bash
+
+MAX_JOBS=20
+running=0
+''')
+
+pull_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 16, 18, 20, 22, 25, 28, 31, 34, 38, 43, 48, 53, 60, 67, 74, 83, 93, 104, 116, 129, 145, 161, 180, 201, 225]
+
+for Npulls in pull_list:
+    systs = ''
+    for i in range(Npulls, 250, 1):
+        systs += ' dummynorm' + str(i)
+
+    file.write('''
+(
+    tag="''' + str(Nbins) + '''bins_''' + str(Npulls) + '''pulls"
+    PROfit -x .././xml/scale_''' + str(Nbins) + '''bins_250pulls.xml --tag scaling_''' + str(Nbins) + '''bins_250pulls -v 1 -w 3 --log .././process_logs/log_${tag}_v3.txt --progress --seed 314 --scale-by-width --exclude-systs''' + systs + ''' scale-test -N 500 --tests fillspectra,metric,metricgrad
+    grep SCALE .././process_logs/log_${tag}_v3.txt > .././scaling_outputs/scale_${tag}_v3.txt
+    echo "Finished $tag"
+) &
+
+((running++))
+if (( running >= MAX_JOBS )); then
+    wait -n    # wait for one job to finish
+    ((running--))
+fi
+    ''')
+
+file.write('''
+wait
+echo "All ''' + str(Nbins) + ''' jobs completed."
+           ''')

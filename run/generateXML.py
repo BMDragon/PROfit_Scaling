@@ -21,10 +21,11 @@ file.write('''<?xml version="1.0" ?>
 <detector name="ND" pot="1e+21"/>
 
 <channel name="numu" plotname="Fake CC #nu_{#mu} Selection">
-    <bins unit="Random Value" min="0" max="1" nbins="''' + str(Nbins) + '''"/>
-    <subchannel name="numu_signal" plotname="#nu_{#mu} CC" color="#99CCFF"/>
-    <subchannel name="numu_background" plotname="#nu_{#mu} Backgrounds" color="#FF6961"/>
-    <subchannel name="numu_cosmic" plotname="Cosmics" color="#E37400"/>
+        <bins unit="Random Value" min="0" max="1" nbins="''' + str(Nbins) + '''"/>
+        <bins unit="Reconstructed Neutrino Energy [GeV]" min="0.1" max="3.5" nbins="34"/>
+        <bins unit="True L/E [km/GeV]" min="0" max="6" nbins="60"/>
+        <bins unit="True Neutrino Energy [GeV]" min="0" max="3" nbins="20" plot="false"/>
+    <subchannel name="signal" plotname="#nu_{#mu} CC" color="#99CCFF"/>
 </channel>
 
 <model tag="3+1_angles">
@@ -32,7 +33,7 @@ file.write('''<?xml version="1.0" ?>
     <rule index="1" name="Numu Disappearance"/>
     <rule index="2" name="Nue Appearance"/>
     <rule index="3" name="Nue Disappearance"/>
-    <parameter name="L/E" variable_index="1"/>
+    <parameter name="L/E" variable_index="2"/>
 </model>
 
 <MCFile treename="events/selected" filename="/nevis/houston/home/markrl/fake_sbn_mc_ND.root" scale = "1.0" pot="1e+21">
@@ -40,11 +41,14 @@ file.write('''<?xml version="1.0" ?>
     <friend treename="events/multisimTree" />
     <friend treename="events/variationTree" />
     <branch
-        associated_subchannel = "nu_ND_nue_intrinsic"
-        model_rule            = "3"
-        additional_weight     = "5*mcweight*(category == 0)"
+        associated_subchannel = "nu_ND_numu_signal"
+        model_rule            = "1"
+        additional_weight     = "mcweight*(category == 3)"
     >
         <variable>random_value</variable>
+        <variable>reco_visible_energy</variable>
+        <variable>true_baseline/(1000*true_neutrino_energy)</variable>
+        <variable>true_neutrino_energy</variable>
     </branch>
 </MCFile>
            
